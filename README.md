@@ -12,6 +12,6 @@ Requires FMCB and wLaunchELF kHn
 4. Press R1 on your controller and select "Copy" from the list
 5. Go back to the main menu and open "hdd:/"
 6. Open now the folder "__system" copy both folders in this directory with R1 -> "Paste"
-7. Several overwrite popups will appear -> Confirm with "YES"
+7. Several overwrite popups will appear -> Confirm with "OK"
 8. After everything has been copied, restart your console or press "Quit game"
 9. The system should be now in English
