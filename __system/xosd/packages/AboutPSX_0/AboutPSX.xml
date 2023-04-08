@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<App name="AboutPSX" native="AboutPSX/AboutPSX" z_depth="-1">
+
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xStr/xStr" version="0.1.0" />
+
+	<String name="FrameNumMax" str="20" />
+
+	<Component name="Frame0" visible="0" >
+		<String name="MaxScroll_y" str="440" />
+
+		<Text name="" x="0" y="240" size="12" alignment="center" str="About PSX"  />
+
+		<Bitmap name="" file="art/PS.tga" x="-102" y="314" />
+
+		<Text name="" x="-120" y="320"  size="12" alignment="left" str="&quot;" />
+		<Text name="" x="10"   y="320"  size="12" alignment="center" str="&quot;、&quot;PSX&quot;and&quot;PlayStation&quot;は" />
+		<Text name="" x="0"    y="350"  size="12" alignment="center" str="It is a registered trademark of Sony Computer Entertainment Inc." />
+		<Text name="" x="0"    y="380" size="12" alignment="center" str="MagicGate、MEMORY STICK、ATRAC3、ATRAC3plus、OpenMG、" />
+		<Text name="" x="0"    y="410" size="12" alignment="center" str="and their respective logos and memory sticks," />
+		<Text name="" x="0"    y="440" size="12" alignment="center" str="It is a trademark or registered trademark of Sony Corporation." />
+
+	</Component>
+
+	<Component name="Frame1" visible="0">
+		<String name="MaxScroll_y" str="390" />
+
+		<Prim name="" type="rect" rgba="FFFFFFFF" x="0" y="285" w="180" h="90"  />
+
+		<Bitmap name="" x="0" y="285" file="art/dolby_digital.png" />
+
+		<Text name="" x="0" y="360" size="12" alignment="center" str="Manufactured under license from Dolby Laboratories." />
+		<Text name="" x="0" y="390" size="12" alignment="center" str="Dolby, Dolby and the double D symbol are trademarks of Dolby Laboratories." />
+
+	</Component>
+
+
+	<Component name="Frame2" visible="0">
+
+		<String name="MaxScroll_y" str="385" />
+
+		<Bitmap name="" file="art/DTS_D_Out_p.png" rgba="D0D0D0FF" x="0" y="295" />
+		<Text name="" str="&quot;DTS&quot; and &quot;DTS Digital Out&quot; are trademarks of Digital Theater Systems, Inc." x="0" y="385" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame3" visible="0">
+		<String name="MaxScroll_y" str="240" />
+
+		<Text name="" str="This software is based in part of the work of the FreeType Team." x="0" y="240" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame4" visible="0">
+		<String name="MaxScroll_y" str="390" />
+
+		<Bitmap name="" file="art/atok_mark.bmp" rgba="D0D0D0FF" x="0" y="300" />
+		<Text name="" str="ATOK is a registered trademark of JustSystems Corporation." x="0" y="390" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame5" visible="0">
+
+		<String name="MaxScroll_y" str="330" />
+
+		<Text name="" str="This product incorporates copyright protection technology and is copyrighted by Macrovision Corporation and other copyright holders." x="0" y="240" size="12" alignment="center" />
+		<Text name="" str="Protected by US patents and other intellectual property rights. The use of this copyright protection technology" x="0" y="270" size="12" alignment="center" />
+		<Text name="" str="Permission from Macrovision is required and home and commercial use only unless otherwise authorized by Macrovision." x="0" y="300" size="12" alignment="center" />
+		<Text name="" str="Others are restricted to some viewing uses. Disassembly or modification is also prohibited." x="0" y="330" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame6" visible="0">
+		<String name="MaxScroll_y" str="240" />
+
+		<Text name="" str="libjpeg   This software is based in part on the work of the independent JPEG Group" x="0" y="240" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame7" visible="0">
+		<String name="MaxScroll_y" str="300" />
+
+		<Text name="" str="The International Components for Unicode-Internationalization Classes" x="0" y="240" size="12" alignment="center" />
+		<Text name="" str="for Unix Copyright &#169;2000" x="0" y="270" size="12" alignment="center" />
+		<Text name="" str="International Business Machines Corporation and others. All Rights Reserved." x="0" y="300" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame8" visible="0">
+		<String name="MaxScroll_y" str="650" />
+
+		<Text name="" str="x-DJ" x="0" y="240" size="30" alignment="center" />
+		<Text name="" str="by" x="0" y="270" size="18" alignment="center" />
+
+		<Bitmap name="" file="art/CQA6Q9~O1.PNG" rgba="D0D0D0FF" x="0" y="320" />
+
+		<Text name="" str="Copyright &#169;2004 Sony Computer Entertainment Inc." x="0" y="410" size="12" alignment="center" />
+		<Text name="" str="All Rights Reserved." x="0" y="440" size="12" alignment="center" />
+		<Text name="" str="The x-DJ function installed in this unit" x="0" y="500" size="12" alignment="center" />
+		<Text name="" str="DJbox DJ simulator engine and" x="0" y="530" size="12" alignment="center" />
+		<Text name="" str="it is realized by AIDJ algorithm." x="0" y="560" size="12" alignment="center" />
+		<Text name="" str="URL http://www.playstation.jp/" x="0" y="590" size="12" alignment="center" />
+		<Text name="" str="DJbox and AIDJ" x="0" y="650" size="12" alignment="center" />
+		<Text name="" str="It is a trademark of Sony Computer Entertainment Inc." x="0" y="680" size="12" alignment="center" />
+
+	</Component>
+
+	<Component name="Frame9" visible="0">
+		<String name="MaxScroll_y" str="600" />
+
+		<Text name="" str="PSX Original Sound"     x="0"    y="240" size="14" alignment="center" />
+
+		<Text name="" str="Produced by"            x="-150" y="270" size="12" alignment="left" />
+		<Text name="" str="Kazuya Nozawa（FEI）"   x="-70"    y="300" size="12" alignment="left" />
+		<Text name="" str="Tetsuya Takahashi"      x="-70"    y="330" size="12" alignment="left" />
+
+		<Text name="" str="Composed by"            x="-150" y="360" size="12" alignment="left" />
+		<Text name="" str="FEI project"            x="-70"    y="390" size="12" alignment="left" />
+		<Text name="" str="Haruki Hirai"           x="-70"    y="420" size="12" alignment="left" />
+		<Text name="" str="Karin Nakano"           x="-70"    y="450" size="12" alignment="left" />
+		<Text name="" str="Kazuhito Fujiki"        x="-70"    y="480" size="12" alignment="left" />
+		<Text name="" str="Naoyuki Horiko"         x="-70"    y="510" size="12" alignment="left" />
+		<Text name="" str="tama happy tone"        x="-70"    y="540" size="12" alignment="left" />
+		<Text name="" str="Tetsuya Takahashi"      x="-70"    y="570" size="12" alignment="left" />
+		<Text name="" str="Yoichi Sakai"           x="-70"    y="600" size="12" alignment="left" />
+
+	</Component>
+
+	<Component name="Frame10" visible="0">
+		<String name="MaxScroll_y" str="300" />
+
+		<Text name="" str="The communication features of this product are licensed by the NetBSD Foundation, Inc. and its contributors." x="0" y="240" size="12" alignment="center" />
+		<Text name="" str="Developed software is used." x="0" y="270" size="12" alignment="center" />
+		<Text name="" str="See About the BSD License after About PSX for more information." x="0" y="300" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame11" visible="0">
+		<String name="MaxScroll_y" str="270" />
+
+		<Text name="" str="d3des  Copyright &#169; 1988, 1989, 1990, 1991, 1992 by Richard Outerbridge. " x="0" y="240" size="12" alignment="center" />
+		<Text name="" str="(GEnie : OUTER; CIS : [71755:204]) Graven Imagery, 1992." x="0" y="270" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame12" visible="0">
+		<String name="MaxScroll_y" str="360" />
+
+		<Text name="" str="This product is&quot;DNAS&quot; (Dynamic Network Authentication System) copyright and" x="0" y="240" size="12" alignment="center" />
+		<Text name="" str="Sony Computer Entertainment Inc.s unique security protection" x="0" y="270" size="12" alignment="center" />
+		<Text name="" str="I am using an authentication system. transfer this systems disabling device or program," x="0" y="300" size="12" alignment="center" />
+		<Text name="" str="Delivery, display, export, import or transmission is prohibited by law." x="0" y="330" size="12" alignment="center" />
+		<Text name="" str="again,&quot;DNAS&quot;is a trademark of the company." x="0" y="360" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame13" visible="0">
+		<String name="MaxScroll_y" str="530" />
+
+		<Bitmap name="" file="art/RSA_Secured.png" rgba="D0D0D0FF" x="0" y="310" />
+		<Text name="" str="This product uses RSA Security Inc. RSA(R) BSAFE TM Crypt-C" x="0" y="410" size="12" alignment="center" />
+		<Text name="" str="and RSA(R) BSAFE TM SSL-C." x="0" y="440" size="12" alignment="center" />
+		<Text name="" str="RSA and BSAFE are owned by RSA Security Inc. in Japan, the United States and" x="0" y="470" size="12" alignment="center" />
+		<Text name="" str="Trademarks or registered trademarks in other countries." x="0" y="500" size="12" alignment="center" />
+		<Text name="" str="RSA Security Inc. All rights reserved." x="0" y="530" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame14" visible="0">
+		<String name="MaxScroll_y" str="240" />
+		<Text name="" str="Other company names and product names are trademarks or registered trademarks of their respective companies." x="0" y="240" size="12" alignment="center" />
+	</Component>
+
+	<Component name="Frame15" visible="0">
+		<String name="MaxScroll_y" str="1110" />
+		<Bitmap name="" file="art/eenet300_01.png" x="0" y="710" />
+		<Text name="" str="About the BSD license" x="0" y="240" size="12" alignment="center" />
+		<Prim name="" type="rect" rgba="000000FF" x="350" y="710" w="64" h="1024" />
+		<Prim name="" type="rect" rgba="000000FF" x="0" y="1210" w="720" h="80" />
+	</Component>
+
+	<Component name="Frame16" visible="0">
+		<String name="MaxScroll_y" str="1040" />
+		<Bitmap name="" file="art/eenet300_02.png" x="0" y="640" />
+		<Prim name="" type="rect" rgba="000000FF" x="350" y="640" w="64" h="1024" />
+		<Prim name="" type="rect" rgba="000000FF" x="0" y="1140" w="720" h="80" />
+	</Component>
+
+	<Component name="Frame17" visible="0">
+		<String name="MaxScroll_y" str="1120" />
+		<Bitmap name="" file="art/eenet300_03.png" x="0" y="680" />
+		<Prim name="" type="rect" rgba="000000FF" x="350" y="680" w="64" h="1024" />
+		<Prim name="" type="rect" rgba="000000FF" x="0" y="1220" w="720" h="80" />
+	</Component>
+
+	<Component name="Frame18" visible="0">
+		<String name="MaxScroll_y" str="1120" />
+		<Bitmap name="" file="art/eenet300_04.png" x="0" y="680" />
+		<Prim name="" type="rect" rgba="000000FF" x="350" y="680" w="64" h="1024" />
+		<Prim name="" type="rect" rgba="000000FF" x="0" y="1220" w="720" h="80" />
+	</Component>
+
+	<Component name="Frame19" visible="0">
+		<String name="MaxScroll_y" str="1060" />
+		<Bitmap name="" file="art/eenet300_05.png" x="0" y="620" />
+		<Prim name="" type="rect" rgba="000000FF" x="350" y="620" w="64" h="1024" />
+		<Prim name="" type="rect" rgba="000000FF" x="0" y="1060" w="720" h="80" />
+	</Component>
+
+</App>

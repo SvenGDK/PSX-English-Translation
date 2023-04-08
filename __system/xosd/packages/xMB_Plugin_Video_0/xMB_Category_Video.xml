@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<Category
+    name="Video"
+    icon="pack:xMB_Plugin_Video/0.1.0/art/video_normal_3G.tm2"
+    icon_x="64"
+    icon_y="64"
+    icon2="pack:xMB_Plugin_Video/0.1.0/art/video_forcus_3G.tm2"
+    icon2_x="64"
+    icon2_y="69"
+    icon3="pack:xMB_Plugin_Video/0.1.0/art/video_option_3G.tm2"
+    icon3_x="64"
+    icon3_y="50"
+    label="{VideoLabel}"
+    order="3"
+>
+</Category>
+

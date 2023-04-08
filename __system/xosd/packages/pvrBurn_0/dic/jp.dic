@@ -1,0 +1,251 @@
+﻿<?dic version="1.0" language="jp" size="207"?>
+
+# -- Common
+
+{Sun} = "Sun";
+{Mon} = "Mon";
+{Tue} = "Tue";
+{Wed} = "Wed";
+{Thu} = "Thu";
+{Fri} = "Fri";
+{Sat} = "Sat";
+
+## +++ Use Cancel Message
+{Dub1} = "dubbing";
+{Init1} = "initializing";
+{Final1} = "finalizing";
+{Form1} = "formatting";
+
+## +++ Use Format Message
+{Dub2} = "Dub";
+{Init2} = "Initialize";
+{Final2} = "Finalize";
+{Form2} = "Format";
+
+## +++ Use Timer Remain
+{Dub3} = "dubbing";
+{Init3} = "initializing";
+{Final3} = "finalizing";
+{Form3} = "formatting";
+
+
+# -- Button Help
+
+{DubTitle} = "HDD→DVD Dubbing";
+{DubTitle_Start} = "HDD→DVD Dubbing / Start confirmation";
+{DubTitle_DiskChk} = "HDD→DVD Dubbing / Disk check";
+{DubTitle_Init} = "HDD→DVD Dubbing / Initialization";
+{DubTitle_SelectTitle} = "HDD→DVD dubbing /Title selection";
+{DubTitle_SelectMenu} = "HDD→DVD dubbing / Menu selection";
+{DubTitle_PreviewMenu} = "HDD→DVD Dubbing / Enlarged display";
+{DubTitle_BurnStart} = "HDD→DVD Dubbing / Writing order confirmation";
+{DubTitle_MenuEnco} = "HDD→DVD Dubbing /DVD menu creation";
+{DubTitle_Apply} = "HDD→DVD Dubbing / Writing";
+{DubTitle_Finalize} = "HDD→DVD dDubbing / Finalization";
+{InitTitle} = "Initialize";
+{FinalTitle} = "Finalize";
+{DiskTitle} = "Disc title name";
+{HelpSelect} = "Select";
+{HelpBack} = "Return";
+{HelpDiscont} = "to interrupt";
+{HelpCancel} = "Cancel";
+{HelpOption} = "Options";
+
+# -- DVD Menu
+
+{NoMenu} = "Do not create a menu";
+{Thumnail_Ex1} = "1 thumbnail";
+{Thumnail_Ex2} = "4 thumbnails";
+{Thumnail_Ex3} = "8 thumbnails";
+{Thumnail_Ex4} = "";
+{Thumnail_Ex5} = "3 thumbnails (special layout)";
+
+# -- Option Menu
+
+{Opt_RecMode} = "Recording mode";
+{Opt_ModeFix} = "Fixed mode";
+{Opt_Auto} = "Auto mode";
+{Opt_Expan} = "View larger image";
+{Opt_ChgName} = "Rename";
+
+# -- Dubbing Top Page
+
+{StartMsg1} = "Dubbing from HDD onto a disc.";
+{StartMsg2} = "Insert a disc and press ";
+{StartMsg3} = "Please press.";
+{StartMsg4} = "Scheduled recording does not work while writing to disc.";
+{FormatMsg1} = "Initialize the DVD.";
+{FormatMsg2} = "If you dont mind";
+{FormatMsg3} = "Please press.";
+{DiskCheck} = "Checking the disc...";
+{DiskChkEnd} = "Disc check completed.";
+{DiskFormat} = "Formatting...";
+{DiskFmtEnd} = "Formatting complete.";
+
+# -- Dubbing Title Selection Page
+
+{Room} = "Free Space";
+{Str_KB} = "%d KB";
+{Str_MB} = "%d MB";
+{TtlSelect1} = " ";
+{TtlSelect2} = "Select the title to dub with";
+{TtlSelect3} = "Please press.";
+{MenuSelect1} = " ";
+{MenuSelect2} = "Select the DVD menu to create with";
+{MenuSelect3} = "Please press.";
+{DateTime1} = "%d/%d(%s) %d:0%d %s";
+{DateTime2} = "%d/%d(%s) %d:%d %s";
+{DateTime3} = "%d/%d(%s) %d:0%d %s";
+{DateTime4} = "%d/%d(%s) %d:%d %s";
+
+# -- Dubbing Page
+
+{BurnStart} = "Titles are dubbed in this order.";
+{BurnStart1} = "Press ";
+{BurnStart2} = " to start dubbing.";
+{FinalizMsg} = "Insert the disc to be finalized.";
+{FinalizMsg1} = "Press ";
+{FinalizMsg2} = " to finalize.";
+{DubMsg1} = "Dubbing...";
+{DubMsg2} = "Do not turn off power.";
+{DubMsg3} = "Dubbing continues even if the power is turned off.";
+{DubStatus} = "Writing...";
+{Remain} = "%sTime remaining:  %2d%2d";
+{CancelStat} = "Cancelling...";
+{FinalStat} = "Finalizing...";
+{MenuStat} = "Encoding menu...";
+{Prog} = "%d％";
+{Optim} = "Optimizing    %d％";
+
+{MEncoStart} = "Create a menu from this. \nThe screen switches automatically, but its not a problem.";
+{Form_End} = "Initialization to DVD is complete. \nEnd initialization.";
+{Final_End} = "Finalization to DVD is complete. \nFinish finalization.";
+{Menu_Create} = "After creating the DVD menu, \nstart dubbing.";
+
+# -- Dialog Message
+
+{Form_Video} = "%s in Video mode?\nAll data on the disc,\nif any, will be erased.";
+{Form_mVR} = "%s in VR mode?\nAll data on the disc,\nif any, will be erased.";
+{Form_pVR1} = "The disc is a DVD+RW.\n%s in +VR mode?\nAll data on the disc,\nif any, will be erased.";
+{Form_pVR2} = "%s in +VR mode?\nAll data on the disc,\nif any, will be erased.";
+{Form_End1} = "Formatted completely.\nFormatting complete.";
+{Form_Err1} = "Cannot format this disc.\nFormatting stopped.";
+{Form_Err2} = "Cannot format this disc.\nInsert a recordable disc.";
+{Form_Err3} = "The disc is a DVD-R. \nStart dubbing in Video Mode ?";
+{Form_Err4} = "Since this disc is a DVD+R, it will be dubbed in\n+VR mode. \nAre you sure?";
+{Rec_Msg} = "Timer recording strarted.\nContinue dubbing?\n\nSelect \"OK\" to stop timer recording.\nSelect \"Cancel\" to stop dubbing.";
+{Dub_Stop} = "Dubbing stopped.";
+{RecStart_Err} = "Failed to stop recording.\nDubbing stopped.";
+{Guide_Cancel1} = "Stop %s?";
+{Guide_Cancel2} = "Aborting %s to DVD. \nAre you sure?";
+{Dub_Cancel} = "Stop dubbing?\nIf the disc is a DVD-R,\nit cannot be used any more.";
+{Final_Cancel} = "Stop finalizing?\nIf the disc is a DVD-R,\nit cannot be used any more.";
+{DiskChk_Err} = "Failed to start disc check.";
+{DiskTyp_Err1} = "No disc.\nInsert a recordable disc.";
+{DiskTyp_Err2} = "The disc is unrecordable.\nInsert a recordable disc.";
+{NoTitle_Err} = "No title.\nDubbing stopped.";
+{NoDVD_Err} = "No disc.\nInsert a recordable disc.";
+{RecProh_Err} = "Could not stop recording.\nCannot start dubbing.";
+{Guide_Timer} = "Timer starts from %s.\nThis timer recording wont start while dubbing.\nStart dubbing?";
+{Guide_Timer1} = "Recording is scheduled within %d hours (%s). \nTimed recording will not start during dubbing.\nWould you like to start dubbing?";
+{Guide_Timer2} = "Recording is scheduled within %d hours %d minutes (%s). \nTimed recording will not start during dubbing.\nWould you like to start dubbing?";
+{Guide_Timer3} = "Start dubbing. \n%s has a scheduled recording. \nYou cannot schedule recording while dubbing. \nAre you sure?";
+{Guide_Timer_Init} = "Recording is scheduled within 1 hour (%s). \nScheduled recording will not start during initialization\nDo you want to start initialization?";
+{Guide_Timer_Init1} = "Recording is scheduled within %d hours (%s). \nScheduled recording will not start during initialization\nDo you want to start initialization?";
+{Guide_Timer_Init2} = "Recording is scheduled within %d hours %d minutes (%s). \nScheduled recording will not start during initialization\nDo you want to start initialization?";
+{Guide_Timer_Init3} = "Start initialization. \n%s has a scheduled recording. \nYou cannot schedule recordings during initialization. \nAre you sure?";
+{Dub_End1} = "Dubbing finished.";
+{Dub_End2} = "Dubbing to DVD is complete. \nEnd dubbing.";
+{Init_End1} = "Initialization finished.";
+{FinalStart_Err} = "Failed to start finalizing.";
+{DubStart_Err} = "Failed to start dubbing.";
+{MnEncoStart_Err} = "Menu encoding failed.";
+{Dub_Cancel1} = "Dubbing cancelled.";
+{Dub_Cancel2} = "Dubbing was cancelled.\nDubbing stopped.";
+{Dub_Err1} = "Not enough disc space.\nCannot dub this title.";
+{Dub_Err2} = "Too many titles selected.\nCannot dub this title.";
+{Dub_Err3} = "Too many chapters.\nCannot dub this title.";
+{Dub_Err4} = "Cannot dub this title.";
+{Dub_Err5} = "It seems that some error has occurred.";
+{Auth_Err1} = "Failed to format the disc.\nDubbing stopped.";
+{Auth_Err2} = "Failed to Release of Finaliz.\nDubbing Stopped.";
+{Auth_Err3} = "Failed to dub to the disc.\nDubbing stopped.";
+{Auth_Err4} = "Failed to finalize.\nDubbing stopped.";
+{Appli_Err1} = "Stop request received.\nDubbing stopped.";
+{Appli_Err2} = "No menu template.\nDubbing stopped.";
+{Appli_Err3} = "No menu item.\nDubbing stopped.";
+{Appli_Err4} = "The encoder is in use.\nDubbing stopped.";
+{Appli_Err5} = "The driver is locked.\nDubbing stopped.";
+{Appli_Err6} = "Shared buffer is in use.\nDubbing stopped.";
+{Appli_Err7} = "No session.\nDubbing stopped.";
+{Appli_Err8} = "Incorrect session.\nDubbing stopped.";
+{Appli_Err9} = "DVD device error.\nDubbing stopped.";
+{ATAPI_Err1} = "Unrecognisable disc.\nInsert a recordable disc.";
+
+{ErrCode1} = "The error occurred.\nDubbing stopped. [%d]";
+{Audio_Main} = "This title dubs the bilingual audio \nas the main audio. \nDubbing takes about the same\ntime as the titles playback time.";
+{Audio_Sub} = "This title dubs the bilingual audio\nas secondary audio. \nDubbing takes about the same\ntime as the title playback time.";
+{RecMode_SLP} = "Set the recording mode to SLP (for +VR). \nDubbing takes about the same\ntime as the titles playback time.";
+{RecMode_Auto} = "\nAutomatically adjust all recording modes for the selected title. Is it OK? \n *Titles whose recording mode is protected\nRecording mode will not be changed.";
+{Opt_RecMDFix} = "Lock recording mode. \nThis title does not\nautomatically adjust the recording mode. \nAre you sure?";
+{VR_Append} = "This is a VR mode disc. \nDo you want to add it?";
+{pVR_Append} = "This is a +VR mode disc. \nDo you want to add it?";
+{Auto_Adjust} = "The recording mode will be automatically adjusted\nbecause the DVD capacity is insufficient. \nFor titles that you want to fix the recording mode,\nselect fixed mode. \nAre you sure?";
+{Move_Msg} = "Dubs titles that can be recorded only once. \nAfter dubbing, even if it is \nprotected, it will be deleted from the hard disk. \nAre you sure?";
+
+{SCE_Err1} = "ExecFormat error [-8]";
+{SCE_Err2} = "File number is wrong. [-9]";
+{SCE_Err3} = "\nThe DVD menu cannot be created because there is not enough space on the hard disk. \nTo create a DVD menu, stop dubbing and\ndelete unnecessary titles from the hard disk.";
+{SCE_Err4} = "Dubbing cannot be started\nbecause there is not enough space on the hard disk. \nPlease stop dubbing and delete unnecessary titles\nfrom your hard disk.";
+{Enco_Err1} = "Failed to create DVD menu. \nStop dubbing.";
+{Enco_Err2} = "Optimization failed. \nStop dubbing.";
+{Debug_Err1} = "Debugging error at title [%d]";
+{Menu_Err1} = "DVD menus can be created up to 20 pages. \nThe selected menu will exceed 20 pages. \nPlease select another menu.";
+
+# -- Dialog
+
+{Yes} = "Yes";
+{No} = "No";
+{Mode_Video} = "Video mode";
+{Mode_VR} = "VR mode";
+{Chg_Format} = "DVD-RW recording mode change";
+
+{Select_Mode} = "Please select a mode.";
+
+# -- MONGON.xml
+
+{mongon_str01} = "It stopped.";
+{mongon_str02} = "Creation of DVD was not completed.";
+{mongon_str03} = "%$3:there is no menu template \'%3$s\'";
+{mongon_str04} = "%$3:item %1$s is not in menu template \'%3$s\'.";
+{mongon_str05} = "It is under videotape recording. It cannot encode.";
+{mongon_str06} = "A DVD drive is using it.";
+{mongon_str07} = "It is under reproduction.";
+{mongon_str08} = "The finalize session is not specified.";
+{mongon_str09} = "%$3:session'%3$s' which carries out finalize is inaccurate.";
+{mongon_str10} = "8cm media are not supported.";
+{mongon_str11} = "The size of media is not known.";
+{mongon_str12} = "The write-in function of a DVD drive cannot be used.";
+{mongon_str13} = "Priority was given to reservation videotape recording.";
+{mongon_str14} = "Videotape recording has not been stopped.";
+{mongon_str15} = "DVD burner;
+{mongon_str16} = "DVD driver error";
+{mongon_str17} = "The situation of DVD is not known.";
+{mongon_str18} = "A tray is not closed.";
+{mongon_str19} = "ATAPI driver";
+{mongon_str20} = "A library cannot be loaded.";
+{mongon_str21} = "Authoring error";
+{mongon_str22} = "The status of DVD cannot be read.";
+{mongon_str23} = "Status acquisition of DVD went wrong.";
+{mongon_str24} = "Initialization of DVD went wrong.";
+{mongon_str25} = "Failed to Release of Finaliz.";
+{mongon_str26} = "Cannot dub this title.";
+{mongon_str27} = "Failed to finalize.";
+{mongon_str28} = "Authoring component";
+{mongon_str29} = "ATAPI error";
+{mongon_str30} = "The situation of DVD is not known.";
+{mongon_str31} = "A tray is not closed.";
+{mongon_str32} = "ATAPI protocol";
+{mongon_str33} = "DVD access";
+
+

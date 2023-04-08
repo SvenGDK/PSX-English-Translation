@@ -1,0 +1,48 @@
+<?dic version="1.0" language="jp" size="43" ?>
+
+{EnterStr} = "Enter";
+{SelectStr} = "Select";
+{BackStr} = "Return";
+{ExitStr} = "Exit";
+{InformationStr} = "Information";
+{OptionsStr} = "Options";
+{DisplayStr} = "Display";
+{ConfirmStr} = "Confirm";
+{DiscardStr} = "Discard";
+{CaptureStr} = "Capture";
+{PanelStr} = "Control Panel";
+
+
+{ONStr} = "On";
+{OnStr} = "On";
+{OFFStr} = "Off";
+{OffStr} = "Off";
+{YESStr} = "Yes";
+{YesStr} = "Yes";
+{NOStr} = "No";
+{NoStr} = "No";
+{OKStr} = "OK";
+{OkStr} = "OK";
+{CANCELStr} = "Cancel";
+{CancelStr} = "Cancel";
+{CONTINUEStr} = "Continue";
+{ContinueStr} = "Continue";
+{NEXTStr} = "Next";
+{NextStr} = "Next";
+{PREVIOUSStr} = "Previous";
+{PreviousStr} = "Previous";
+{AGREEStr} = "Agree";
+{AgreeStr} = "Agree";
+{DISAGREEStr} = "Disagree";
+{DisagreeStr} = "Disagree";
+{ACCEPTStr} = "Accept";
+{AcceptStr} = "Accept";
+{REJECTStr} = "Reject";
+{RejectStr} = "Reject";
+{SAVEStr} = "Save";
+{SaveStr} = "Save";
+{DELETEStr} = "Delete";
+{DeleteStr} = "Delete";
+{HELPStr} = "Help";
+{HelpStr} = "Help";
+

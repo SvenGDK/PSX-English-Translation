@@ -1,0 +1,452 @@
+<?xml version="1.0"?>
+<App name="ConfigEasy" focus="ModifyFocus" native="ConfigEasy/ConfigEasy" z_depth="0" visible="0">
+
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xStr/xStr" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+
+	<Dic name="ConfigEasy" filepath="pack:ConfigEasy/0.1.0/dic" default="yes" />
+
+	<String name="page_guide0"  str="Set start"                                  visible="0" />
+	<String name="page_guide1"  str="BS antenna power setting"                        visible="0" />
+	<String name="page_guide2"  str="Time setting"                                  visible="0" />
+	<String name="page_guide3"  str="Time setting"                                  visible="0" />
+	<String name="page_guide4"  str="Omakase/March Recording Settings"                      visible="0" />
+	<String name="page_guide5"  str="Omakase/March Recording Settings"                      visible="0" />
+	<String name="page_guide6"  str="Area code setting"                              visible="0" />
+	<String name="page_guide7"  str="Automatic channel setting"                        visible="0" />
+	<String name="page_guide8"  str="TV type setting"                              visible="0" />
+	<String name="page_guide9"  str="Optical digital output setting"                        visible="0" />
+	<String name="page_guide10" str="Dolby Digital settings"                      visible="0" />
+	<String name="page_guide11" str="DTS settings"                                   visible="0" />
+	<String name="page_guide12" str="List of setting values"                               visible="0" />
+	<String name="page_guide13" str="End of setting"                                  visible="0" />
+	<String name="page_guide14" str="Automatic channel setting"                        visible="0" />
+
+	<!-- 壁紙 /-->
+	<Bitmap name="bg" file="art/wizard_bg.png" x="0" y="0" w="720" h="480" />
+
+	<Component name="WizardList"                                                x="-360" y="-240" >
+
+		<!-- No.0 設定開始 /-->
+		<Component name="cell0"                                                 x="-720" y="0" rgba="D0D0D0FF"  visible="0" >
+			<Component name="text"                                              x="255"  y="224" >
+				<Text name="text0" str="Start Easy Setup."             x="0"    y="0" size="16" />
+				<Bitmap name="enter" file="art/BtnNav-EnterCir-917-wide.tga"    x="30"   y="20" />
+				<Text name="text1" str="Please press."                     x="65"   y="24" size="16" />
+			</Component>
+		</Component>
+
+		<!-- No.1 BSアンテナ設定 /-->
+		<Component name="cell1"                                                 x="720" y="0" visible="0" >
+			<Component name="text"                                              x="360" y="200" alignment="center" >
+				<Text name="text0" str="Please select the BS antenna power setting." x="0"  y="0" size="16" alignment="center" />
+			</Component>
+			<Component name="list"                                             x="360"  y="285" w="56.0" rgba="{*::TextRGBA.Normal}" >
+				<Text name="text0" str="enter"                                    x="0"    y="0"   size="16" alignment="center" />
+				<Text name="text1" str="cut"                                    x="0"    y="24"  size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.2 時刻設定（変更の有無の確認） /-->
+		<Component name="cell2"                                                 x="720"  y="0"  visible="0" >
+			<Component name="text"                                              x="200"  y="176" >
+				<Text name="text0" str="Please check the current time."           x="0"    y="0" size="16" />
+				<Bitmap name="enter" file="art/BtnNav-EnterCir-917-wide.tga"    x="30"  y="20" />
+				<Text name="text1" str="Press to change the time."         x="65"  y="24" size="16" />
+				<Text name="text2" str="After confirming and changing"                         x="0"    y="48" size="16" />
+				<Bitmap name="arrowUD" file="art/arrow_R.tga"                   x="126"  y="44" />
+				<Text name="text3" str="Please press."                     x="134"  y="48" size="16" />
+			</Component>
+			<Component name="list"                                              x="204"  y="294" w="350.0" rgba="{*::TextRGBA.Normal}" >
+				<Text name="text0" str="YYYY/MM/DD  hh:mm:mm"                   x="0"    y="0"   size="16" />
+			</Component>
+		</Component>
+
+		<!-- No.3 時刻設定（日時の手動入力） /-->
+		<Component name="cell3"                                                 x="720"  y="0"  visible="0" >
+			<Component name="text"                                              x="200"  y="176" >
+				<Bitmap name="arrowLR" file="art/arrow_LR.tga"                  x="8"    y="-4" />
+				<Text name="text0" str="Select an item with and change the value." x="20"   y="0" size="16" />
+				<Text name="text2" str="After change"                               x="0"    y="24" size="16" />
+				<Bitmap name="enter" file="art/BtnNav-EnterCir-917-wide.tga"    x="100"  y="20" />
+				<Text name="text3" str="Please press."                     x="135"  y="24" size="16" />
+			</Component>
+		</Component>
+
+		<!-- No.4 おまかせ・まる録（設定確認） /-->
+		<Component name="cell4"                                                 x="720" y="0" visible="0" >
+			<Component name="text"                                              x="360" y="200" >
+				<Text name="text0" str="Would you like to use Omakase/Maruku?"       x="0"   y="0" size="16" alignment="center" />
+			</Component>
+			<Component name="list"                                              x="360"  y="285" w="84.0" rgba="{*::TextRGBA.Normal}" >
+				<Text name="text0" str="yes"                                   x="0"    y="0"   size="16" alignment="center" />
+				<Text name="text1" str="no"                                 x="0"    y="24"  size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- 5:おまかせ・まる録（キー設定） /-->
+		<Component name="cell5"                                                             x="720" y="0" visible="0" >
+			<Component name="text"                                                          x="160" y="120" >
+				<Text name="text0" str="Select some keywords you want to use."   x="0"  y="0" size="16" />
+				<Bitmap name="enter" file="art/BtnNav-EnterCir-917-wide.tga"                x="30"   y="20" />
+				<Text name="text1" str="Press to select."                           x="65"  y="24" size="16" />
+				<Text name="text2" str="After setting"                                           x="0"   y="48" size="16" />
+				<Bitmap name="arrowR" file="art/arrow_R.tga"                                x="66"  y="44" />
+				<Text name="text3" str="Please press."                                 x="76"   y="48" size="16" />
+			</Component>
+			<Component name="list"                                              x="300" y="210" w="160.0" rgba="{*::TextRGBA.Normal}" >
+				<Text name="text0" str="Movie"                                   x="0"   y="0"    size="16" />
+				<Text name="text1" str="Animation"                                 x="0"   y="24"   size="16" />
+				<Text name="text2" str="Music"                                   x="0"   y="48"   size="16" />
+				<Text name="text3" str="Night drama"                         x="0"   y="72"   size="16" />
+				<Text name="text4" str="Variety"                             x="0"   y="96"   size="16" />
+				<Text name="text5" str="Baseball"                                   x="0"   y="120"  size="16" />
+				<Text name="text6" str="Soccer"                               x="0"   y="144"  size="16" />
+				<Text name="text7" str="Night News"                           x="0"   y="168"  size="16" />
+				<Bitmap name="check0" file="art/ICN_mark.tga"                   x="-25" y="-4"    visible="0" />
+				<Bitmap name="check1" file="art/ICN_mark.tga"                   x="-25" y="20"   visible="0" />
+				<Bitmap name="check2" file="art/ICN_mark.tga"                   x="-25" y="44"   visible="0" />
+				<Bitmap name="check3" file="art/ICN_mark.tga"                   x="-25" y="68"   visible="0" />
+				<Bitmap name="check4" file="art/ICN_mark.tga"                   x="-25" y="92"   visible="0" />
+				<Bitmap name="check5" file="art/ICN_mark.tga"                   x="-25" y="116"  visible="0" />
+				<Bitmap name="check6" file="art/ICN_mark.tga"                   x="-25" y="140"  visible="0" />
+				<Bitmap name="check7" file="art/ICN_mark.tga"                   x="-25" y="164"  visible="0" />
+			</Component>
+		</Component>
+
+		<!-- No.6 地域設定 /-->
+		<Component name="cell6"                                                 x="720" y="0" visible="0" >
+			<Component name="text"                                              x="360" y="120" >
+				<Text name="text0" str="Please select your region."     x="0"  y="0" size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.7 自動チャンネル設定 /-->
+		<Component name="cell7"                                                 x="720" y="0"  visible="0" >
+			<Component name="text"                                              x="360" y="190" >
+				<Text name="text0" str="Would you like to set the channel automatically?"       x="0"  y="0" size="16" alignment="center" />
+			</Component>
+			<Component name="list"                                              x="360"  y="285" w="84.0" rgba="{*::TextRGBA.Normal}" >
+				<Text name="text0" str="Yes"                                   x="0"    y="0"   size="16" alignment="center" />
+				<Text name="text1" str="No"                                 x="0"    y="24"  size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.8 TVタイプ /-->
+		<Component name="cell8"                                                 x="720" y="0" visible="0" >
+			<Component name="text"                                              x="360" y="200" >
+				<Text name="text0" str="Select the aspect ratio of your TV screen." x="16"  y="0" size="16" alignment="center"/>
+			</Component>
+			<Component name="list"                                              x="360" y="285" w="192.0" rgba="{*::TextRGBA.Normal}" >
+				<Text name="text0" str="16:9"                    x="0"   y="0"    size="16" alignment="center" />
+				<Text name="text1" str="4:3 Letterbox"                    x="0"   y="24"   size="16" alignment="center" />
+				<Text name="text2" str="4:3 Pan Scan"                    x="0"   y="48"   size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.9 光デジタル出力 /-->
+		<Component name="cell9"                                                 x="720" y="0" visible="0" >
+			<Component name="text"                                              x="360" y="200" >
+				<Text name="text0" str="Are you using the optical digital output?"         x="0"  y="0" size="16" alignment="center" />
+			</Component>
+			<Component name="list"                                              x="360"  y="285" w="84.0" rgba="{*::TextRGBA.Normal}" >
+				<Text name="text0" str="Yes"                                   x="0"    y="0"   size="16" alignment="center" />
+				<Text name="text1" str="No"                                 x="0"    y="24"  size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.10 ドルビーデジタル /-->
+		<Component name="cell10"                                                 x="720"  y="0" visible="0" >
+			<Component name="text"                                               x="360"  y="200" >
+				<Text name="text0" str="Please select the Dolby Digital setting."  x="16"   y="0" size="16" alignment="center" />
+			</Component>
+			<Component name="list"                                              x="360"  y="285" w="56.0" rgba="{*::TextRGBA.Normal}" >
+				<Text name="text0" str="Enter"                                     x="0"    y="0"   size="16" alignment="center" />
+				<Text name="text1" str="Abort"                                     x="0"    y="24"  size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.11 DTS /-->
+		<Component name="cell11"                                                x="720"  y="0" visible="0" >
+			<Component name="text"                                              x="360"  y="200" >
+				<Text name="text0" str="Choose your DTS settings."          x="0"   y="0" size="16" alignment="center" />
+			</Component>
+			<Component name="list"                                              x="360"  y="285" w="56.0" rgba="{*::TextRGBA.Normal}" >
+				<Text name="text0" str="Enter"                                     x="0"    y="0"   size="16" alignment="center" />
+				<Text name="text1" str="Abort"                                     x="0"    y="24"  size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.12 設定値一覧 /-->
+		<Component name="cell12"                                                x="720"  y="0" visible="0" >
+			<Component name="text"                                              x="360"  y="140" >
+				<Text name="text0" str="Set with the following contents."             x="0"    y="0" size="16" alignment="center" />
+			</Component>
+			<Component name="set_val"                                           x="130"  y="220" >
+				<Text name="text0" str="BS Antenna power supply :"                       x="0"    y="0"   size="16" />
+				<Text name="text1" str="Time :"                                 x="0"    y="24"  size="16" />
+				<Text name="text2" str="Omakase・Maruroku :"                     x="0"    y="48"  size="16" />
+				<Text name="text3" str="Area code :"                             x="0"    y="72"  size="16" />
+				<Text name="text4" str="TV type :"                             x="0"    y="96"  size="16" />
+				<Text name="text6" str="Dolby Digital :"                     x="0"    y="120" size="16" />
+				<Text name="text7" str="DTS :"                                  x="0"    y="144" size="16" />
+				<Text name="data0" str=""                                       x="200"  y="0"   size="16" />
+				<Text name="data1" str=""                                       x="200"  y="24"  size="16" />
+				<Text name="data2" str=""                                       x="200"  y="48"  size="16" />
+				<Text name="data3" str=""                                       x="200"  y="72"  size="16" />
+				<Text name="data4" str=""                                       x="200"  y="96"  size="16" />
+				<Text name="data5" str=""                                       x="200"  y="120" size="16" />
+				<Text name="data6" str=""                                       x="200"  y="144" size="16" />
+			</Component>
+		</Component>
+
+		<!-- No.13 設定終了 /-->
+		<Component name="cell13"                                                x="720"  y="0" visible="0" >
+			<Component name="text"                                              x="360"  y="248" >
+				<Text name="text" str="Quit Easy Setup."              x="0"    y="0" size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.14 自動チャンネル設定中画面 /-->
+		<Component name="cell14"                                                  x="720"  y="0" visible="0" >
+			<Component name="text"                                                x="360"  y="160" >
+				<Text name="text0" str="Automatic channel setting in progress."               x="0"    y="0"  size="16" alignment="center" />
+				<Text name="text1" str="Do not turn off the power during setting."       x="0"    y="30" size="16" alignment="center" />
+				<Text name="text2" str="Progress"                                 x="-220" y="80" size="16" alignment="center" />
+				<Text name="prog_ch" str="  "                                     x="200"  y="-60" size="14"  alignment="left" />
+				<Text name="prog"    str="  "                                     x="200"  y="120" size="14" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.15 壁紙のみの画面 /-->
+		<Component name="cell15"                                                  x="720"  y="0" rgba="D0D0D000" visible="0" />
+
+		<Component name="ModifyFocus"                                           x="0"   y="240" />
+		<Component name="ModifyFocus2"                                          x="0"   y="240" />
+		<Component name="bar"                                                   x="340" y="255" visible="1" />
+
+		<Component name="ListArrow"                                                     y="240" >
+			<Bitmap name="ListArrowLeft"  file="art/GT000020.tga"               x="65"  y="-4" rot_y="0.5" w="28"  h="30" visible="0" />
+			<Bitmap name="ListArrowRight" file="art/GT000020.tga"               x="646" y="-4" w="28"  h="30" visible="0" />
+		</Component>
+
+		<!-- 時刻設定項目 /-->
+		<Component name="TimeSet"                                                x="720"   y="0" >
+			<Component name="menu"                                               x="204"   y="294"  >
+				<Number name="day"    str="01"   min="1"    max="31"             x="0.0"   y="0" size="16" />
+				<Text name="slash0"   str="/"                                    x="28.0"  y="0" size="16" />
+				<Number name="month"  str="01"   min="1"    max="12"             x="36.0"  y="0" size="16" />
+				<Text name="slash1"   str="/"                                    x="64.0"  y="0" size="16" />
+				<Number name="year"   str="2004" min="2000" max="2999"           x="72.0"  y="0" size="16" />
+				<Number name="hour"   str="00"   min="0"    max="23"             x="164.0" y="0" size="16" />
+				<Text name="colon0"   str=":"                                    x="196.0" y="0" size="16" />
+				<Number name="minute" str="00"   min="0"    max="59"             x="207.0" y="0" size="16" />
+				<Text name="colon1"   str=":"                                    x="239.0" y="0" size="16" />
+				<Number name="second" str="00"   min="0"    max="59"             x="250.0" y="0" size="16" />
+				<Text name="notation" str="  "                                   x="288"   y="0" size="16" />
+			</Component>
+		</Component>
+
+	</Component>
+
+	<Component name="AreaListBase"                                              x="720"  y="-80" visible="0" >
+		<Component name="Bar"                                                   x="88"   y="113" />
+		<Component name="AreaList"                                              x="-60"  y="0" w="160.0" rgba="{*::TextRGBA.Normal}" >
+			<Component name="menu0"                                             x="0"    y="0" rgba="D0D0D070">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component>
+			<Component name="menu1"                                             x="0"    y="24" rgba="{*::TextRGBA.Normal}">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component>
+			<Component name="menu2"                                             x="0"    y="48" rgba="{*::TextRGBA.Normal}">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component>
+			<Component name="menu3"                                             x="0"    y="72" rgba="{*::TextRGBA.Normal}">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component>
+			<Component name="menu4"                                             x="0"    y="96" rgba="{*::TextRGBA.Normal}">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component>
+			<Component name="menu5"                                             x="0"    y="120" rgba="{*::TextRGBA.Normal}">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component> 
+			<Component name="menu6"                                             x="0"    y="144" rgba="{*::TextRGBA.Normal}">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component>
+			<Component name="menu7"                                             x="0"    y="168" rgba="{*::TextRGBA.Normal}">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component>
+			<Component name="menu8"                                             x="0"    y="192" rgba="{*::TextRGBA.Normal}">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component>
+			<Component name="menu9"                                             x="0"    y="216" rgba="{*::TextRGBA.Normal}">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component>
+			<Component name="menu10"                                            x="0"    y="240" rgba="D0D0D080">
+				<Text name="text0" str="" x="0"   size="16" />
+			</Component> 
+		</Component>
+	</Component>
+
+	<Component name="tool_item">
+		<!-- かんたん設定 /-->
+		<String name="TopTitle"      str="Easy setting" />
+		<!--String name="TopTitle"      str="{setting.6}" /-->
+		<!-- 決定 /-->
+		<String name="GuideConfirm"  str="Confirm" />
+		<!-- 戻る /-->
+		<String name="GuideBack"   str="Return" />
+		<!-- 中止 /-->
+		<String name="GuideCancel"   str="Cancel" />
+		<!-- 閉じる /-->
+		<String name="GuideClose"   str="Close" />
+	</Component>
+	
+	<Component name="config_select_disp_item">
+		<String name="text0"    str="Confim" />
+		<String name="text1"    str="Cancel" />
+	</Component>
+
+	<Component name="config_area_item">
+		<String name="text0"    str="  " />
+		<String name="text1"    str="1 Sapporo" />
+		<String name="text2"    str="2 Otaru" />
+		<String name="text3"    str="3 Asahikawa" />
+		<String name="text4"    str="4 Nayoro" />
+		<String name="text5"    str="5 Wakkanai" />
+		<String name="text6"    str="6 Muroran" />
+		<String name="text7"    str="7 Tomakomai" />
+		<String name="text8"    str="8 Hakodate" />
+		<String name="text9"    str="9 Obihiro" />
+		<String name="text10"   str="10 Kushiro" />
+		<String name="text11"   str="11 Abashiri" />
+		<String name="text12"   str="12 Kitami" />
+		<String name="text13"   str="13 Aomori" />
+		<String name="text14"   str="14 Hachinohe" />
+		<String name="text15"   str="15 Mutsu" />
+		<String name="text16"   str="16 Morioka" />
+		<String name="text17"   str="17 Kamaishi" />
+		<String name="text18"   str="18 Ninohe" />
+		<String name="text19"   str="19 Sendai" />
+		<String name="text20"   str="20 Ishinomaki" />
+		<String name="text21"   str="21 Kesennuma" />
+		<String name="text22"   str="22 Akita" />
+		<String name="text23"   str="23 Odate" />
+		<String name="text24"   str="24 Omagari" />
+		<String name="text25"   str="25 Yamagata" />
+		<String name="text26"   str="26 Tsuruoka" />
+		<String name="text27"   str="27 Yonezawa" />
+		<String name="text28"   str="28 Fukushima" />
+		<String name="text29"   str="29 Iwaki" />
+		<String name="text30"   str="30 Aizuwakamatsu" />
+		<String name="text31"   str="31 Mito" />
+		<String name="text32"   str="32 Hitachi" />
+		<String name="text33"   str="33 Utsunomiya" />
+		<String name="text34"   str="34 sheet pile" />
+		<String name="text35"   str="35 Maebashi" />
+		<String name="text36"   str="36 Kiryu" />
+		<String name="text37"   str="37 Saitama" />
+		<String name="text38"   str="38 Kumagaya" />
+		<String name="text39"   str="39 Chichibu" />
+		<String name="text40"   str="40 Chiba" />
+		<String name="text41"   str="41 Choshi" />
+		<String name="text42"   str="42 23 wards of Tokyo" />
+		<String name="text43"   str="43 Hachioji" />
+		<String name="text44"   str="44 Tama" />
+		<String name="text45"   str="45 Yokohama 1" />
+		<String name="text46"   str="46 Yokohama 2" />
+		<String name="text47"   str="47 Hiratsuka" />
+		<String name="text48"   str="48 Hadano" />
+		<String name="text49"   str="49 Odawara" />
+		<String name="text50"   str="50 Kofu" />
+		<String name="text51"   str="51 Nagano 1" />
+		<String name="text52"   str="52 Nagano 2" />
+		<String name="text53"   str="53 Matsumoto" />
+		<String name="text54"   str="54 Iida" />
+		<String name="text55"   str="55 Okaya and Suwa" />
+		<String name="text56"   str="56 Niigata" />
+		<String name="text57"   str="57 Joetsu" />
+		<String name="text58"   str="58 Toyama" />
+		<String name="text59"   str="59 Takaoka" />
+		<String name="text60"   str="60 Kanazawa" />
+		<String name="text61"   str="61 Nanao" />
+		<String name="text62"   str="62 Fukui" />
+		<String name="text63"   str="63 Tsuruga" />
+		<String name="text64"   str="64 Gifu" />
+		<String name="text65"   str="65 alpine" />
+		<String name="text66"   str="66 Nakatsugawa" />
+		<String name="text67"   str="67 Shizuoka" />
+		<String name="text68"   str="68 Hamamatsu" />
+		<String name="text69"   str="69 Fuji" />
+		<String name="text70"   str="70 Mishima/Numazu" />
+		<String name="text71"   str="71 Shimada" />
+		<String name="text72"   str="72 Fujieda" />
+		<String name="text73"   str="73 Nagoya" />
+		<String name="text74"   str="74 Toyohashi" />
+		<String name="text75"   str="75 Toyota" />
+		<String name="text76"   str="76 Tianjin" />
+		<String name="text77"   str="77 Ise" />
+		<String name="text78"   str="78 Nabari" />
+		<String name="text79"   str="79 Otsu" />
+		<String name="text80"   str="80 Hikone" />
+		<String name="text81"   str="81 Kyoto" />
+		<String name="text82"   str="82 Maizuru" />
+		<String name="text83"   str="83 Fukuchiyama" />
+		<String name="text84"   str="84 Osaka" />
+		<String name="text85"   str="85 Kobe" />
+		<String name="text86"   str="86 Kobe Nada" />
+		<String name="text87"   str="87 Kawanishi" />
+		<String name="text88"   str="88 Miki" />
+		<String name="text89"   str="89 Himeji" />
+		<String name="text90"   str="90 Akashi" />
+		<String name="text91"   str="91 Nara" />
+		<String name="text92"   str="92 Gojo" />
+		<String name="text93"   str="93 Wakayama" />
+		<String name="text94"   str="94 Kainan/Tanabe" />
+		<String name="text95"   str="95 Tottori" />
+		<String name="text96"   str="96 Matsue" />
+		<String name="text97"   str="97 Hamada" />
+		<String name="text98"   str="98 Okayama" />
+		<String name="text99"   str="99 Tsuyama" />
+		<String name="text100"  str="100 Kasaoka" />
+		<String name="text101"  str="101 Hiroshima" />
+		<String name="text102"  str="102 Fukuyama" />
+		<String name="text103"  str="103 Onomichi" />
+		<String name="text104"  str="104 Kure" />
+		<String name="text105"  str="105 Yamaguchi" />
+		<String name="text106"  str="106 Shimonoseki" />
+		<String name="text107"  str="107 Ube" />
+		<String name="text108"  str="108 Iwakuni" />
+		<String name="text109"  str="109 Tokushima" />
+		<String name="text110"  str="110 Takamatsu" />
+		<String name="text111"  str="111 Marugame" />
+		<String name="text112"  str="112 Matsuyama" />
+		<String name="text113"  str="113 Niihama" />
+		<String name="text114"  str="114 Imabari" />
+		<String name="text115"  str="115 Uwajima" />
+		<String name="text116"  str="116 Kochi" />
+		<String name="text117"  str="117 Fukuoka" />
+		<String name="text118"  str="118 Kurume" />
+		<String name="text119"  str="119 Omuta" />
+		<String name="text120"  str="120 Kitakyushu" />
+		<String name="text121"  str="121 Yukuhashi" />
+		<String name="text122"  str="122 Saga" />
+		<String name="text123"  str="123 Nagasaki" />
+		<String name="text124"  str="124 Sasebo" />
+		<String name="text125"  str="125 Isahaya" />
+		<String name="text126"  str="126 Kumamoto" />
+		<String name="text127"  str="127 Oita" />
+		<String name="text128"  str="128 Nakatsu" />
+		<String name="text129"  str="129 Miyazaki" />
+		<String name="text130"  str="130 Nobeoka" />
+		<String name="text131"  str="131 Kagoshima" />
+		<String name="text132"  str="132 Akune" />
+		<String name="text133"  str="133 Kanoya" />
+		<String name="text134"  str="134 Okinawa" />
+		<String name="text135"  str="  " />
+	</Component>
+
+</App>

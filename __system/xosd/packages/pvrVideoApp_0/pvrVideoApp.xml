@@ -1,0 +1,576 @@
+﻿<?xml version="1.0"?>
+<App name="pvrVideoApp" focus="VRMenu" native="pvrVideoApp/pvrVideoApp">
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xButton/xButton" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xSlider/xSlider" version="0.1.0" />
+	<Dll name="xStr/xStr" version="0.1.0" />
+
+	<Dic name="videoplayer" filepath="pack:pvrVideoApp/0.1.0/dic" default="yes" />
+
+	<Component name="Cache" visible="0">
+		<Bitmap name="Dummy_MainSub" file="pack:pvrVideoApp/0.1.0/art/Audio-MainSub.png"/>
+		<Bitmap name="Dummy_Main" file="pack:pvrVideoApp/0.1.0/art/Audio-Main.png"/>
+		<Bitmap name="Dummy_Sub" file="pack:pvrVideoApp/0.1.0/art/Audio-Sub.png"/>
+		<Bitmap name="Dummy_Stereo" file="pack:pvrVideoApp/0.1.0/art/Audio-Stereo.png"/>
+	</Component>
+
+	<Text name="ABMessage" str="" alignment="center" x="0.0" y="0.0" size="16" rgba="FFFFFFD0" />
+	<Component name="ABConfirmation" visible="0">
+		<Bitmap name="AB" file="pack:pvrVideoApp/0.1.0/art/CP_ABRepeat.png" rgba="FFFFFFD0" x="0" y="0"/>
+		<Bitmap name="A" file="pack:pvrVideoApp/0.1.0/art/CP_ABRepeatA.png" rgba="FFFFFFD0" x="0" y="0"/>
+	</Component>
+
+	<Component name="Jump" visible="0" x="0" y="0">
+		<Bitmap name="jump_carpet" file="pack:pvrVideoApp/0.1.0/art/duration_number_carpet.png" rgba="FFFFFFFF" x="252.0" y="151.0" />
+
+		<Text name="Jump1" str="0"    x="204.0" y="156.0" rgba="FFFFFFD0" />
+		<Text name="Jump2" str="0"    x="217.0" y="156.0" rgba="FFFFFFD0" />
+		<Text name="Colon1" str="：" x="227.0" y="156.0" rgba="FFFFFFD0" />
+		<Text name="Jump3" str="0"    x="240.0" y="156.0" rgba="FFFFFFD0" />
+		<Text name="Jump4" str="0"    x="253.0" y="156.0" rgba="FFFFFFD0" />
+		<Text name="Colon2" str="：" x="263.0" y="156.0" rgba="FFFFFFD0" />
+		<Text name="Jump5" str="0"    x="276.0" y="156.0" rgba="FFFFFFD0" />
+		<Text name="Jump6" str="0"    x="289.0" y="156.0" rgba="FFFFFFD0" />
+
+		<Component name="Arrow" visible="0">
+			<Bitmap name="UA"  file="pack:pvrVideoApp/0.1.0/art/Arrow_U.png" rgba="FFFFFFFF" x="210.0" y="131.0" />
+			<Bitmap name="DA"  file="pack:pvrVideoApp/0.1.0/art/Arrow_D.png" rgba="FFFFFFFF" x="210.0" y="169.0" />
+		</Component>
+	</Component>
+
+	<Component name="VideoCoordSysConvert">
+		<Component name="info" x="-280" y="150" z="0">
+			<Bitmap name="SokoIcon" x="0" y="0" rgba="FFFFFFDC" />
+			<Component name="recinfo" x="-19" y="-19" z="0">
+				<Bitmap name="RecSokoIcon" file="" x="0" y="0" rgba="FFFFFFDC" />
+			</Component>
+			<Component name="repeatinfo" x="70" y="0" z="0">
+				<Bitmap name="RepeatSokoIcon" file="" x="0" y="0" rgba="FFFFFFD0" />
+			</Component>
+		</Component>
+
+		<Component name="VideoProgress">
+			<Bitmap name="slider_carpet" file="pack:pvrVideoApp/0.1.0/art/progBar_Carpet.png" rgba="FFFFFFC8" x="0" y="150" w="250" h="10" visible="1" />
+			<Slider name="ProgressBar" x="0" y="150" w="230" visible="1"/>
+		</Component>
+
+		<Component name="ChapterNavi">
+			<Bitmap name="chapter_carpet" file="pack:pvrVideoApp/0.1.0/art/Chapter_number_carpet.png" rgba="FFFFFFFF" x="120" y="151.0"  visible="1" />
+			<Text name="Chapter" str="Chapter 1" x="120"  y="156" size="16" rgba="FFFFFFFF" visible="1" alignment="center" />
+		</Component>
+
+		<Component name="NumberInput" visible="0" x="288" y="-150.0" >
+			<Bitmap name="number_carpet" file="pack:pvrVideoApp/0.1.0/art/counter_number_carpet.png" rgba="FFFFFFFF" />
+			<Text name="Number0" str="-" x="-7"  y="5" size="16" rgba="FFFFFFFF" alignment="center" />
+			<Text name="Number1" str="-" x="7"  y="5" size="16" rgba="FFFFFFFF" alignment="center" />
+		</Component>
+	</Component>
+
+	<Text name="Common" str="" x="-276" y="-148" size="18" rgba="d1d1d1d1" />
+
+	<Component name="VRMenu" visible="0" x="0" y="0">
+		<Component name="Buttons">
+			<Bitmap name="Button0"  file="pack:pvrVideoApp/0.1.0/art/CP_Sound.png"       rgba="FFFFFFFF" x="-184" y="-116" />
+			<Bitmap name="Button1"  file="pack:pvrVideoApp/0.1.0/art/CP_Subscript.png"   rgba="FFFFFFDC" x="-148" y="-116" />
+			<Bitmap name="Button2"  file="pack:pvrVideoApp/0.1.0/art/CP_Jump.png"        rgba="FFFFFFDC" x="-112" y="-116" />
+			<Bitmap name="Button3"  file="pack:pvrVideoApp/0.1.0/art/CP_BeThumbnail.png" rgba="FFFFFFDC" x="-76"  y="-116" />
+			<Bitmap name="Button4"  file="pack:pvrVideoApp/0.1.0/art/CP_Display.png"     rgba="FFFFFFDC" x="-40"  y="-116" />
+
+			<Bitmap name="Button5"  file="pack:pvrVideoApp/0.1.0/art/CP_Prev.png"        rgba="FFFFFFDC" x="-292" y="-80" />
+			<Bitmap name="Button6"  file="pack:pvrVideoApp/0.1.0/art/CP_Next.png"        rgba="FFFFFFDC" x="-256" y="-80" />
+			<Bitmap name="Button7"  file="pack:pvrVideoApp/0.1.0/art/CP_Search_B.png"    rgba="FFFFFFDC" x="-220" y="-80" />
+			<Bitmap name="Button8"  file="pack:pvrVideoApp/0.1.0/art/CP_Search_F.png"    rgba="FFFFFFDC" x="-184" y="-80" />
+			<Bitmap name="Button9"  file="pack:pvrVideoApp/0.1.0/art/CP_Slow_F.png"      rgba="FFFFFFDC" x="-148" y="-80" />
+			<Bitmap name="Button10" file="pack:pvrVideoApp/0.1.0/art/CP_Flash_B.png"     rgba="FFFFFFDC" x="-112"  y="-80" />
+			<Bitmap name="Button11" file="pack:pvrVideoApp/0.1.0/art/CP_Flash_F.png"     rgba="FFFFFFDC" x="-76"  y="-80" />
+			<Bitmap name="Button12" file="pack:pvrVideoApp/0.1.0/art/CP_SpeedPlay.png"    rgba="FFFFFFDC" x="-40"  y="-80" />
+			<Bitmap name="Button13" file="pack:pvrVideoApp/0.1.0/art/CP_Play.png"        rgba="FFFFFFDC" x="-4"  y="-80" />
+			<Bitmap name="Button14" file="pack:pvrVideoApp/0.1.0/art/CP_Pause.png"       rgba="FFFFFFDC" x="32"   y="-80" />
+			<Bitmap name="Button15" file="pack:pvrVideoApp/0.1.0/art/CP_Stop.png"        rgba="FFFFFFDC" x="68"   y="-80" />
+
+			<Component name="Button16">
+				<Bitmap name="AB" file="pack:pvrVideoApp/0.1.0/art/CP_ABRepeat.png"    rgba="FFFFFFDC" x="-184" y="-44" />
+				<Bitmap name="A" file="pack:pvrVideoApp/0.1.0/art/CP_ABRepeatA.png"    rgba="FFFFFFDC" x="-184" y="-44" />
+			</Component>
+			<Bitmap name="Button17" file="pack:pvrVideoApp/0.1.0/art/CP_Repeat.png"      rgba="FFFFFFDC" x="-112" y="-44" />
+			<Bitmap name="Button18" file="pack:pvrVideoApp/0.1.0/art/CP_Clear.png"       rgba="FFFFFFDC" x="-40"  y="-44" />
+		</Component>
+
+		<Text name="help" str="" alignment="center" x="-112" y="-8" size="18" rgba="D0D000FF" />
+
+	</Component>
+
+	<Component name="VideoMenu" visible="0" x="0" y="0">
+		<Component name="Buttons">
+			<Bitmap name="Button0" file="pack:pvrVideoApp/0.1.0/art/CP_DVDMenu.png"     rgba="D0D000FF" x="-238" y="-116" />
+			<Bitmap name="Button1" file="pack:pvrVideoApp/0.1.0/art/CP_Title.png"       rgba="FFFFFFDC" x="-202" y="-116" />
+			<Bitmap name="Button2" file="pack:pvrVideoApp/0.1.0/art/CP_Return.png"      rgba="FFFFFFDC" x="-166" y="-116" />
+			<Bitmap name="Button3" file="pack:pvrVideoApp/0.1.0/art/CP_Sound.png"       rgba="FFFFFFDC" x="-130" y="-116" />
+			<Bitmap name="Button4" file="pack:pvrVideoApp/0.1.0/art/CP_Angle.png"       rgba="FFFFFFDC" x="-94" y="-116" />
+			<Bitmap name="Button5" file="pack:pvrVideoApp/0.1.0/art/CP_Subscript.png"   rgba="FFFFFFDC" x="-58"  y="-116" />
+			<Bitmap name="Button6" file="pack:pvrVideoApp/0.1.0/art/CP_Jump.png"        rgba="FFFFFFDC" x="-22"  y="-116" />
+			<Bitmap name="Button7" file="pack:pvrVideoApp/0.1.0/art/CP_Display.png"     rgba="FFFFFFDC" x="14"   y="-116" />
+
+			<Bitmap name="Button8"  file="pack:pvrVideoApp/0.1.0/art/CP_Prev.png"       rgba="FFFFFFDC"  x="-292" y="-80" />
+			<Bitmap name="Button9"  file="pack:pvrVideoApp/0.1.0/art/CP_Next.png"       rgba="FFFFFFDC"  x="-256" y="-80" />
+			<Bitmap name="Button10" file="pack:pvrVideoApp/0.1.0/art/CP_Search_B.png"   rgba="FFFFFFDC"  x="-220" y="-80" />
+			<Bitmap name="Button11" file="pack:pvrVideoApp/0.1.0/art/CP_Search_F.png"   rgba="FFFFFFDC"  x="-184" y="-80" />
+			<Bitmap name="Button12" file="pack:pvrVideoApp/0.1.0/art/CP_Slow_F.png"     rgba="FFFFFFDC"  x="-148" y="-80" />
+			<Bitmap name="Button13" file="pack:pvrVideoApp/0.1.0/art/CP_Flash_B.png"    rgba="FFFFFFDC"  x="-112"  y="-80" />
+			<Bitmap name="Button14" file="pack:pvrVideoApp/0.1.0/art/CP_Flash_F.png"    rgba="FFFFFFDC"  x="-76"  y="-80" />
+			<Bitmap name="Button15" file="pack:pvrVideoApp/0.1.0/art/CP_SpeedPlay.png"   rgba="FFFFFFDC"  x="-40"  y="-80" />
+			<Bitmap name="Button16" file="pack:pvrVideoApp/0.1.0/art/CP_Play.png"       rgba="FFFFFFDC"  x="-4"  y="-80" />
+			<Bitmap name="Button17" file="pack:pvrVideoApp/0.1.0/art/CP_Pause.png"      rgba="FFFFFFDC"  x="32"   y="-80" />
+			<Bitmap name="Button18" file="pack:pvrVideoApp/0.1.0/art/CP_Stop.png"       rgba="FFFFFFDC"  x="68"   y="-80" />
+                                                                                              
+			<Component name="Button19">
+				<Bitmap name="AB" file="pack:pvrVideoApp/0.1.0/art/CP_ABRepeat.png"    rgba="FFFFFFDC" x="-184" y="-44" />
+				<Bitmap name="A" file="pack:pvrVideoApp/0.1.0/art/CP_ABRepeatA.png"    rgba="FFFFFFDC" x="-184" y="-44" />
+			</Component>
+
+			<Bitmap name="Button20" file="pack:pvrVideoApp/0.1.0/art/CP_Repeat.png"      rgba="FFFFFFDC" x="-112" y="-44" />
+			<Bitmap name="Button21" file="pack:pvrVideoApp/0.1.0/art/CP_Clear.png"       rgba="FFFFFFDC" x="-40"  y="-44" />
+		</Component>
+
+		<Text name="help" str="" alignment="center" x="-112.0" y="-8" size="18" rgba="D0D000FF" />
+
+	</Component>
+
+	<Component name="PersonalID" x="0" y="0" visible="0" rgba="D0D0D0FF" focus="no0">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Bitmap name="Bar1" file="pack:pvrVideoApp/0.1.0/art/DialogBorder.tga" x ="0" y="-60" w="450" />
+		<Bitmap name="Bar2" file="pack:pvrVideoApp/0.1.0/art/DialogBorder.tga" x ="0" y="60" w="450" />
+		<Component name="Base" x="-155" y="-20">
+			<Text name="text1" str="{videoplayer::Msg1}" x="20" y="0" size="16" alignment="left" />
+			<Text name="text1_1" str="{videoplayer::Msg2}" x="90" y="24" size="16" visible="0" />
+			<Button name="no0" nav_left="no9" nav_right="no1" x="15" y="24" >
+				<FocusOff>
+					<Text str="0" size="16" rgba="D0D0D0FF"/>
+				</FocusOff>
+				<FocusOn>
+					<Text str="0" font="font2" rgba="D0D000" size="16" />
+				</FocusOn>
+			</Button>
+			<Button name="no1" nav_left="no0" nav_right="no2" x="45" y="24" >
+				<FocusOff>
+					<Text str="1" size="16" rgba="D0D0D0FF"/>
+				</FocusOff>
+				<FocusOn>
+					<Text str="1" font="font2" rgba="D0D000" size="16" />
+				</FocusOn>
+			</Button>
+			<Button name="no2" nav_left="no1" nav_right="no3" x="75" y="24" >
+				<FocusOff>
+					<Text str="2" size="16" rgba="D0D0D0FF"/>
+				</FocusOff>
+				<FocusOn>
+					<Text str="2" font="font2" rgba="D0D000" size="16" />
+				</FocusOn>
+			</Button>
+			<Button name="no3" nav_left="no2" nav_right="no4" x="105" y="24" >
+				<FocusOff>
+					<Text str="3" size="16" rgba="D0D0D0FF"/>
+				</FocusOff>
+				<FocusOn>
+					<Text str="3" font="font2" rgba="D0D000" size="16" />
+				</FocusOn>
+			</Button>
+			<Button name="no4" nav_left="no3" nav_right="no5" x="135" y="24" >
+				<FocusOff>
+					<Text str="4" size="16" rgba="D0D0D0FF"/>
+				</FocusOff>
+				<FocusOn>
+					<Text str="4" font="font2" rgba="D0D000" size="16" />
+				</FocusOn>
+			</Button>
+			<Button name="no5" nav_left="no4" nav_right="no6" x="165" y="24" >
+				<FocusOff>
+					<Text str="5" size="16" rgba="D0D0D0FF"/>
+				</FocusOff>
+				<FocusOn>
+					<Text str="5" font="font2" rgba="D0D000" size="16" />
+				</FocusOn>
+			</Button>
+			<Button name="no6" nav_left="no5" nav_right="no7" x="195" y="24" >
+				<FocusOff>
+					<Text str="6" size="16" rgba="D0D0D0FF"/>
+				</FocusOff>
+				<FocusOn>
+					<Text str="6" font="font2" rgba="D0D000" size="16" />
+				</FocusOn>
+			</Button>
+			<Button name="no7" nav_left="no6" nav_right="no8" x="225" y="24" >
+				<FocusOff>
+					<Text str="7" size="16" rgba="D0D0D0FF"/>
+				</FocusOff>
+				<FocusOn>
+					<Text str="7" font="font2" rgba="D0D000" size="16" />
+				</FocusOn>
+			</Button>
+			<Button name="no8" nav_left="no7" nav_right="no9" x="255" y="24" >
+				<FocusOff>
+					<Text str="8" size="16" rgba="D0D0D0FF"/>
+				</FocusOff>
+				<FocusOn>
+					<Text str="8" font="font2" rgba="D0D000" size="16" />
+				</FocusOn>
+			</Button>
+			<Button name="no9" nav_left="no8" nav_right="no0" x="285" y="24" >
+				<FocusOff>
+					<Text str="9" size="16" rgba="D0D0D0FF"/>
+				</FocusOff>
+				<FocusOn>
+					<Text str="9" font="font2" rgba="D0D000" size="16" />
+				</FocusOn>
+			</Button>
+			<Text name="code0" str="・" x="103" y="50" size="16" />
+			<Text name="code1" str="・" x="133" y="50" size="16" />
+			<Text name="code2" str="・" x="163" y="50" size="16" />
+			<Text name="code3" str="・" x="193" y="50" size="16" />
+		</Component>
+		<!--Component name="DialogFocus" x="-360" y="250"  /-->
+	</Component>
+
+	<Component name="mongon" visible="0">
+		<Component name="func_status">
+			<String name="other0" str="{videoplayer::cut}" />
+			<String name="other1" str="{videoplayer::other}" />
+			<String name="other2" str="{videoplayer::audio}" />
+			<String name="other3" str="{videoplayer::angle}" />
+			<String name="other4" str="{videoplayer::subscript}" />
+			<String name="other5" str="{videoplayer::repeat}" />
+			<String name="other6" str="{videoplayer::disc}" />
+			<String name="other7" str="{videoplayer::title}" />
+			<String name="other8" str="{videoplayer::chapter}" />
+			<String name="other9" str="{videoplayer::audiomainsub}" />
+			<String name="other10" str="{videoplayer::audiomain}" />
+			<String name="other11" str="{videoplayer::audiosub}" />
+		</Component>
+
+		<Component name="bar_help">
+			<String name="bhelp_enter" str="{videoplayer::bhelp_enter}" />
+			<String name="bhelp_option" str="{videoplayer::bhelp_option}" />
+			<String name="bhelp_back" str="{videoplayer::bhelp_back}" />
+			<String name="bhelp_close" str="{videoplayer::bhelp_close}" />
+			<String name="bhelp_info" str="{videoplayer::bhelp_info}" />
+		</Component>
+
+		<Component name="message">
+			<String name="message0" str="{videoplayer::A point is set.}" />
+			<String name="message1" str="{videoplayer::Reproduction Mode is cleared.}" />
+			<String name="message2" str="{videoplayer::Setting is cleared.}" />
+			<String name="message3" str="{videoplayer::Cannot execute.}" />
+			<String name="message4" str="{videoplayer::Can't set b point at the same point.}" />
+		</Component>
+
+ 		<Component name="vr">
+	 		<String name="str0" str="{videoplayer::ChangeSound}" />
+	 		<String name="str1" str="{videoplayer::ChangeSubtitle}" />
+	 		<String name="str2" str="{videoplayer::TimeJump}" />
+	 		<String name="str3" str="{videoplayer::ThumbnailRegistration}" />
+	 		<String name="str4" str="{videoplayer::DisplayInformation}" />
+	 		<String name="str5" str="{videoplayer::Previous}" />
+	 		<String name="str6" str="{videoplayer::Next}" />
+	 		<String name="str7" str="{videoplayer::Search-Minus}" />
+	 		<String name="str8" str="{videoplayer::Search-Plus}" />
+	 		<String name="str9" str="{videoplayer::Slow}" />
+	 		<String name="str10" str="{videoplayer::Flash-Minus}" />
+	 		<String name="str11" str="{videoplayer::Flash-Plus}" />
+	 		<String name="str12" str="{videoplayer::FastPlay}" />
+	 		<String name="str13" str="{videoplayer::Play}" />
+	 		<String name="str14" str="{videoplayer::Pause}" />
+	 		<String name="str15" str="{videoplayer::Stop}" />
+	 		<String name="str16" str="{videoplayer::ABRepeat}" />
+	 		<String name="str17" str="{videoplayer::Repeat}" />
+	 		<String name="str18" str="{videoplayer::Clear}" />
+ 		 </Component>
+
+		 <Component name="video">
+ 		 	<String name="str0" str="{videoplayer::Menu}" />
+ 		 	<String name="str1" str="{videoplayer::TopMenu}" />
+ 		 	<String name="str2" str="{videoplayer::Return}" />
+ 		 	<String name="str3" str="{videoplayer::ChangeSound}" />
+ 		 	<String name="str4" str="{videoplayer::ChangeAngle}" />
+ 		 	<String name="str5" str="{videoplayer::ChangeSubtitle}" />
+ 		 	<String name="str6" str="{videoplayer::TimeJump}" />
+ 		 	<String name="str7" str="{videoplayer::DisplayInformation}" />
+ 		 	<String name="str8" str="{videoplayer::Previous}" />
+ 		 	<String name="str9" str="{videoplayer::Next}" />
+ 		 	<String name="str10" str="{videoplayer::Search-Minus}" />
+ 		 	<String name="str11" str="{videoplayer::Search-Plus}" />
+ 		 	<String name="str12" str="{videoplayer::Slow}" />
+ 		 	<String name="str13" str="{videoplayer::Flash-Minus}" />
+ 		 	<String name="str14" str="{videoplayer::Flash-Plus}" />
+ 		 	<String name="str15" str="{videoplayer::FastPlay}" />
+ 		 	<String name="str16" str="{videoplayer::Play}" />
+ 		 	<String name="str17" str="{videoplayer::Pause}" />
+ 		 	<String name="str18" str="{videoplayer::Stop}" />
+ 		 	<String name="str19" str="{videoplayer::ABRepeat}" />
+ 		 	<String name="str20" str="{videoplayer::Repeat}" />
+ 		 	<String name="str21" str="{videoplayer::Clear}" />
+		</Component>
+
+		<Component name="Parental_Message">
+			<String name="str0" str="{videoplayer::OK to change Parental Control Level to}" />
+			<String name="str1" str="{videoplayer::temporary?}" />
+			<String name="str2" str="{videoplayer::0}" />
+		</Component>
+
+		<Component name="Warning_Message">
+		    <!--/* (pvr/include のerrorcode.hを参照！！) */-->
+	 		<String name="str1" str="{videoplayer::No error}" />
+	 		<String name="str2" str="{videoplayer::Clear A point}" />
+	 		<String name="str3" str="{videoplayer::Memory A point}" />
+	 		<String name="str4" str="{videoplayer::Search A point}" />
+	 		<String name="str5" str="{videoplayer::Clear AB point}" />
+	 		<String name="str6" str="{videoplayer::Memory B point}" />
+	 		<String name="str7" str="{videoplayer::Show bookmark}" />
+	 		<String name="str8" str="{videoplayer::Cannot bookmark}" />
+	 		<String name="str9" str="{videoplayer::Setup bookmark}" />
+	 		<String name="str10" str="{videoplayer::Do First Play}" />
+	 		<String name="str11" str="{videoplayer::End multi-screen}" />
+	 		<String name="str12" str="{videoplayer::Show multi-screen}" />
+	 		<String name="str13" str="{videoplayer::Search top prog}" />
+	 		<String name="str14" str="{videoplayer::Srch prev prog}" />
+	 		<String name="str15" str="{videoplayer::Srch next prog}" />
+	 		<String name="str16" str="{videoplayer::End pict mem}" />
+	 		<String name="str17" str="{videoplayer::Save pict mem}" />
+	 		<String name="str18" str="{videoplayer::Chng paren lev}" />
+	 		<String name="str19" str="{videoplayer::No PSC error}" />
+	 		<String name="str20" str="{videoplayer::Resume off}" />
+	 		<String name="str21" str="{videoplayer::Resume on}" />
+	 		<String name="str22" str="{videoplayer::End chap scan}" />
+	 		<String name="str23" str="{videoplayer::Fail chap scan}" />
+	 		<String name="str24" str="{videoplayer::End chap scan fail}" />
+	 		<String name="str25" str="{videoplayer::Show chap scan}" />
+	 		<String name="str26" str="{videoplayer::Setup paren lev}" />
+	 		<String name="str27" str="{videoplayer::Stop condition}" />
+	 		<String name="str28" str="{videoplayer::VIEWER RESUME}" />
+	 		<String name="str29" str="{videoplayer::VIEWER TITLE}" />
+	 		<String name="str30" str="{videoplayer::PLAY MODE CLEAR}" />
+	 		<String name="str31" str="{videoplayer::Repeat off}" />
+	 		<String name="str32" str="{videoplayer::Repeat on}" />
+	 		<String name="str33" str="{videoplayer::DISC repeat}" />
+	 		<String name="str34" str="{videoplayer::TITLE repeat}" />
+	 		<String name="str35" str="{videoplayer::CHAPTER repeat}" />
+
+	 		<String name="str100" str="{videoplayer::PSC error}" />
+	 		<String name="str101" str="{videoplayer::Failed to read disc.}" />
+	 		<String name="str102" str="{videoplayer::Error. Stop play.}" />
+	 		<String name="str103" str="{videoplayer::Disc format is wrong.}" />
+	 		<String name="str104" str="{videoplayer::Designated chapter invalid.}" />
+	 		<String name="str105" str="{videoplayer::Designated time invalid.}" />
+	 		<String name="str106" str="{videoplayer::Designated title invalid.}" />
+	 		<String name="str107" str="{videoplayer::Desig number invalid.}" />
+	 		<String name="str108" str="{videoplayer::Next program is invalid.}" />
+	 		<String name="str109" str="{videoplayer::Next program has conflict.}" />
+	 		<String name="str110" str="{videoplayer::There is no sound.}" />
+	 		<String name="str111" str="{videoplayer::No menu on disc}" />
+	 
+	 		<String name="str112" str="{videoplayer::No subtitle in this disc}" />
+	 		<String name="str113" str="{videoplayer::There is no angle.}" />
+
+	 		<String name="str114" str="{videoplayer::Resume operation prohibited.}" />
+			<String name="str115" str="{videoplayer::Cannot operate this disc.}" />
+	  		<String name="str116" str="{videoplayer::Play restrict. Cannot play.}" />
+	 		<String name="str117" str="{videoplayer::Program search prohibited.}" />
+	 		<String name="str118" str="{videoplayer::Cannot play.}" />
+	 		<String name="str119" str="{videoplayer::Previous program invalid.}" />
+	 		<String name="str120" str="{videoplayer::Prev program has conflict.}" />
+	 		<String name="str121" str="{videoplayer::Cannot operate this disc.}" />
+	 		<String name="str122" str="{videoplayer::Cannot operate this title.}" />
+	 		<String name="str123" str="{videoplayer::Chapter search error.}" />
+	 		<String name="str124" str="{videoplayer::Disc prohibited: reg rest.}" />
+	 		<String name="str125" str="{videoplayer::Stop prohibited.}" />
+	 		<String name="str126" str="{videoplayer::Time display prohibited.}" />
+	 		<String name="str127" str="{videoplayer::Wrong TV system.}" />
+	  		<String name="str128" str="{videoplayer::User operation prohibited.}" />
+	 		<String name="str129" str="{videoplayer::VIEWER is unavailable in this disc.}" />
+	 		<String name="str130" str="{videoplayer::VIEWER is unavailable in this title.}" />
+	 		<String name="str131" str="{videoplayer::No VIEWER.}" />
+			<String name="str132" str="{videoplayer::No disc.}" />
+	 		<String name="str133" str="{videoplayer::One sound only.}" />
+			<String name="str134" str="{videoplayer::Error. Stop play.}" />
+			<String name="str135" str="{videoplayer::Cannot play this disc.}" />
+			<String name="str136" str="{videoplayer::Play restrict. Cannot play.}" />
+	<!--
+			<String name="str137" str="Core初期化エラー。" />
+			<String name="str138" str="HDD読込エラー。" />
+			<String name="str139" str="メモリ割当エラー。" />
+			<String name="str140" str="BUSYタイムアウト。" />
+	-->
+			<String name="str137" str="{videoplayer::Play failure. Turn off power then turn on again.}" />
+			<String name="str138" str="{videoplayer::HDD read error.}" />
+			<String name="str139" str="{videoplayer::Play failure. Turn off power then turn on again.}" />
+			<String name="str140" str="{videoplayer::Play failure. Turn off power then turn on again.}" />
+
+		    <!--/* (コードの追加はこの定義より上にすること！！) */-->
+			<String name="str141" str="{videoplayer::Unusual play (no message).}" />
+			<String name="str142" str="{videoplayer::Cannot chng angl: angle blk}" />
+			<String name="str143" str="{videoplayer::Resume play.}" />
+			<String name="str144" str="{videoplayer::Cannot play: temp del.}" />
+	 		<String name="str145" str="{videoplayer::Error: TERMINATE code.}" />
+
+			<String name="str201" str="{videoplayer::Cannot be played title.}" />
+
+			<String name="str300" str="{videoplayer::Cannot execute.}" />
+		</Component>
+
+		<Component name="video_langitem_wmusic">
+			<String name="text0" str="Japanese" />
+			<String name="text1" str="English" />
+			<String name="text2" str="Chinese" />
+			<String name="text3" str="German" />
+			<String name="text4" str="French" />
+			<String name="text5" str="Italian" />
+			<String name="text6" str="Spanish" />
+			<String name="text7" str="Portuguese" />
+			<String name="text8" str="Dutch" />
+			<String name="text9" str="Danish" />
+			<String name="text10" str="Swedish" />
+			<String name="text11" str="Finnish" />
+			<String name="text12" str="Norwegian" />
+			<String name="text13" str="Russian" />
+			<String name="text14" str="Korean" />
+			<String name="text15" str="Voice link" />
+			<String name="text16" str="Afar" />
+			<String name="text17" str="Abkhazian" />
+			<String name="text18" str="Afrikaans" />
+			<String name="text19" str="Amharic" />
+			<String name="text20" str="Arabic" />
+			<String name="text21" str="Assamese" />
+			<String name="text22" str="Aymara" />
+			<String name="text23" str="Azerbaijani" />
+			<String name="text24" str="Bashkir" />
+			<String name="text25" str="Byelorussian" />
+			<String name="text26" str="Bulgarian" />
+			<String name="text27" str="Bihari" />
+			<String name="text28" str="Bislama" />
+			<String name="text29" str="Bengali; Bangla" />
+			<String name="text30" str="Tibetan" />
+			<String name="text31" str="Breton" />
+			<String name="text32" str="Catalan" />
+			<String name="text33" str="Corsican" />
+			<String name="text34" str="Czech" />
+			<String name="text35" str="Welsh" />
+			<String name="text36" str="Danish" />
+			<String name="text37" str="German" />
+			<String name="text38" str="Bhutani" />
+			<String name="text39" str="Greek" />
+			<String name="text40" str="English" />
+			<String name="text41" str="Esperanto" />
+			<String name="text42" str="Spanish" />
+			<String name="text43" str="Estonian" />
+			<String name="text44" str="Basque" />
+			<String name="text45" str="Persian" />
+			<String name="text46" str="Finnish" />
+			<String name="text47" str="Fiji" />
+			<String name="text48" str="Faeroese" />
+			<String name="text49" str="French" />
+			<String name="text50" str="Frisian" />
+			<String name="text51" str="Irish" />
+			<String name="text52" str="Scots Gaelic" />
+			<String name="text53" str="Galician" />
+			<String name="text54" str="Guarani" />
+			<String name="text55" str="Gujarati" />
+			<String name="text56" str="Hausa" />
+			<String name="text57" str="Hindi" />
+			<String name="text58" str="Croatian" />
+			<String name="text59" str="Hungarian" />
+			<String name="text60" str="Armenian" />
+			<String name="text61" str="Interlingua" />
+			<String name="text62" str="Interlingue" />
+			<String name="text63" str="Inupiak" />
+			<String name="text64" str="Indonesian" />
+			<String name="text65" str="Icelandic" />
+			<String name="text66" str="Italian" />
+			<String name="text67" str="Hebrew" />
+			<String name="text68" str="Japanese" />
+			<String name="text69" str="Yiddish" />
+			<String name="text70" str="Javanese" />
+			<String name="text71" str="Georgian" />
+			<String name="text72" str="Kazakh" />
+			<String name="text73" str="Greenlandic" />
+			<String name="text74" str="Cambodian" />
+			<String name="text75" str="Kannada" />
+			<String name="text76" str="Korean" />
+			<String name="text77" str="Kashmiri" />
+			<String name="text78" str="Kurdish" />
+			<String name="text79" str="Kirghiz" />
+			<String name="text80" str="Latin" />
+			<String name="text81" str="Lingala" />
+			<String name="text82" str="Laothian" />
+			<String name="text83" str="Lithuanian" />
+			<String name="text84" str="Latvian, Lettish" />
+			<String name="text85" str="Malagasy" />
+			<String name="text86" str="Maori" />
+			<String name="text87" str="Macedonian" />
+			<String name="text88" str="Malayalam" />
+			<String name="text89" str="Mongolian" />
+			<String name="text90" str="Moldavian" />
+			<String name="text91" str="Marathi" />
+			<String name="text92" str="Malay" />
+			<String name="text93" str="Maltese" />
+			<String name="text94" str="Burmese" />
+			<String name="text95" str="Nauru" />
+			<String name="text96" str="Nepali" />
+			<String name="text97" str="Dutch" />
+			<String name="text98" str="Norwegian" />
+			<String name="text99" str="Occitan" />
+			<String name="text100" str="(Afan) Oromo" />
+			<String name="text101" str="Oriya" />
+			<String name="text102" str="Punjabi" />
+			<String name="text103" str="Polish" />
+			<String name="text104" str="Pashto, Pushto" />
+			<String name="text105" str="Portuguese" />
+			<String name="text106" str="Quechua" />
+			<String name="text107" str="Rhaeto-Romance" />
+			<String name="text108" str="Kirundi" />
+			<String name="text109" str="Romanian" />
+			<String name="text110" str="Russian" />
+			<String name="text111" str="Kinyarwanda" />
+			<String name="text112" str="Sanskrit" />
+			<String name="text113" str="Sindhi" />
+			<String name="text114" str="Sangro" />
+			<String name="text115" str="Serbo-Croatian" />
+			<String name="text116" str="Singhalese" />
+			<String name="text117" str="Slovak" />
+			<String name="text118" str="Slovenian" />
+			<String name="text119" str="Samoan" />
+			<String name="text120" str="Shona" />
+			<String name="text121" str="Somali" />
+			<String name="text122" str="Albanian" />
+			<String name="text123" str="Serbian" />
+			<String name="text124" str="Siswati" />
+			<String name="text125" str="Sesotho" />
+			<String name="text126" str="Sundanese" />
+			<String name="text127" str="Swedish" />
+			<String name="text128" str="Swahili" />
+			<String name="text129" str="Tamil" />
+			<String name="text130" str="Tegulu" />
+			<String name="text131" str="Tajik" />
+			<String name="text132" str="Thai" />
+			<String name="text133" str="Tigrinya" />
+			<String name="text134" str="Turkmen" />
+			<String name="text135" str="Tagalog" />
+			<String name="text136" str="Setswana" />
+			<String name="text137" str="Tonga" />
+			<String name="text138" str="Turkish" />
+			<String name="text139" str="Tsonga" />
+			<String name="text140" str="Tatar" />
+			<String name="text141" str="Twi" />
+			<String name="text142" str="Ukrainian" />
+			<String name="text143" str="Urdu" />
+			<String name="text144" str="Uzbek" />
+			<String name="text145" str="Vietnamese" />
+			<String name="text146" str="Volapuk" />
+			<String name="text147" str="Wolof" />
+			<String name="text148" str="Xhosa" />
+			<String name="text149" str="Yoruba" />
+			<String name="text150" str="Chinese" />
+			<String name="text151" str="Zulu" />
+		</Component>
+	</Component>
+</App>

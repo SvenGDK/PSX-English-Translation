@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<App name="OmakaseChannel" focus="OmakaseList" native="OmakaseChannel/OmakaseChannel"  z_depth="-2">
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xStr/xStr" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xSelector/xSelector" version="0.1.0" />
+	<Dic name="OmakaseChannel" filepath="pack:OmakaseChannel/0.1.0/dic" default="yes" />
+
+	<Bitmap name="bg" file="art/wizard_bg.png" x="0" y="0" w="720" h="480" rgba="FFFFFF00"/>
+
+	<Bitmap name="Line1" file="art/border_horizontal.png" x="20" y="-116" w="500" h="32" rgba="FFFFFF00"/>
+
+	<!-- mongon *********************************************************************************** -->
+
+	<String name="Omakase_str_TITLE" str="Video settings / Omakase / Full recording channel settings" />
+	<String name="Omakase_str_CONFIRM" str="Confirm" />
+	<String name="Omakase_str_CANCEL" str="Cancel" />
+
+
+	<!-- Index list *********************************************************************************** -->
+
+	<Component name="OmakaseListIndex" x="-370" y="-240" visible="1" rgba="FFFFFF00" >
+		<Text name="Cap_Index1" str="Display Channel" x="100" y="104" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index2" str="Broadcaster" x="312" y="104" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index3" str="Omakase・Maruroku" x="450" y="104" size="16" rgba="D0D0D0FF" />
+	</Component>
+
+	<!-- Config list *********************************************************************************** -->
+
+	<Selector name="Selection" x="150" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" visible="0" z_depth="-10.0" >
+		<Selection name="0" str="Do" />
+		<Selection name="1" str="Dont" />
+	</Selector>
+
+	<!-- Config list *********************************************************************************** -->
+
+	<Component name="OmakaseList" x="-370" y="-240" visible="1" rgba="FFFFFF00">
+		<Component name="Bar" x="55" y="268" />
+
+		<Component name="cell0" x="0" y="128" rgba="D0D0D000" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell1" x="0" y="148" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell2" x="0" y="168" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell3" x="0" y="188" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell4" x="0" y="208" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell5" x="0" y="228" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell6" x="0" y="248" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell7" x="0" y="268" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell8" x="0" y="288" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell9" x="0" y="308" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell10" x="0" y="328" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell11" x="0" y="348" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell12" x="0" y="368" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell13" x="0" y="388" rgba="D0D0D0FF" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+		<Component name="cell15" x="0" y="408" rgba="D0D0D000" >
+			<Text name="Cnt0" str="" x="190" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="338" size="16" alignment="center" />
+			<Selector name="Cnt3" x="520" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" >
+				<Selection name="0" str="Do" />
+				<Selection name="1" str="Dont" />
+			</Selector>
+		</Component>
+
+	</Component>
+
+	<!-- Scrool Bar Base ***************************************************************************************** -->
+
+	<Component name="SB" x="-370" y="-240" visible="1" rgba="FFFFFF00" >
+		<!-- Component name="Scrool_Bar" x="55" y="274" / -->
+		<Component name="Scrool_Bar" x="55" y="269" />
+	</Component>
+
+</App>

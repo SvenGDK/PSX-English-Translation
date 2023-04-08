@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<App name="Video" native="xMB_Plugin_Video/xMB_Plugin_Video">
+	<Dll name="xStr/xStr" version="0.1.0" />
+
+    <Dic name="video" filepath="pack:xMB_Plugin_Video/0.1.0/dic" default="yes" />
+</App>
+

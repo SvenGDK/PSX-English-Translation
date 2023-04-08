@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 文字コード自動判別支援：このファイルはUTF-8で記述されています。はふ～ん。-->
+
+<App name="epg" file="epg/0.1.0/" script="epg.amx">
+	
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xTex/xTex" version="0.1.0" />
+	<Dll name="xMemo/xMemo" version="0.1.0" />
+	<Dll name="xEdit/xEdit" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xStr/xStr" version="0.1.0" />
+	<Dll name="pvr/pvrNative_Small" version="0.1.0" />
+	<Dll name="epg/epg_proxy" version="0.1.0" />
+	
+<Bitmap name="EpgAppBG" file="art/BG.png" x="0" y="0" w="704" h="480" rgba="FFFFFF00" />
+	
+	<!-- ================================================================= -->
+	<!-- EPG全体のベース                                                   -->
+	<!-- ================================================================= -->
+	<Component name="EpgBase" visible="0" >
+		<!-- 背景 -->
+<!--	<Bitmap file="art/Bg.tga" x="0" y="0" w="720" h="480" /> -->
+		
+		<!-- 背景色1 -->
+		<!-- <Prim type="rect" rgba="FFFFFF99" x="-360" y="-240" w="720" h="480" /> -->
+		
+		<!-- 背景色2 -->
+		<!-- <Prim type="rect" rgba="00000033" x="-360" y="-164" w="720" h="334" /> -->
+		
+		<Component name="topbar" x="0" y="-204" z_depth="-3">
+			<Bitmap file="art/TopBar-Thick.tga" x="0" y="0"   w="704"/>
+			<!-- グリッドシンボル -->
+			<Bitmap name="EPGIcon" file="art/EPGIcon.png" x="3" y="16" />
+			<!-- タイトル -->
+			<Text name="MainTitleText" str="Uninitialized State" size="16" x="-60" y="21" rgba="D0D0D0FF" spacing_h="0" shadow="1" shadow_rgba="00000030" />
+		</Component>
+		<Component name="btmbar" x="0" y="204" z_depth="-3">
+			<Bitmap file="art/TopBar-Thick.tga" x="0" y="0" w="704" rot_z="0.5"/>
+			<Component name="navCross" x="-105" y="-14">
+				<Bitmap name="Icon" file="art/BtnNav-Crs-917.png" x="0" y="0" rgba="FFFFFFFF" />
+				<Text   name="Str" str="Return" size="16" alignment="left" x="14.0" y="5" shadow="1" shadow_rgba="00000030" rgba="D0D0D0FF" />
+			</Component>
+			<Component name="navCircle" x="14.5" y="-13">
+				<Bitmap name="Icon" file="art/BtnNav-EnterCir-917-wide.tga" x="0" y="0" rgba="FFFFFFFF" />
+				<Text   name="Str" str="Confirm" size="16" alignment="left" x="35.0" y="5" shadow="1" shadow_rgba="00000030" rgba="D0D0D0FF" />
+			</Component>
+			<Component name="navTriangle" x="208" y="-13">
+				<Bitmap name="Icon" file="art/BtnNav-Tri-917.png" x="0" y="0" rgba="FFFFFFFF" />
+				<Text   name="Str" str="Options" size="16" alignment="left" x="14.0" y="5" shadow="1" shadow_rgba="00000030" rgba="D0D0D0FF" />
+			</Component>
+		</Component>
+		
+		<!-- Gemstar Logo -->
+		<Bitmap name="GLogo" file="art/Glogo_epg.png" x="270" y="-189" z_depth="-9000.0" />
+		
+		<!-- ================================================================= -->
+		<!-- PinP                                                              -->
+		<!-- ================================================================= -->
+		<Component name="VideoBase" x="-218" y="67" z_depth="-9000.0" >
+			<Bitmap file="art/clock_back.png" x="0" y="70" w="178" />
+			
+			<!-- 日付と時間 -->
+			<Text name="TimeText" str="..:.."          x="32" y="80" size="32" rgba="FFFFFFFF" alignment="right" spacing_h="0" shadow="1" shadow_rgba="00000030" />
+			<Text name="AmPmText" str=".."             x="64" y="80" size="16" rgba="FFFFFFFF" alignment="right" spacing_h="0" shadow="1" shadow_rgba="00000030" />
+			<Text name="DateText" str="..../../..(..)" x="68" y="40" size="16" rgba="FFFFFFFF" alignment="right" spacing_h="0" shadow="1" shadow_rgba="00000030" />
+			
+			<!-- ラストチャンネル -->
+			<Text name="LastChInfo" str="." x="-35" y="105" size="14" alignment="center" rgba="FFFFFFFF" shadow="1" shadow_rgba="00000030" />
+			<Text name="LastChName" str="." x="-4" y="105" size="14" rgba="FFFFFFFF" shadow="1" shadow_rgba="00000030" />
+			<Bitmap name="LashCh" file="art/LastCh.png" x="-70" y="100" />
+			
+		</Component> <!--VideoBase-->
+		
+		<!-- ================================================================= -->
+		<!-- リスト表示のベース                                                -->
+		<!-- ================================================================= -->
+		<Component name="ListBase" x="0" y="0" >
+			
+			<!-- グリッド分類 -->
+			<Component name="ListKindBase" x="74" y="0" >
+				<Text name="GridKindText" str="←Categories→" rgba="FFFFFFFF" x="18" y="-139"  alignment="center" spacing_h="0" shadow="1" shadow_rgba="00000030" />
+				<Bitmap name="GridKindArrowL" file="art/L_arrow.png" x="0" y="-144" />
+				<Bitmap name="GridKindArrowR" file="art/R_arrow.png" x="0" y="-144" />
+			</Component>
+			
+			<!-- グリッド -->
+			<Component name="GridBase0" x="74" y="0" >
+				<Component x="-208" y="-128" >
+					<Component name="GridCellBase" x="208" y="13" >
+						
+						<!-- カーソルですにょ -->
+						<Component name="Cursor0" z_depth="-10.0" >
+							<Component x="10" y="0" >
+								<Bitmap3x3 file="art/TextFocus.tga" h="35" w="406" corner_w="25" corner_h="17" />
+							</Component>
+						</Component>
+						
+						<!-- epgLayout.inc で生成されるセルはここらへん  -->
+						
+					</Component> <!--CellBase-->
+				</Component> <!--GridOffset-->
+				
+				<!-- スクロールガイド -->
+				<Bitmap name="Grid0ScrollGuideUpEnable" file="art/U_arrow.png" x="222" y="-134" />
+				<Bitmap name="Grid0ScrollGuideDownEnable" file="art/D_arrow.png" x="222" y="89" />
+				
+				<!-- すくろーるばー -->
+				<Component name="ScrollBarBase0" x="221" y="-22" visible="1" >
+					<Bitmap3x3 name="Frame"  file="art/ScrollBarBase.tga" corner_w="0" corner_h="1"/>
+					<Bitmap3x3 name="Mark"   file="art/ScrollBarCurrent.tga" corner_w="0" corner_h="9"/>
+				</Component>
+				
+			</Component> <!--GridBase-->
+			
+			<!-- データ無し -->
+			<!-- Component name="DetailBase" x="94" y="-3" -->
+			<Bitmap name="EmptyBase" file="art/list_title_back.png" x="85" y="-23" w="404" h="203" >
+				<Text str="該当するデータがありません。" x="0" y="0" alignment="center" rgba="FFFFFFFF" shadow="1" shadow_rgba="00000030" />
+			</Bitmap>
+			
+			<!-- 詳細情報 -->
+			<Component name="ListDetailBase" >
+				<Bitmap name="DetailCarpet" file="art/InfomationTitleCarpet.png" x="87" y="128" w="408" h="74" rgba="FFFFFFAA" />
+				<Text name="NoteText0"  str="--:--xM - --:--xM Station name" x="-110" y="111"  rgba="FFFFFFFF" spacing_h="0" shadow="1" shadow_rgba="00000030" />
+				<Memo name="DetailMemo" str="Show in detail" x="-110" y="96" w="400" h="70" rgba="FFFFFFFF" buf_size="256" read_only="1" have_scrollbar="0" visible="1" spacing_h="0" shadow="0" shadow_rgba="00000030" />
+			</Component>
+			
+		</Component> <!--ListBase-->
+		
+		
+		<!-- ================================================================= -->
+		<!-- セレクタ                                                          -->
+		<!-- ================================================================= -->
+		<Component name="SelectorBase" x="0" y="0" >
+			
+			<Text name="SelectorKindText" str="Classification" rgba="FFFFFFFF" x="92" y="-148"  alignment="center" spacing_h="0" shadow="1" shadow_rgba="00000030" />
+			
+			<!-- グリッド -->
+			<Component name="GridBase1" x="74" y="0" >
+				
+				<Component x="-208" y="-128" >
+					
+					<Component x="208" y="13" name="GridCellBase" >
+						
+						<!-- カーソルですにょ -->
+						<Component name="Cursor1" >
+							<Component x="10" y="0" >
+								<Bitmap3x3 file="art/TextFocus.tga" h="35" w="406" corner_w="25" corner_h="17" />
+							</Component>
+						</Component>
+						
+						<!-- キーワード入力用 -->
+						<Edit name="KeywordEdit" osk_param="0" x="0" y="0" w="370" size="16" rgba="FFFFA0FF" buf_size="128" spacing_h="0" shadow="1" />
+						
+						<!-- せるはここ  -->
+						
+					</Component>	<!--CellOffset-->
+					
+				</Component> <!--GridOffset-->
+				
+				<!-- スクロールガイド -->
+				<Bitmap name="Grid1ScrollGuideUpEnable" file="art/U_arrow.png" x="222" y="-136" />
+				<Bitmap name="Grid1ScrollGuideDownEnable" file="art/D_arrow.png" x="222" y="147" />
+				
+				<!-- すくろーるばー -->
+				<Component name="ScrollBarBase1" x="221" y="7" visible="1">
+					<Bitmap3x3 name="Frame"  file="art/ScrollBarBase.tga" corner_w="0" corner_h="90"/>
+					<Bitmap3x3 name="Mark"   file="art/ScrollBarCurrent.tga" corner_w="0" corner_h="9"/>
+				</Component>
+				
+			</Component> <!--GridBase-->
+		
+		</Component> <!--SelectorBase-->
+		
+		
+		
+		
+		<!-- ================================================================= -->
+		<!-- 詳細表示                                                          -->
+		<!-- ================================================================= -->
+		<Component name="DetailBase" x="94" y="-3" >
+			<Component x="-208" y="-155" >
+				<Bitmap name="DetailBg" file="art/InfomationCarpet.png" x="208" y="158" w="422" h="329" rgba="FFFFFF7F" >
+					<Bitmap file="art/InfomationTitleCarpet.png" x="0" y="-94" w="422" h="81" />
+				</Bitmap>
+				
+				<Bitmap3x3 name="DetailBgFocus" file="art/panelFocus_3x3.png" x="208" y="158" corner_h="8" corner_w="8" w="430" h="341" />
+				
+				<Text name="DetailReservationText" str="..:..xM - ..:..xM Station name" x="10" y="15"  rgba="FFFFFFFF" spacing_h="0" shadow="1" shadow_rgba="00000030" />
+				<Memo name="DetailMemo0" str="This is the display area for detail 1." x="10" y="30" w="400" h="64" rgba="FFFFFFFF" buf_size="256" read_only="1" have_scrollbar="0" visible="1" spacing_h="0" shadow_rgba="00000030" shadow="0"  />
+				<Memo name="DetailMemo1" str="This is the detail 2 display area." x="10" y="111" w="400" h="205" rgba="FFFFFFFF" rgba0="FFFFFFFF" rgba1="FFFFFFFF" rgba2="FFFFFFFF" rgba3="FFFFFFFF" buf_size="5120" read_only="1" have_scrollbar="0" visible="1" spacing_h="0" shadow_rgba="00000030" shadow="0"  />
+			</Component> <!--DetailOffset-->
+		</Component> <!--DetailBase-->
+		
+		
+		<!-- でぃま -->
+		<!-- Prim name="Dimmer" type="rect" rgba="000000D0" x="-360" y="-240" w="720" h="480" visible="0" / -->
+		<Prim name="Dimmer" type="rect" rgba="000000D0" w="720" h="480" visible="0" />
+		
+		<!-- 広告画像 -->
+		<Component name="AdvBase" x="-218" y="-65" z_depth="-8500.0" >
+			<!--広告BMP2(下ハーフサイズ)-->
+			<Component name="Pad1" x="-90" y="2">
+				<Bitmap name="Base" file="art/padbase_3x3.png" x="90" y="66" w="178" h="133" />
+				<Bitmap name="Focus" file="art/padfocus_3x3.png"  x="90" y="66" w="182" h="132" />
+				<Bitmap name="Digest" file="art/paddigest_3x3.png"  x="90" y="66" w="182" h="132" />
+				<Bitmap name="Default" file="art/default_AD_b.png" x="90" y="66" w="178" h="130" />
+				<Bitmap name="Image" x="90" y="66" w="176" h="128" />
+			</Component>
+			
+			<!--広告BMP1(上) -->
+			<Component name="Pad0" x="-90" y="-134">
+				<Bitmap name="Base" file="art/padbase_3x3.png" x="90" y="66" w="178" h="133" />
+				<Bitmap name="Focus" file="art/padfocus_3x3.png"  x="90" y="66" w="182" h="132" />
+				<Bitmap name="Digest" file="art/paddigest_3x3.png"  x="90" y="66" w="182" h="132" />
+				<Bitmap name="Default" file="art/default_AD_a.png" x="90" y="67" w="178" h="130" />
+				<Bitmap name="Image" x="90" y="134" w="176" h="264" /> 
+			</Component>
+		
+		</Component> <!--AdvBmpBase-->
+		
+	
+	
+		<!-- ================================================================= -->
+		<!-- [Dialog:0000] INFOMATION                                          -->
+		<!-- ================================================================= -->
+		<Component name="Dialog0" x="90" y="0"  visible="0" >
+			<Bitmap name="BorderTop"    file="art/DialogBorder.tga" x ="0" y="-60" w="430" />
+			<Bitmap name="BorderBottom" file="art/DialogBorder.tga" x ="0" y="50" w="430" />
+			<Text name="Text0" rgba="FFFFFFFF" str="-" x="4" y="0" alignment="center" shadow="0" />
+			<!-- Component name="Button0" x="0" y="20">
+				<Bitmap3x3 name="Active" file="art/TextFocus.tga" h="40" w="100" corner_w="25" corner_h="17" y="-5"/>
+				<Text name="Text" rgba="FFFFFFFF" str="ＯＫ" alignment="center" shadow="1" shadow_rgba="000000A0" />
+			</Component -->
+		</Component>
+		
+		<!-- ================================================================= -->
+		<!-- [Dialog:0001] SURE ?                                              -->
+		<!-- ================================================================= -->
+		<Component name="Dialog1" x="90" y="0" visible="0" >
+			<Bitmap name="BorderTop"    file="art/DialogBorder.tga" x ="0" y="-60" w="430" />
+			<Bitmap name="BorderBottom" file="art/DialogBorder.tga" x ="0" y="50" w="430" />
+			
+			<Text name="Text0"   rgba="FFFFFFFF" str="？" x="4" y="-10" alignment= "center" shadow="1" shadow_rgba="00000080" />
+			<Component name="Button0" x="-65" y="20">
+				<Bitmap3x3 name="Active" file="art/TextFocus.tga" h="35" w="96" corner_w="25" corner_h="17" y="-5"/>
+				<Text name="Text" rgba="FFFFFFFF" str="Yes"   alignment="center" shadow="1" shadow_rgba="000000A0" />
+			</Component>
+			<Component name="Button1" x="55" y="20">
+				<Bitmap3x3 name="Active" file="art/TextFocus.tga" h="35" w="96" corner_w="25" corner_h="17" y="-5"/>
+				<Text name="Text" rgba="FFFFFFFF" str="No" alignment="center" shadow="1" shadow_rgba="000000A0" />
+			</Component>
+		</Component>
+
+		<!-- ================================================================= -->
+		<!-- [EmptyDialog]                                                     -->
+		<!-- ================================================================= -->
+		<Component name="EmptyDialog" x="0" y="0" visible="0" >
+			<Bitmap name="BorderTop"    file="art/DialogBorder.tga" x ="0" y="-100" w="430" visible="1" />
+			<Bitmap name="BorderBottom" file="art/DialogBorder.tga" x ="0" y="100" w="430" visible="1" />
+			
+			<Text name="Text0"   rgba="FFFFFFFF" str="There is no applicable data." x="-110" y="-5" alignment= "left" shadow="1" shadow_rgba="00000080" />
+			<Text name="Text1"   rgba="FFFFFFFF" str="Program schedule is not available." x="-110" y="20" alignment= "left" shadow="1" shadow_rgba="00000080" />
+		</Component>
+
+		<!-- ================================================================= -->
+		<!-- [EasyWord]                                                     -->
+		<!-- ================================================================= -->
+		<Text name="TextEasyWord"   rgba="FFFFFFFF" str="Edit the words to be registered." x="-270" y="-145" visible="0" shadow="1" shadow_rgba="00000080" />
+		
+		<!-- ================================================================= -->
+		<!-- [Option Menu]                                                     -->
+		<!-- ================================================================= -->
+		<Component name="EpgMenu" visible="0" x="240" y="0" >
+			<!-- Prim type="rect" rgba="00000080" x="-105" y="-240" w="210" h="480" / -->
+			<Bitmap name="BG" file="art/Base_OptMenu.png" w="210" h="480" />
+			
+			<Component name="Cursor2" >
+				<Component x="90" y="-5" >
+					<Bitmap3x3 name="OptionCursor" file="art/TextFocus.tga" h="35" w="240" corner_w="25" corner_h="17" />
+				</Component>
+			</Component>
+			
+			<Bitmap name="ToSeco" file="art/D_arrow.png" rgba="FFFFFF00" x="-82" y="4" />
+			<Bitmap name="ToPrim" file="art/U_arrow.png" rgba="FFFFFF00" x="-82" y="28" />
+
+			<!-- 語句登録入力用 -->
+			<Edit name="EasyWordEdit" osk_param="0" x="0" y="0" w="370" size="16" rgba="FFFFA0FF" buf_size="700" spacing_h="0" shadow="1" />
+			
+		</Component> <!-- EpgMenu -->
+
+	    <Bitmap3x3 name="inputFrame" file="pack:xOSK_A/0.1.0/Box.png" w="487" h="28" z_depth="1" visible="0" />
+	
+	</Component> <!-- epgBase -->
+	
+</App>

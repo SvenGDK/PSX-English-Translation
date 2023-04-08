@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<PSML2>
+
+<Dll name="xBitmap/xBitmap"	version="0.1.0" />
+<Dll name="xButton/xButton"	version="0.1.0" />
+<Dll name="xText/xText"		version="0.1.0" />
+
+<Screen name="TerminalMessageDialog" visible="0" z_depth="-1" focus="NO">
+	<Text name="text0" str="Pict Story編集を中止します。"	x="0" y="-20" alignment="center" />
+	<Text name="text1" str="よろしいですか？　　　　　　"	x="0" y="0"   alignment="center" />
+	<Button name="YES" x="0" y="40" nav_right="NO">
+		<Wizard action="" variable="RetValue1" value="YES"/>
+		<FocusOn>
+			<Text str="Yes" alignment="right" rgba="{*::TextRGBA.Hilited}" x="-50" shadow="0" />
+			<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="84" h="40" x="-68" y="-5" />
+		</FocusOn>
+        <FocusOff>
+			<Text str="Yes" alignment="right" rgba="{*::TextRGBA.Normal}" x="-50" />
+		</FocusOff>
+	</Button>
+	<Button name="NO" x="0" y="40" nav_left="YES">
+		<Wizard action="" variable="RetValue2" value="NO"/>
+		<FocusOn>
+			<Text str="No" alignment="left" rgba="{*::TextRGBA.Hilited}" x="20" shadow="0" />
+			<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="100" h="40" x="45" y="-5" />
+		</FocusOn>
+		<FocusOff>
+			<Text str="No" alignment="left" rgba="{*::TextRGBA.Normal}" x="20" />
+		</FocusOff>
+	</Button>
+</Screen>
+</PSML2>

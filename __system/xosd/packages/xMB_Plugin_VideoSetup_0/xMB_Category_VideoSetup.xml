@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Category
+    name="VideoSetup"
+    icon="pack:xMB_Plugin_VideoSetup/0.1.0/art/Nail-Conf-Video.png"
+    icon_x="29"
+    icon_y="37"
+    label="{VideoLabel}"
+    order="4"
+>
+</Category>
+

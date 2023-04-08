@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<PSML2>
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xButton/xButton" version="0.1.0" />
+	<Dll name="xEdit/xEdit" version="0.1.0" />
+	<Dll name="xSlider/xSlider" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xSelector/xSelector" version="0.1.0" />
+
+	<Screen name="Message" visible="0" z_depth="-1">
+		<Text name="Text" shadow="0" spacing_v="6"/>
+	</Screen>
+
+	<Screen name="YesOrNo" visible="0" z_depth="-1" focus="ButtonYes">
+		<Text name="Text" y="0"  shadow="0" spacing_v="6" alignment="center" />
+
+		<Button name="ButtonYes" x="-60" y="60" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+			</FocusOn>
+			<FocusOff>
+				<Text str="Yes" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+			</FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="60" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+			</FocusOn>
+			<FocusOff>
+				<Text str="No" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+			</FocusOff>
+		</Button>
+	</Screen>
+
+	<Screen name="QTimerInput" visible="0" z_depth="-1" focus="Time" >
+		<Text name="Text1" str="Please select a time." y="-30" shadow="0" alignment="center" />
+		<Selector name="Time" arrows="1" next="UP" prev="DOWN" x="-16" y="30" alignment="center" wrap="1" />
+	</Screen>
+
+	<Screen name="QTimerEPG" visible="0" z_depth="-1" focus="ButtonYes" >
+		<Text name="Text0" str="Record until the end of the program." x="-105" y="-45" shadow="0" />
+		<Text name="Text1" str="Is this OK?" x="-105" y="-25" shadow="0" />
+		<Text name="Text2" str="" x="-105" y="-5" shadow="0" />
+		<Text name="tmHour" y="30" alignment="center" visible="0"/>
+		<Text name="tmMin" y="30" alignment="center" visible="0"/>
+		<Button name="ButtonYes" x="-65" y="55" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+			</FocusOn>
+			<FocusOff>
+				<Text str="Yes" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+			</FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="55" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+			</FocusOn>
+			<FocusOff>
+				<Text str="No" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+			</FocusOff>
+		</Button>
+
+	</Screen>
+
+	<Screen name="QTimer" visible="0" z_depth="-1">
+
+		<Component name="SetTimer" visible="1">
+			<Text name="Text1" str="Quick timer setting" y="-15" shadow="0" alignment="center" />
+
+			<Button name="ButtonManual" x="-75" y="25" nav_right="ButtonEPG">
+				<FocusOn>
+					<Bitmap3x3 file="art/TextFocus.tga" y="-4" w="95" h="40" corner_w="25" corner_h="17"/>
+					<Text str="Manual setting" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+				</FocusOn>
+				<FocusOff>
+					<Text str="Manual setting" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+				</FocusOff>
+			</Button>
+			<Button name="ButtonEPG" x="45" y="25" nav_left="ButtonManual">
+				<FocusOn>
+					<Bitmap3x3 file="art/TextFocus.tga" y="-4" w="160" h="40" corner_w="25" corner_h="17"/>
+					<Text str="Match the schedule" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+				</FocusOn>
+				<FocusOff>
+					<Text str="Match the schedule" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+				</FocusOff>
+			</Button>
+		</Component>
+
+		<Component name="Input" visible="0">
+			<Text name="Text1" str="Please select a time." y="-30" shadow="0" alignment="center" />
+			<Selector name="Time" arrows="1" next="UP" prev="DOWN" x="-16" y="30" alignment="center" wrap="1" />
+		</Component>
+
+		<Component name="EPG" visible="0">
+			<Text name="Text0" str="Record until the end of the program." x="-105" y="-45" shadow="0" />
+			<Text name="Text1" str="Is this OK?" x="-105" y="-25" shadow="0" />
+			<Text name="Text2" str="" x="-105" y="-5" shadow="0" />
+			<Text name="tmHour" y="30" alignment="center" visible="0"/>
+			<Text name="tmMin" y="30" alignment="center" visible="0"/>
+			<Button name="ButtonYes" x="-65" y="55" nav_right="ButtonNo">
+				<FocusOn>
+					<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+					<Text str="Yes" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+				</FocusOn>
+				<FocusOff>
+					<Text str="Yes" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+				</FocusOff>
+			</Button>
+			<Button name="ButtonNo" x="60" y="55" nav_left="ButtonYes">
+				<FocusOn>
+					<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+					<Text str="No" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+				</FocusOn>
+				<FocusOff>
+					<Text str="No" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+				</FocusOff>
+			</Button>
+		</Component>
+
+		<Component name="QTimerError" visible="0">
+			<Text name="Text" str="" shadow="0" spacing_v="6" alignment="center"/>
+		</Component>
+
+	</Screen>
+
+	<Screen name="OmakaseStandby" visible="0" z_depth="-1" focus="ButtonYes" >
+		<Component name="Text" y="-90">
+			<Text name="Text0" str="It is almost time to start recording automatically." x="-220" y="-4" shadow="0" spacing_v="6"/>
+			<Text name="Text1" str="I would like to change the channel, please?" x="-220" y="16" shadow="0" spacing_v="6"/>
+		</Component>
+
+		<Component name="RecInfo" y="0">
+			<Text name="Title" str="" x="-165" y="-4" shadow="0" />
+			<Text name="Info" str="" x="-165" y="16" shadow="0" />
+		</Component>
+
+		<Button name="ButtonYes" x="-60" y="100" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+			</FocusOn>
+			<FocusOff>
+				<Text str="Yes" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+			</FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="100" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5"  w="96" h="40" corner_w="25" corner_h="17" />
+				<Text str="No" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+			</FocusOn>
+			<FocusOff>
+				<Text str="No" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+			</FocusOff>
+		</Button>
+	</Screen>
+
+</PSML2>

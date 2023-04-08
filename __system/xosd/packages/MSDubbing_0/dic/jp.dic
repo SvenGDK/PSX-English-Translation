@@ -1,0 +1,136 @@
+<?dic version="1.0" language="jp" size="92"?>
+
+#######################
+# -- MS Message Start
+#######################
+
+#
+# -- インストラクション
+#    => タイトル
+{MSDubTitle} = "HDD→M.S. Dubbing";
+{MSDubTitle_Start} = "HDD→M.S. Dubbing / Start confirmation";
+{MSDubTitle_MSChk} = "HDD→M.S. Dubbing / M.S. Check";
+{MSDubTitle_Format} = "HDD→M.S. Dubbing / Format";
+{MSDubTitle_MovieDel} = "HDD→M.S. Dubbing / Deleting all videos";
+{MSDubTitle_SelectTitle} = "HDD→M.S. Dubbing / Title selection";
+{MSDubTitle_ConvCopyStart} = "HDD→M.S. Dubbing / Writing order confirmation";
+{MSDubTitle_ConvCopy} = "HDD→M.S. Dubbing / Writing";
+#    => ボタンヘルプ
+{HelpSelect} = "Select";
+{HelpBack} = "Return";
+{HelpDiscont} = "Abort";
+{HelpCancel} = "Cancel";
+{HelpOption} = "Options";
+{HelpClose} = "Close";
+
+#
+# -- M.S.ダビング開始確認ページ～フォーマット中or全動画削除中
+#
+{StartMsg1} = "Title to memory stick video format";
+{StartMsg2} = "Convert and dub to memory stick.";
+{StartMsg3} = "Insert a memory stick that can be dubbed";
+{StartMsg4} = "Please press.";
+{MSCheck} = "Checking memory stick %3d%";
+{MSChkEnd} = "Memory stick check completed.";
+{MSFormat} = "Formatting%3d%";
+{MSFmtEnd} = "Format finished.";
+{MSDelete} = "Deleting %3d%";
+{MSDelEnd} = "Deletion completed.";
+
+#
+# -- タイトル選択画面
+#
+{Room} = "Free Space";
+{Str_KB} = "%d KB";
+{Str_MB} = "%d MB";
+{TtlSelect1} = " ";
+{TtlSelect2} = "Select the title to dub with";
+{TtlSelect3} = "Please press.";
+#    => タイトル情報
+{Sun} = "Sunday";
+{Mon} = "Monday";
+{Tue} = "Tuesday";
+{Wed} = "Wednesday";
+{Thu} = "Thursday";
+{Fri} = "Friday";
+{Sat} = "Saturday";
+
+#
+# -- オプション
+#
+{Opt_RecMode} = "recording mode";
+{Opt_Audio} = "Audio   ";
+
+#
+# -- 変換・コピー開始
+#
+{CopyStart1} = "The order of writing to the memory stick";
+{CopyStart2} = "please confirm.";
+{CopyStart3} = "Press to start dubbing.";
+{CopySumTime} = "Approximately until end of dubbing: %d hours %d minutes";
+
+#
+# -- 変換・コピー実行中
+#
+{CopyMsg1} = "Dubbing the title.";
+{CopyMsg2} = "Do not remove the memory stick.";
+{CopyMsg3} = "";
+{Prog} = "%d％";
+{Remain1} = "Approximately %d minutes %d seconds until dubbing ends";
+{Remain2} = "Approximately %d hours %d minutes until dubbing ends";
+{AllProg} = "All";
+{ConvStatus} = "Converting...";
+{CopyStatus} = "Writing...";
+{CancelStatus} = "Canceling...";
+
+#
+# -- ダイアログメッセージ
+#
+{Func_Select} = "Free space on memory stick is %dMB. \nPlease select a function.";
+{Chk_Delete} = "Memory Stick Video Format\nDelete all titles. \nAre you sure?";
+{Chk_Format} = "format. All data written\nto the memory stick will be deleted. \nAre you sure?";
+{Chk_Format2} = "Formatting will also delete all\ndata not displayed on this unit. \nAre you sure?";
+{Chk_FormatErr} = "This memory stick needs formatting. \nAll data written to the memory stick\nwill be deleted. \nAre you sure?";
+{Chk_Writable} = "The memory stick cannot be written any more. \nDo you want to delete all videos or format?";
+{ConvCopy_End} = "Copying finished.";
+{Guide_Cancel} = "Stop Copying. \nAre you sure?";
+{ConvCopy_Cancel} = "Stopped copying.";
+# 2005.04.05:YY:電源断追加対応
+{Chk_Shutdown} = "Do you want to turn off the power after copying?";
+{ConvCopy_End_Shutdown} = "Copying finished. \nPower off.";
+
+#
+# -- ダイアログエラーメッセージ
+#
+{Err_Optimi} = "Optimization in progress. \nDubbing is not possible.";
+{Err_NoTitle} = "No titles to dub. \nDubbing stopped.";
+{Err_System} = "A system error has occurred. \nDubbing stopped.";
+{Err_NoMemoStick} = "No memory stick. \nDubbing stopped.";
+{Err_NotPoss} = "This memory stick cannot be used. \nDubbing stopped.";
+{Err_Lock} = "Memory stick is locked. \nDubbing stopped.";
+{Err_NoWrite} = "Cannot write due to memory stick error. \nDubbing stopped.";
+{Err_ReadEx} = "It is a read-only memory stick. I stopped diving.";
+{Err_NoAccess} = "This is an incompatible memory stick. \nDubbing stopped.";
+{Err_FailWrite1} = "Dubbing was aborted\nbecause writing failed.";
+{Err_FailWrite2} = "Write failed. \nAfter this, it becomes read-only. \nDubbing stopped.";
+{Err_FailDelete} = "Failed to delete all videos\nDubbing was canceled.";
+{Err_FailFormat} = "Dubbing was aborted\nbecause formatting failed.";
+{Err_NoCopyTitle} = "This title cannot be dubbed.";
+{Err_Capacity} = "This title cannot be dubbed\nbecause there is not enough free space on the memory stick.";
+{Err_OverTitle} = "No more titles can be selected.";
+{Err_OverTime} = "You cannot select titles whose total playing time after editing is more than %d hours\n.";
+{Err_FailConv} = "Dubbing was aborted\nbecause title conversion failed.";
+{Err_MemoStick} = "Either the memory stick is not inserted or\nmemory stick error. \nDubbing stopped.";
+{Err_EmpName} = "No more titles can\n be written to the memory stick.";
+{Err_RecTitle} = "This is the title being recorded. \nDubbing is not possible.";
+{Err_HDDCapa} = "Dubbing cannot be started\nbecause there is not enough space on the hard disk. \nPlease stop dubbing and delete unnecessary titles\nfrom your hard disk.";
+#    => ダイアログ選択肢
+{Yes} = "Yes";
+{No} = "No";
+{Sel_Append} = "Append";
+{Sel_Delete} = "Delete all videos";
+{Sel_Format} = "Format";
+
+#######################
+# -- MS Message End
+#######################

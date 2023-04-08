@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<App name="VideoUtil" native="xMB_Plugin_VideoUtil/xMB_Plugin_VideoUtil">
+	<Dll name="xStr/xStr" version="0.1.0" />
+
+    <Dic name="videoutil" filepath="pack:xMB_Plugin_VideoUtil/0.1.0/dic" default="yes" />
+
+	<Component name="IconInfo">
+		<String name="VIDEO_TEXT_DV_DUBBING"       str="pack:xMB_Plugin_VideoUtil/0.1.0/art/ICN_DV_Dubbing.png" />
+		<String name="VIDEO_TEXT_MP4_DUBBING"      str="pack:xMB_Plugin_VideoUtil/0.1.0/art/MS_copy.png" />
+		<String name="VIDEO_TEXT_BURNDVD"          str="pack:xMB_Plugin_VideoUtil/0.1.0/art/ICN_Burn.png" />
+		<String name="VIDEO_TEXT_VIDEORESERVATION" str="pack:xMB_Plugin_VideoUtil/0.1.0/art/ICN_TmRes.png" />
+		<String name="VIDEO_TEXT_OMAKASE"          str="pack:xMB_Plugin_VideoUtil/0.1.0/art/ICN_OMAKASE.png" />
+		<String name="VIDEO_TEXT_RESERVATIONLIST"  str="pack:xMB_Plugin_VideoUtil/0.1.0/art/ICN_ResList.png" />
+		<String name="DVDDiscIcon"                 str="pack:xMB_Plugin_VideoUtil/0.1.0/art/ICN_DVD.png" />
+	</Component>
+</App>
+

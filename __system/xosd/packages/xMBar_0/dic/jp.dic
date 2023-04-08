@@ -1,0 +1,64 @@
+<?dic version="1.0" language="jp" size="57" ?>
+
+{NoItems} = "No Items";
+
+{SettingsLabel} = "Settings";
+{PhotoLabel} = "Photo";
+{MusicLabel} = "Music";
+{VideoLabel} = "Video";
+{TVLabel} = "TV";
+{FriendsLabel} = "Friends";
+{GameLabel} = "Game";
+{VenusLabel} = "NetPlayer";
+{ShoutcastLabel} = "Internet Radio";
+{ShowLabel} = "Now Showing!";
+{PSBBLabel} = "PSBB";
+
+{Opt.Play} = "Play";
+{Opt.Browse} = "Display Content";
+{Opt.Copy} = "Copy";
+{Opt.Move} = "Move";
+{Opt.Import} = "Import";
+{Opt.Export} = "Export";
+{Opt.CheckIn} = "Check In";
+{Opt.CheckOut} = "Check Out";
+{Opt.Rename} = "Rename";
+{Opt.RestoreInfo} = "Restore Info";
+{Opt.Save} = "Save";
+{Opt.Delete} = "Delete";
+{Opt.Show} = "Show";
+{Opt.Options} = "Options";
+{Opt.Format} = "Format";
+{Opt.Information} = "Information";
+{Opt.AddToShow} = "Add To Show";
+{Opt.MoveUp} = "Move Up";
+{Opt.MoveDown} = "Move Down";
+{Opt.SetCover} = "Set Cover";
+
+{Opt.Standard} = "Standard";
+{Opt.SortChannel} = "Sort Channel";
+{Opt.ImportDate} = "Import Date";
+{Opt.Frequency} = "Frequency";
+{Opt.Sort} = "Sort";
+{Opt.AllTrack} = "All Track";
+{Opt.Artist} = "Artist";
+{Opt.Genre} = "Genre";
+{Opt.Album} = "Album";
+{Opt.Date} = "Date";
+{Opt.AllPhoto} = "All Photo";
+{Opt.ImageType} = "Image Type";
+{Opt.ClipName}  = "Clip Name";
+
+{Storage.MCps1} = "Memory Card";
+{Storage.MCps2} = "Memory Card (PS2)";
+{Storage.MS} = "Memory Stick®";
+{Storage.USB} = "USB Storage";
+{Storage.Camera} = "Digital Camera";
+{Storage.AudioDev} = "Audio Device";
+{Storage.NetMD} = "NetMD";
+{Storage.EyeToy} = "EyeToy™";
+{Storage.DataCD} = "Data CD";
+{Storage.AudioCD} = "Audio CD";
+{Storage.DataDVD} = "DVD";
+
+{Err.CorruptedData} = "Corrupted Data";

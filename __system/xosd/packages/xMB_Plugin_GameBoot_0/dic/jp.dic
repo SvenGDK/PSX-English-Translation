@@ -1,0 +1,42 @@
+﻿<?dic version="1.0" language="jp" size="31" ?>
+
+
+
+{PS1_FORMAT} = "PlayStation® format software";
+{PS2_FORMAT} = "PlayStation®2 format software";
+{PS1_HDDFORMAT} = "PlayStation® format software";
+{PS2_HDDFORMAT} = "PlayStation®2 format software";
+
+{Setting.DiscSpeed} = "Read speed of PlayStation® discs";
+{Setting.DiscSpeed.0} = "Standard";
+{Setting.DiscSpeed.1} = "Fast";
+{Setting.TextureMapping} = "PlayStation®\nGame Texture Mapping";
+{Setting.TextureMapping.0} = "Standard";
+{Setting.TextureMapping.1} = "Smooth";
+
+{Info.Title} = "Title";
+{Info.Distributor} = "Publisher";
+{Info.ProdCode} = "Game ID";
+{Info.Type} = "Type";
+{Info.Created} = "Created";
+{Info.Size} = "Size";
+
+{Unknown} = "Unknown";
+
+{Opt.Play} = "Start";
+
+{PleaseWaitForGame} = "Please wait for the game to start.";
+{StartingGamePleaseWait} = "\tStarting game. Please wait...";
+
+{GameDelete.HDD1} = "Delete this game from your hard disk.";
+{GameDelete.HDD2} = "Is this OK?";
+
+{Error.BadDisc} = "The disc could not be read.";
+{Error.DiscNoBoot} = "This disc cannot be started.";
+{Error.Illegal} = "Please insert a PlayStation® or\nPlayStation®2 format disc.";
+{Error.GameNoBoot} = "This game cannot be started.";
+{Error.DiscNeeded} = "This game requires a disc for start-up.";
+{Error.InsertDisc} = "Insert a disc.";
+{Error.WrongDisc} = "This is the wrong disc.";
+{Error.Corrupt.0} = "This data is corrupted.";
+{Error.Corrupt.1} = "Please delete it.";

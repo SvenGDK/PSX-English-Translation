@@ -1,0 +1,17 @@
+﻿<?xml version="1.0"?>
+<Category
+    name="PSXSettings"
+    icon="pack:xMB_Plugin_Settings/0.1.0/art/config_normal_3G.tm2"
+    icon_x="64"
+    icon_y="64"
+    icon2="pack:xMB_Plugin_Settings/0.1.0/art/config_forcus_3G.tm2"
+    icon2_x="64"
+    icon2_y="69"
+    icon3="pack:xMB_Plugin_Settings/0.1.0/art/config_option_3G.tm2"
+    icon3_x="64"
+    icon3_y="50"
+    label="{SettingsLabel}"
+    order="0"
+>
+</Category>
+

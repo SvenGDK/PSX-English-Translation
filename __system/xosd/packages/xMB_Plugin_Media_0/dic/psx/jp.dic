@@ -1,0 +1,144 @@
+﻿<?dic version="1.0" language="jp" size="116" ?>
+
+// PSX3GJ BEGIN
+/* change to media from psx */
+{OptionsTitle} = "Dlete";
+{DeleteComplete} = "Deleted.";
+{DeleteCancelled} ="Abort the deletion.";
+{DeletingWarning} = "Deleting.";
+{DeleteFailed}  = "Delete failed.";
+{ContinueQuestion} = "Is this OK ?";
+{DeletingAllPhotos} = "Delete all photos in the album.";
+{DeletingAllTracks} = "Delete all tracks in the album.";
+{DeletingPhoto} = "Delete.";
+{DeletingTrack} = "Delete.";
+/* remove psx from xml*/
+{NoStr} = "No";
+{YesStr} = "Yes";
+{BackStr} = "Return";
+{EnterStr} = "Confirm";
+
+/* new */
+{DelPhotostory} = "Pict Story made from this album.";
+{DelAllPhoto} = "When deleted, all photos in the album and";
+{DeletingPhotostory} = "Delete the associated Pict Story.";
+{DelUnregister} = "DJ registered tracks";
+{DelUnregistDel} = "After canceling the DJ registration, it will be deleted.";
+{CancelStr} = "Cancel";
+{EmptyStr} = "－";
+
+{Common_Help_Back} = "Return";
+{Common_Help_Confirm} = "Confirm";
+{Common_Help_Abort} = "Abort";
+{Common_Help_Close} = "Close";
+{Common_Yes} = "Yes";
+{Common_No} = "No";
+{Common_Confirm} = "Confirm";
+{Common_Back} = "Return";
+
+{Genre.0} = "No genre";
+{Genre.16} = "Seoul";
+{Genre.17} = "R&B";
+{Genre.18} = "Hip hop";
+{Genre.32} = "Rock";
+{Genre.33} = "Hard Rock";
+{Genre.34} = "Progressive";
+{Genre.35} = "New wave";
+{Genre.36} = "Punk";
+{Genre.37} = "Core";
+{Genre.48} = "Jazz";
+{Genre.49} = "Latin";
+{Genre.50} = "Fusion";
+{Genre.64} = "Pop";
+{Genre.81} = "Disco";
+{Genre.82} = "Euro beat";
+{Genre.83} = "House";
+{Genre.84} = "Reggae/Ska";
+{Genre.85} = "Techno";
+{Genre.86} = "Trance";
+{Genre.87} = "Break beats";
+{Genre.88} = "Drum & bass";
+{Genre.97} = "Fork";
+{Genre.98} = "Country";
+{Genre.99} = "World";
+{Genre.100} = "New age";
+{Genre.101} = "Children";
+{Genre.102} = "Soundtrack";
+{Genre.103} = "Classic";
+{Genre.113} = "J-pop";
+{Genre.114} = "Popular song";
+{Genre.115} = "Idol";
+{Genre.116} = "New music";
+{Genre.117} = "Group sounds";
+{Genre.118} = "Enka";
+{Genre.119} = "Animation";
+
+{Import_CheckSpace_Message1} = "Checking hard disk free space.";
+{Import_CheckSpace_Message2} = "Please wait.";
+
+{Import_SelectAlbum_NewAlbum_Label} = "Create New";
+{Import_SelectAlbum_NewAlbum_Prefix} = "Album ";
+{Import_SelectAlbum_MultiMusic_Message1} = "Import all music that can be imported.";
+{Import_SelectAlbum_MultiMusic_Message2} = "Select the destination album.";
+{Import_SelectAlbum_MultiPhoto_Message1} = "Import all photos that can be imported.";
+{Import_SelectAlbum_MultiPhoto_Message2} = "Select the destination album.";
+{Import_SelectAlbum_Single_Message1} = "";
+{Import_SelectAlbum_Single_Message2} = "Select the destination album.";
+
+{Import_EditMeta_Message1} = "Set the following information for the track to import.";
+{Import_EditMeta_Message2} = "Please select the item to change with ↑↓.";
+{Import_EditMeta_Year} = "Release year";
+{Import_EditMeta_Artist} = "Artist name";
+{Import_EditMeta_Genre} = "Genre";
+
+{Import_SelectDjBox_Message1} = "After importing, register as a DJ.";
+{Import_SelectDjBox_Message2} = "Is this OK?";
+
+{Import_ProgressSingle_Message1} = "Taking in.";
+{Import_ProgressSingle_Message2} = "";
+{Import_ProgressMulti_Message1} = "Taking in.";
+{Import_ProgressMulti_Message2} = "";
+{Import_ProgressMulti_All} = "All";
+
+{Import_CancelImport_Message1} = "Stop importing.";
+{Import_CancelImport_Message2} = "Is this OK?";
+
+{Import_End_Message1} = "Took it in.";
+
+{Import_DiscError_Message1} = "This disc cannot be imported.";
+{Import_DiscError_Message2} = "";
+
+{Import_ReEncodeError_Message1} = "Cannot be captured during optimization.";
+
+{Import_SpaceError_Message1} = "Insufficient hard disk space.";
+{Import_SpaceError_Message2} = "Delete unwanted titles, tracks and photos";
+{Import_SpaceError_Message3} = "please.";
+
+{Import_AlbumNameError_Message1} = "The name you entered is invalid or already in use.";
+{Import_AlbumNameError_Message2} = "Please change the name.";
+
+{Import_AlbumCharError_Message1} = "The following characters cannot be used.";
+{Import_AlbumCharError_Message2} = "/¥:*?<>|'";
+
+{Import_TrackFullErrorMusic_Message1} = "The album is full of tracks.";
+{Import_TrackFullErrorMusic_Message2} = "Please select another album.";
+{Import_TrackFullErrorPhoto_Message1} = "You have a lot of photos in your album.";
+{Import_TrackFullErrorPhoto_Message2} = "Please select another album.";
+
+{Import_SelectOverImportMusic_Message1} = "The album is full of tracks.";
+{Import_SelectOverImportMusic_Message2} = "Cant import some tracks";
+{Import_SelectOverImportMusic_Message3} = "Do you want to continue importing?";
+{Import_SelectOverImportPhoto_Message1} = "You have a lot of photos in your album.";
+{Import_SelectOverImportPhoto_Message2} = "Cant import some photos";
+{Import_SelectOverImportPhoto_Message3} = "Do you want to continue importing?";
+
+{Import_NoTrackErrorMusic_Message1} = "There are no tracks that can be operated.";
+{Import_NoTrackErrorPhoto_Message1} = "There are no photos that can be manipulated.";
+
+{Import_FatalErrorMusic_Message1} = "There are tracks that could not be imported.";
+{Import_FatalErrorMusic_Message2} = "Check the destination album.";
+{Import_FatalErrorPhoto_Message1} = "could not be captured.";
+{Import_FatalErrorPhoto_Message2} = "Make sure it is connected properly.";
+
+// PSX3GJ END
+

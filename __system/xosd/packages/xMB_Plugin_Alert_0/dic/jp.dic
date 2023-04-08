@@ -1,0 +1,7 @@
+﻿<?dic version="1.0" language="jp" size="3" ?>
+
+
+
+{Message} = "%i Unread Message";
+{Messages} = "%i Unread Messages";
+{Press_R3_to_go} = "Press the R3 button.";

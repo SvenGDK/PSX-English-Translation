@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<PSML2>
+
+	<Dll name="xText/xText" version="0.1.0" />
+
+	<Screen name="Message" visible="0" z_depth="-1">
+		<Text name="Text1" y="0" str="Could not get thumbnail information." shadow="0" spacing_v="6" alignment="center" />
+	</Screen>
+
+</PSML2>

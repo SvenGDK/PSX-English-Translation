@@ -1,0 +1,40 @@
+<?dic version="1.0" language="jp" size="50"?>
+{SHUFFLEPLAY} = "Shuffle Playback";
+
+{ALBUMTITLE} = "PSX Original Sound";
+{ALBUMPATH} = "/Preset/Music/PSXオリジナルサウンド";
+{MUSICPATH_001} = "/Preset/Music/PSXオリジナルサウンド/0101b_boogie_night.mp3";
+{MUSICPATH_002} = "/Preset/Music/PSXオリジナルサウンド/0102b_legacy_road.mp3";
+{MUSICPATH_003} = "/Preset/Music/PSXオリジナルサウンド/0103b_midnight_party.mp3";
+{MUSICPATH_004} = "/Preset/Music/PSXオリジナルサウンド/0104b_Party_of_love.mp3";
+{MUSICPATH_005} = "/Preset/Music/PSXオリジナルサウンド/0105b_Bossa_Samba_2004.mp3";
+{MUSICPATH_006} = "/Preset/Music/PSXオリジナルサウンド/0106b_Fairy_Airily_Mary.mp3";
+{MUSICPATH_007} = "/Preset/Music/PSXオリジナルサウンド/0201b_sea_wind.mp3";
+{MUSICPATH_008} = "/Preset/Music/PSXオリジナルサウンド/0202b_Oriental_mind.mp3";
+{MUSICPATH_009} = "/Preset/Music/PSXオリジナルサウンド/0203b_JungleParkTKO.mp3";
+{MUSICPATH_010} = "/Preset/Music/PSXオリジナルサウンド/0301b_Memories_of_you.mp3";
+{MUSICPATH_011} = "/Preset/Music/PSXオリジナルサウンド/0302b_Omoide.mp3";
+{MUSICPATH_012} = "/Preset/Music/PSXオリジナルサウンド/0303b_fragrance.mp3";
+{MUSICPATH_013} = "/Preset/Music/PSXオリジナルサウンド/0304b_another_days.mp3";
+{MUSICPATH_014} = "/Preset/Music/PSXオリジナルサウンド/0401b_Greeting_of_love.mp3";
+{MUSICPATH_015} = "/Preset/Music/PSXオリジナルサウンド/0402b_afternoon_tea.mp3";
+{MUSICPATH_016} = "/Preset/Music/PSXオリジナルサウンド/0403b_Calm_Song.mp3";
+{MUSICPATH_017} = "/Preset/Music/PSXオリジナルサウンド/0404b_Snapshot.mp3";
+{MUSICPATH_018} = "/Preset/Music/PSXオリジナルサウンド/0501b_wish.mp3";
+{MUSICPATH_019} = "/Preset/Music/PSXオリジナルサウンド/0502b_Poetry_of_sea_breeze.mp3";
+{MUSICPATH_020} = "/Preset/Music/PSXオリジナルサウンド/0601b_strikeBout_.mp3";
+{MUSICPATH_021} = "/Preset/Music/PSXオリジナルサウンド/0602b_glory.mp3";
+{MUSICPATH_022} = "/Preset/Music/PSXオリジナルサウンド/0603b_Fighting_Spirit.mp3";
+{MUSICPATH_023} = "/Preset/Music/PSXオリジナルサウンド/0701b_Pretty_Days.mp3";
+{MUSICPATH_024} = "/Preset/Music/PSXオリジナルサウンド/0702b_sleeping_baby.mp3";
+{MUSICPATH_025} = "/Preset/Music/PSXオリジナルサウンド/0703b_Straight_Story.mp3";
+{MUSICPATH_026} = "/Preset/Music/PSXオリジナルサウンド/0801b_chaos.mp3";
+{MUSICPATH_027} = "/Preset/Music/PSXオリジナルサウンド/0802b_Breathing_of_Gods.mp3";
+{MUSICPATH_028} = "/Preset/Music/PSXオリジナルサウンド/Cycling.mp3";
+{MUSICPATH_029} = "/Preset/Music/PSXオリジナルサウンド/Resort.mp3";
+{MUSICPATH_030} = "/Preset/Music/PSXオリジナルサウンド/MotorWave_realjuke.mp3";
+
+{BACK} = "Return";
+{CONFIRM} = "Confirm";
+{OPTION} = "Options";
+

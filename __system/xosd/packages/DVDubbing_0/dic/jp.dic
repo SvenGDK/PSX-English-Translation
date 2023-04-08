@@ -1,0 +1,29 @@
+<?dic version="1.0" language="jp" size="27"?>
+
+{Main_Title} = "DV→HDD Dubbing";
+{POP_START__TEXT_START} = "Start dubbing from the DV device. \nPlease set the audio and recording mode and start dubbing.";
+{POP_START__TEXT_SELECT_SOUND_MODE} = "Audio";
+{POP_START__TEXT_SELECT_REC_MODE} = "Recording mode";
+{POP_START__TEXT_CONNECT_DV_NAME} = "Connected device:";
+{POP_START__YES} = "Start dubbing";
+{POP_START__NO_NAME} = "Not available";
+{DLG__YES} = "Yes";
+{DLG__NO} = "No";
+{ENTER} = "Enter";
+{BACK} = "Return";
+{CANCEL} = "Cancel";
+{DLG_ROLLING_BACK_TAPE} = "Rewinding. \nPlease wait a moment.";
+{DLG_COPY_COMPLETE} = "Diving is finished.";
+{DLG_STOP_COPY} = "Stop diving. \nAre you sure?";
+{DLG_STOPED_COPY} = "I stopped diving.";
+{DLG_PRE60_REC} = "Start dubbing. \nHH:MM There is a scheduled recording at AM. \nScheduled recording cannot be performed during dubbing. \nAre you sure?";
+{DLG_PRE5_REC} = "Preparing for recording. \nTo perform dubbing, please delete the scheduled recording.";
+{DLG_PLAY_REC} = "Recording. \nDubbing is not possible.";
+{DLG_PLAY_REENCO} = "Optimization in progress. \nDubbing is not possible.";
+{DLG_UNKNOWN_DV} = "DV equipment cannot be recognized. \nDubbing stopped.";
+{DLG_NOINPUT_TAPE} = "There is no cassette in the DV device. \nDubbing stopped.";
+{DLG_CANNOT_CONTROL_DV} = "DV equipment cannot be controlled. \nDubbing stopped.";
+{DLG_COPY_FAITAL} = "Failed to copy.";
+{DLG_HDD_NO_CAPACITY} = "Insufficient hard disk space. \nPlease delete unnecessary titles, tracks and photos.";
+{DLG_TITLE_FULL} = "Full of titles. Please delete unnecessary titles.";
+{DLG_END} = "End dubbing.";

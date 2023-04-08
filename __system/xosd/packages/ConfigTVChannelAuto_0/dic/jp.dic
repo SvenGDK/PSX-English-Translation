@@ -1,0 +1,15 @@
+<?dic version="1.0" language="jp" size="14"?>
+{Main_Title} = "TV Settings";
+{Title_SettingStart} = "Automatic Channel Setting";
+{ENTER} = "Enter";
+{BACK} = "Return";
+{CANCEL} = "Cancel";
+{CLOSE} = "Close";
+{YES} = "Yes";
+{NO} = "No";
+{cell1_text0} = "Automatic channel setting in progress.";
+{cell1_text1} = "Do not turn off the power during setting.";
+{cell1_text2} = "Progress";
+{Message_Cancel} = "Execute automatic channel setting. \nAre you sure?";
+{Message_RecStanby} = "Less than 10 minutes left until recording reservation starts. \nAborting the current operation.";
+{Message_EPGStanby} = "We will start getting program information soon. \nAborting the current operation.";

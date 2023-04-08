@@ -1,0 +1,56 @@
+﻿<?dic version="1.0" language="jp" size="50" ?>
+
+{E-Distribution} = "Network Download";
+{Agreement_title} = "Download Agreement";
+{Login_title} = "Billing Login";
+{Download_title} = "Download Information";
+{GameNameStr} = "Game";
+{Download_Str} = "Download";
+{Information_Str} = "Information";
+{GamePartitionError} = "Start the game and set the Enable HDD option\nbefore downloading this package";
+{LoginScreen} = "You must log in to continue.";
+{LoginScreenUserName} = "Enter your user name.";
+{LoginScreenPassword} = "Enter your 4-digit password.";
+{LoginProgress} = "Processing login information. Please wait…";
+{LoginError} = "A login error has occurred.";
+{PurchaseError} = "An error has occurred in processing your purchase.";
+{DownloadInfoDescription} = "Description";
+{DownloadInfoTotalSize} = "Total Size";
+{DownloadInfoVersionNumber} = "Version Number";
+{DownloadInfoRelease Date} = "Released";
+
+{MemoryCardNotInserted} = "There is no memory card inserted.\nInsert a memory card (PS2) and try again.";
+{MemoryCardNotFormated} = "The memory card is not formatted.\nGo to Saved Data Utility to format.";
+{MemoryCardNoFreeSpace} = "There is not enough free space on the memory card.\nInsert a memory card (PS2) with enough space.";
+{MemoryCardWrongCardType} = "This is not a memory card (PS2).\nInsert a memory card (PS2) and try again.";
+{MemoryCardFileExist} = "There is a file with the same name\non the memory card.\nDo you want to overwrite?";
+
+{HDDNoHDD} = "This download requires a hard disk.";
+{HDDNoFreeSpace} = "The hard disk does not have enough free space.";
+{HDDFileExist} = "There is a file with the same name\non the hard disk.\nDo you want to overwrite?";
+{HDDPartitionError} = "Start the game and set the Enable HDD option\nbefore downloading.";
+{BILLINGNotEnoughToken} = "There are not enough tokens. Go to Account Manager to purchase tokens.";
+{BILLINGLoginFail} = "The login failed.";
+{BILLINGLoginCancel} = "The login was cancelled.";
+{BILLINGPurchaseFail} = "The purchase could not be completed.";
+{BILLINGPurchaseAlready} = "This item has already been purchased.";
+
+{DOWNLOADFail} = "The download could not be completed.";
+{DOWNLOADCANCEL} = "The download was cancelled.";
+{INSTALLFail} = "The install could not be completed.";
+{NETWORKNotUp} = "The network is not available now.";
+
+{SelectMC} = "Please select Memory Card to Download";
+{DisagreeWarning} = "If you Disagree, you will exit, Are you sure want to exit?";
+{InstallWarning} = "Dont turn off the power or remove Memory Card";
+{ConnectingWarning} = "Please wait till for network to connect";
+{Downloading} = "Downloading...";
+{DownlOadError} = "Download Error!";
+{PowerWarning} = "Dont turn off the power";
+{InstallError} = "Install Error!";
+{CancelDownload} = "Are you sure you want to cancel download?";
+{Description} = "Description";
+{TotalSize} = "Total Size";
+{VersionNumber} = "Version Number";
+{ReleaseDate} = "Release Date";
+{Complete} = "Complete!";

@@ -1,0 +1,23 @@
+<?dic version="1.0" language="jp" size="19" ?>
+
+
+
+{Label_Previous_men2} = "Previous";
+{Label_Next_men2} = "Next";
+{Label_Play_men2} = "Play";
+{Label_Pause_men2} = "Pause";
+{Label_Stop_men2} = "Stop";
+{Label_RotLeft_men1} = "Rotate Left";
+{Label_RotLRight_men1} = "Rotate Right";
+{Label_Random_men1} = "Random";
+{Label_BT_men1} = "Use as Icon";
+{Label_EMS_men1} = "Export";
+{Label_Import_men1} = "Import";
+{Label_Delete_men1} = "Delete";
+{Label_Display_men1} = "Information";
+{no_next_data} = "There is no data available.";
+{no_prev_data} = "There is no data available.";
+{empty_album} = "There are not enough photos in this album to do a slideshow.";
+{thumbnail_jpeg} = "Registered as an album jpeg.";
+{thumbnail_mpeg} = "Registered as an album mpeg.";
+{NotSupported} = "This photo cannot be operated.";

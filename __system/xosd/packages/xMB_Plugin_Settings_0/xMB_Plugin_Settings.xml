@@ -1,0 +1,365 @@
+﻿<?xml version="1.0"?>
+<App name="PSXSettings" native="xMB_Plugin_Settings/xMB_Plugin_Settings" z_depth="-5">
+
+	<Dll name="xStr/xStr" version="0.1.0" />
+
+    <Dic name="settings" filepath="pack:xMB_Plugin_Settings/0.1.0/dic" default="yes" />
+
+	<Component name="Config">
+
+		<!-- DVDの設定 -->
+		<String name="Conf_2" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-DVD.png">
+			<String name="Conf_2_0"> <!-- DVDメニュー表示言語 -->
+				<String name="Conf_2_0_0" />  <!-- 日本語 -->
+				<String name="Conf_2_0_1" />  <!-- 英語 -->
+				<String name="Conf_2_0_2" />  <!-- 中国語 -->
+				<String name="Conf_2_0_3" />  <!-- ドイツ語 -->
+				<String name="Conf_2_0_4" />  <!-- フランス語 -->
+				<String name="Conf_2_0_5" />  <!-- イタリア語 -->
+				<String name="Conf_2_0_6" />  <!-- スペイン語 -->
+				<String name="Conf_2_0_7" />  <!-- ポルトガル語 -->
+				<String name="Conf_2_0_8" />  <!-- オランダ語 -->
+				<String name="Conf_2_0_9" />  <!-- デンマーク語 -->
+				<String name="Conf_2_0_10" /> <!-- スウェーデン語 -->
+				<String name="Conf_2_0_11" /> <!-- フィンランド語 -->
+				<String name="Conf_2_0_12" /> <!-- ノルウェー語 -->
+				<String name="Conf_2_0_13" /> <!-- ロシア語 -->
+				<String name="Conf_2_0_14" /> <!-- 韓国語 -->
+				<String name="Conf_2_0_15" /> <!-- 言語一覧 -->
+			</String>
+			<String name="Conf_2_1"> <!-- 音声言語 -->
+				<String name="Conf_2_1_0" />  <!-- 日本語 -->
+				<String name="Conf_2_1_1" />  <!-- 英語 -->
+				<String name="Conf_2_1_2" />  <!-- 中国語 -->
+				<String name="Conf_2_1_3" />  <!-- ドイツ語 -->
+				<String name="Conf_2_1_4" />  <!-- フランス語 -->
+				<String name="Conf_2_1_5" />  <!-- イタリア語 -->
+				<String name="Conf_2_1_6" />  <!-- スペイン語 -->
+				<String name="Conf_2_1_7" />  <!-- ポルトガル語 -->
+				<String name="Conf_2_1_8" />  <!-- オランダ語 -->
+				<String name="Conf_2_1_9" />  <!-- デンマーク語 -->
+				<String name="Conf_2_1_10" /> <!-- スウェーデン語 -->
+				<String name="Conf_2_1_11" /> <!-- フィンランド語 -->
+				<String name="Conf_2_1_12" /> <!-- ノルウェー語 -->
+				<String name="Conf_2_1_13" /> <!-- ロシア語 -->
+				<String name="Conf_2_1_14" /> <!-- 韓国語 -->
+				<String name="Conf_2_1_15" /> <!-- 言語一覧 -->
+			</String>
+			<String name="Conf_2_2"> <!-- 字幕言語 -->
+				<String name="Conf_2_2_0" />  <!-- 日本語 -->
+				<String name="Conf_2_2_1" />  <!-- 英語 -->
+				<String name="Conf_2_2_2" />  <!-- 中国語 -->
+				<String name="Conf_2_2_3" />  <!-- ドイツ語 -->
+				<String name="Conf_2_2_4" />  <!-- フランス語 -->
+				<String name="Conf_2_2_5" />  <!-- イタリア語 -->
+				<String name="Conf_2_2_6" />  <!-- スペイン語 -->
+				<String name="Conf_2_2_7" />  <!-- ポルトガル語 -->
+				<String name="Conf_2_2_8" />  <!-- オランダ語 -->
+				<String name="Conf_2_2_9" />  <!-- デンマーク語 -->
+				<String name="Conf_2_2_10" /> <!-- スウェーデン語 -->
+				<String name="Conf_2_2_11" /> <!-- フィンランド語 -->
+				<String name="Conf_2_2_12" /> <!-- ノルウェー語 -->
+				<String name="Conf_2_2_13" /> <!-- ロシア語 -->
+				<String name="Conf_2_2_14" /> <!-- 韓国語 -->
+				<String name="Conf_2_2_15" /> <!-- 音声連動 -->
+				<String name="Conf_2_2_16" /> <!-- 言語一覧 -->
+			</String>
+
+			<String name="Conf_2_3">				<!-- プログレッシブ出力 -->
+				<String name="Conf_2_3_0" />			<!-- 入 -->
+				<String name="Conf_2_3_1" />			<!-- 切 -->
+			</String>
+			<String name="Conf_2_4">				<!-- ドルビーデジタル -->
+				<String name="Conf_2_4_0" />			<!-- 入 -->
+				<String name="Conf_2_4_1" />			<!-- 切 -->
+			</String>
+			<String name="Conf_2_5">				<!-- DTS -->
+				<String name="Conf_2_5_0" />			<!-- 入 -->
+				<String name="Conf_2_5_1" />			<!-- 切 -->
+			</String>
+			<String name="Conf_2_6">				<!-- 音声トラック自動選定 -->
+				<String name="Conf_2_6_0" />			<!-- 入 -->
+				<String name="Conf_2_6_1" />			<!-- 切 -->
+			</String>
+			<String name="Conf_2_7" />				<!-- 視聴年齢制限暗証番号 -->
+			<String name="Conf_2_8" />				<!-- 視聴年齢制限使用地域 -->
+			<String name="Conf_2_9" />				<!-- 視聴年齢制限のレベル -->
+		</String>
+
+		<!-- フォトの設定 -->
+		<String name="Conf_3" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-Photo.png">
+			<String name="Conf_3_0">			<!-- スライドショーBGM -->
+				<String name="Conf_3_0_0" />	<!-- 切 -->
+				<String name="Conf_3_0_1" />	<!-- Music1 -->
+				<String name="Conf_3_0_2" />	<!-- Music2 -->
+				<String name="Conf_3_0_3" />	<!-- Music3 -->
+			</String>
+			<String name="Conf_3_1">			<!-- スライドショー効果 -->
+				<String name="Conf_3_1_0" />	<!-- 切 -->
+				<String name="Conf_3_1_1" />	<!-- 効果1 -->
+				<String name="Conf_3_1_2" />	<!-- 効果2 -->
+			</String>
+		</String>
+
+		<!-- ミュージックの設定 -->
+		<String name="Conf_4" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-Music.png">
+			<String name="Conf_4_0">			<!-- CD取り込み設定 -->
+				<String name="Conf_4_0_0" />	<!-- 132kbps -->
+				<String name="Conf_4_0_1" />	<!-- 105kbps -->
+				<String name="Conf_4_0_2" />	<!-- 66kbps -->
+			</String>
+		</String>
+
+		<!-- ゲームの設定 -->
+		<String name="Conf_5" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-Game.png">
+			<String name="Conf_5_0">			<!-- PlayStation Discの高速読み込み -->
+				<String name="Conf_5_0_0" />	<!-- 入 -->
+				<String name="Conf_5_0_1" />	<!-- 切 -->
+			</String>
+			<String name="Conf_5_1">			<!-- PlayStation Discのテクスチャ補間 -->
+				<String name="Conf_5_1_0" />	<!-- 入 -->
+				<String name="Conf_5_1_1" />	<!-- 切 -->
+			</String>
+		</String>
+
+		<!-- 本体の設定 -->
+		<String name="Conf_6" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-Console.png">
+			<String name="Conf_6_0">			<!-- TVタイプ -->
+				<String name="Conf_6_0_0" />		<!-- 16:9 -->
+				<String name="Conf_6_0_1" />		<!-- 4:3 レターボックス -->
+				<String name="Conf_6_0_2" />		<!-- 4:3 パンスキャン -->
+			</String>
+			<String name="Conf_6_1">			<!-- DNR -->
+				<String name="Conf_6_1_0" />		<!-- 切 -->
+				<String name="Conf_6_1_1" />		<!-- DNR1 -->
+				<String name="Conf_6_1_2" />		<!-- DNR2 -->
+			</String>
+			<String name="Conf_6_2">			<!-- 輪郭強調 -->
+				<String name="Conf_6_2_0" />		<!-- 2 -->
+				<String name="Conf_6_2_1" />		<!-- 1 -->
+				<String name="Conf_6_2_2" />		<!-- 0 -->
+			</String>
+			<String name="Conf_6_3">			<!-- 一時停止モード -->
+				<String name="Conf_6_3_0" />		<!-- 自動 -->
+				<String name="Conf_6_3_1" />		<!-- フレーム -->
+			</String>
+			<String name="Conf_6_4" />			<!-- 出荷時設定に戻す -->
+			<String name="Conf_6_5" />			<!-- HDD領域設定 -->
+			<String name="Conf_6_6" />			<!-- 情報表示 -->
+			<String name="Conf_6_7" />			<!-- PSXについて -->
+		 </String>
+
+		<!-- 日付と時刻の設定 -->
+		<String name="Conf_7" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-System.png">
+			<String name="Conf_7_0" />			<!-- 時刻設定 -->
+			<String name="Conf_7_1">			<!-- ジャストクロック -->
+				<String name="Conf_7_1_0" />		<!-- 入 -->
+				<String name="Conf_7_1_1" />		<!-- 切 -->
+			</String>
+			<String name="Conf_7_2">			<!-- 設定チャンネル -->
+				<String name="dummy CH" />
+			</String>
+		</String>
+
+		<!-- 文字入力の設定 -->
+		<String name="Conf_8" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-IM.png">
+			<String name="Conf_8_0" />			<!-- 語句設定 -->
+			<String name="Conf_8_1">			<!-- 日本語入力 -->
+				<String name="Conf_8_1_0" />		<!-- ローマ字入力 -->
+				<String name="Conf_8_1_1" />		<!-- かな入力 -->
+			</String>
+			<String name="Conf_8_2">			<!-- キーバインド -->
+				<String name="Conf_8_2_0" />		<!-- 設定1 -->
+				<String name="Conf_8_2_1" />		<!-- 設定2 -->
+			</String>
+		</String>
+
+		<!-- リモコンの設定 -->
+		<String name="Conf_9" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-Remocon.png">
+			<String name="Conf_9_0">			<!-- リモコンモード -->
+				<String name="Conf_9_0_0" />	<!-- 1 -->
+				<String name="Conf_9_0_1" />	<!-- 2 -->
+				<String name="Conf_9_0_2" />	<!-- 3 -->
+			</String>
+			<String name="Conf_9_1">			<!-- ゲームプレイ機能 -->
+				<String name="Conf_9_1_0" />	<!-- 入 -->
+				<String name="Conf_9_1_1" />	<!-- 切 -->
+			</String>
+			<String name="Conf_9_2">			<!-- 受光部の設定 -->
+				<String name="Conf_9_2_0" />	<!-- 前面 + 天面 -->
+				<String name="Conf_9_2_1" />	<!-- 前面 -->
+				<String name="Conf_9_2_2" />	<!-- 天面 -->
+			</String>
+		</String>
+
+		<!-- キーボードの設定 -->
+		<String name="Conf_10" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-Kbd.png">
+
+			<String name="Conf_10_0">			<!-- タイプ -->
+				<String name="Conf_10_0_0" />	<!-- 日本語キーボード -->
+				<String name="Conf_10_0_1" />	<!-- 英語キーボード -->
+			</String>
+			<String name="Conf_10_1">			<!-- リピート開始時間 -->
+				<String name="Conf_10_1_0" />	<!-- 短い -->
+				<String name="Conf_10_1_1" />	<!-- 標準 -->
+				<String name="Conf_10_1_2" />	<!-- 長い -->
+			</String>
+			<String name="Conf_10_2">			<!-- キーリピートの速さ -->
+				<String name="Conf_10_2_0" />	<!-- 遅い -->
+				<String name="Conf_10_2_1" />	<!-- 標準 -->
+				<String name="Conf_10_2_2" />	<!-- 速い -->
+			</String>
+		</String>
+
+		<!-- ネットワークの設定 -->
+		<String name="Conf_11" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-Network.png" />
+		<!-- ネットワークアップデート -->
+		<String name="Conf_12" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-SystemUpdate.png" />
+		<!-- かんたん設定 -->
+		<String name="Conf_13" str="pack:xMB_Plugin_Settings/0.1.0/art/Nail-Conf-EasySettings.png" />
+	</Component>
+
+	<String name="Parental_Level_Off" str="{Conf_Term_ParentalLevel_Off}" />		<!-- 切 -->
+	<String name="Parental_Area_America" str="{Conf_Term_ParentalArea_America}" />		<!-- アメリカ -->
+	<String name="Parental_Area_Others"  str="{Conf_Term_ParentalArea_Others}" />		<!-- その他 -->
+
+	<Component name="DVD_Language">
+		<String name="DVDLang_13" str="Afar" />
+		<String name="DVDLang_14" str="Abkhazian" />
+		<String name="DVDLang_15" str="Afrikaans" />
+		<String name="DVDLang_16" str="Amharic" />
+		<String name="DVDLang_17" str="Arabic" />
+		<String name="DVDLang_18" str="Assamese" />
+		<String name="DVDLang_19" str="Aymara" />
+		<String name="DVDLang_20" str="Azerbaijani" />
+		<String name="DVDLang_21" str="Bashkir" />
+		<String name="DVDLang_22" str="Byelorussian" />
+		<String name="DVDLang_23" str="Bulgarian" />
+		<String name="DVDLang_24" str="Bihari" />
+		<String name="DVDLang_25" str="Bislama" />
+		<String name="DVDLang_26" str="Bengali;Bangla" />
+		<String name="DVDLang_27" str="Tibetan" />
+		<String name="DVDLang_28" str="Breton" />
+		<String name="DVDLang_29" str="Catalan" />
+		<String name="DVDLang_30" str="Corsican" />
+		<String name="DVDLang_31" str="Czech" />
+		<String name="DVDLang_32" str="Welsh" />
+		<String name="DVDLang_33" str="Danish" />
+		<String name="DVDLang_34" str="German" />
+		<String name="DVDLang_35" str="Bhutani" />
+		<String name="DVDLang_36" str="Greek" />
+		<String name="DVDLang_37" str="English" />
+		<String name="DVDLang_38" str="Esperanto" />
+		<String name="DVDLang_39" str="Spanish" />
+		<String name="DVDLang_40" str="Estonian" />
+		<String name="DVDLang_41" str="Basque" />
+		<String name="DVDLang_42" str="Persian" />
+		<String name="DVDLang_43" str="Finnish" />
+		<String name="DVDLang_44" str="Fiji" />
+		<String name="DVDLang_45" str="Faeroese" />
+		<String name="DVDLang_46" str="French" />
+		<String name="DVDLang_47" str="Frisian" />
+		<String name="DVDLang_48" str="Irish" />
+		<String name="DVDLang_49" str="Scot73,Gaelic" />
+		<String name="DVDLang_50" str="Galician" />
+		<String name="DVDLang_51" str="Guarani" />
+		<String name="DVDLang_52" str="Gujarati" />
+		<String name="DVDLang_53" str="Hausa" />
+		<String name="DVDLang_54" str="Hindi" />
+		<String name="DVDLang_55" str="Croatian" />
+		<String name="DVDLang_56" str="Hungarian" />
+		<String name="DVDLang_57" str="Armenian" />
+		<String name="DVDLang_58" str="Interlingua" />
+		<String name="DVDLang_59" str="Interlingue" />
+		<String name="DVDLang_60" str="Inupiak" />
+		<String name="DVDLang_61" str="Indonesian" />
+		<String name="DVDLang_62" str="Icelandic" />
+		<String name="DVDLang_63" str="Italian" />
+		<String name="DVDLang_64" str="Hebrew" />
+		<String name="DVDLang_65" str="Japanese" />
+		<String name="DVDLang_66" str="Yiddish" />
+		<String name="DVDLang_67" str="Javanese" />
+		<String name="DVDLang_68" str="Georgian" />
+		<String name="DVDLang_69" str="Kazakh" />
+		<String name="DVDLang_70" str="Greenlandic" />
+		<String name="DVDLang_71" str="Cambodian" />
+		<String name="DVDLang_72" str="Kannada" />
+		<String name="DVDLang_73" str="Korean" />
+		<String name="DVDLang_74" str="Kashmiri" />
+		<String name="DVDLang_75" str="Kurdish" />
+		<String name="DVDLang_76" str="Kirghiz" />
+		<String name="DVDLang_77" str="Latin" />
+		<String name="DVDLang_78" str="Lingala" />
+		<String name="DVDLang_79" str="Laothian" />
+		<String name="DVDLang_80" str="Lithuanian" />
+		<String name="DVDLang_81" str="Latvian,Lettish" />
+		<String name="DVDLang_82" str="Malagasy" />
+		<String name="DVDLang_83" str="Maori" />
+		<String name="DVDLang_84" str="Macedonian" />
+		<String name="DVDLang_85" str="Malayalam" />
+		<String name="DVDLang_86" str="Mongolian" />
+		<String name="DVDLang_87" str="Moldavian" />
+		<String name="DVDLang_88" str="Marathi" />
+		<String name="DVDLang_89" str="Malay" />
+		<String name="DVDLang_90" str="Maltese" />
+		<String name="DVDLang_91" str="Burmese" />
+		<String name="DVDLang_92" str="Nauru" />
+		<String name="DVDLang_93" str="Nepali" />
+		<String name="DVDLang_94" str="Dutch" />
+		<String name="DVDLang_95" str="Norwegian" />
+		<String name="DVDLang_96" str="Occitan" />
+		<String name="DVDLang_97" str="(Afan),Oromo" />
+		<String name="DVDLang_98" str="Oriya" />
+		<String name="DVDLang_99" str="Punjabi" />
+		<String name="DVDLang_100" str="Polish" />
+		<String name="DVDLang_101" str="Pashto,Pushto" />
+		<String name="DVDLang_102" str="Portuguese" />
+		<String name="DVDLang_103" str="Quechua" />
+		<String name="DVDLang_104" str="Rhaeto-Romance" />
+		<String name="DVDLang_105" str="Kirundi" />
+		<String name="DVDLang_106" str="Romanian" />
+		<String name="DVDLang_107" str="Russian" />
+		<String name="DVDLang_108" str="Kinyarwanda" />
+		<String name="DVDLang_109" str="Sanskrit" />
+		<String name="DVDLang_110" str="Sindhi" />
+		<String name="DVDLang_111" str="Sangro" />
+		<String name="DVDLang_112" str="Serbo-Croatian" />
+		<String name="DVDLang_113" str="Singhalese" />
+		<String name="DVDLang_114" str="Slovak" />
+		<String name="DVDLang_115" str="Slovenian" />
+		<String name="DVDLang_116" str="Samoan" />
+		<String name="DVDLang_117" str="Shona" />
+		<String name="DVDLang_118" str="Somali" />
+		<String name="DVDLang_119" str="Albanian" />
+		<String name="DVDLang_120" str="Serbian" />
+		<String name="DVDLang_121" str="Siswati" />
+		<String name="DVDLang_122" str="Sesotho" />
+		<String name="DVDLang_123" str="Sundanese" />
+		<String name="DVDLang_124" str="Swedish" />
+		<String name="DVDLang_125" str="Swahili" />
+		<String name="DVDLang_126" str="Tamil" />
+		<String name="DVDLang_127" str="Tegulu" />
+		<String name="DVDLang_128" str="Tajik" />
+		<String name="DVDLang_129" str="Thai" />
+		<String name="DVDLang_130" str="Tigrinya" />
+		<String name="DVDLang_131" str="Turkmen" />
+		<String name="DVDLang_132" str="Tagalog" />
+		<String name="DVDLang_133" str="Setswana" />
+		<String name="DVDLang_134" str="Tonga" />
+		<String name="DVDLang_135" str="Turkish" />
+		<String name="DVDLang_136" str="Tsonga" />
+		<String name="DVDLang_137" str="Tatar" />
+		<String name="DVDLang_138" str="Twi" />
+		<String name="DVDLang_139" str="Ukrainian" />
+		<String name="DVDLang_130" str="Urdu" />
+		<String name="DVDLang_131" str="Uzbek" />
+		<String name="DVDLang_132" str="Vietnamese" />
+		<String name="DVDLang_133" str="Volapuk" />
+		<String name="DVDLang_134" str="Wolof" />
+		<String name="DVDLang_135" str="Xhosa" />
+		<String name="DVDLang_136" str="Yoruba" />
+		<String name="DVDLang_137" str="Chinese" />
+		<String name="DVDLang_138" str="Zulu" />
+	</Component>
+
+</App>

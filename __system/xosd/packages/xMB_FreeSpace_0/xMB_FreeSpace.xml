@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<App name="xMB_FreeSpace" native="xMB_FreeSpace/xMB_FreeSpace">
+
+  <Component name="freespace" w="235"  z_depth="1">
+    <Bitmap name="carpet" file="art/FreeSpaceCarpet-w235.tga" x2d="488" y2d="0" h="480" />
+    <Bitmap3x3 name="bar0" file="art/FreeSpaceBase.tga" corner_w="0" corner_h="61" h="170" x2d="526">
+      <Bitmap name="bar1" file="art/FreeSpaceCurrent.tga" />
+    </Bitmap3x3>
+    <Text  name="text0" str="Disk remaining 100%" x2d="508" y2d="137" />
+    <Text name="text1" str="03H02M" x2d="579" y2d="173">
+      <Bitmap name="bitmap" file="art/RecMode_HQ_917.tga" x="-20" y="-5" />
+    </Text>
+    <Text name="text2" str="04H00M" x2d="579" y2d="202">
+      <Bitmap name="bitmap" file="art/RecMode_HSP_917.tga" x="-20" y="-5" />
+    </Text>
+    <Text name="text3" str="06H31M" x2d="579" y2d="231">
+      <Bitmap name="bitmap" file="art/RecMode_SP_917.tga" x="-20" y="-5" />
+    </Text>
+    <Text name="text4" str="08H00M" x2d="579" y2d="260">
+      <Bitmap name="bitmap" file="art/RecMode_LP_917.tga" x="-20" y="-5" />
+    </Text>
+    <Text name="text5" str="12H56M" x2d="579" y2d="289">
+      <Bitmap name="bitmap" file="art/RecMode_EP_917.tga" x="-20" y="-5" />
+    </Text>
+    <Text name="text6" str="18H00M" x2d="579" y2d="318">
+      <Bitmap name="bitmap" file="art/RecMode_SLP_917.tga" x="-20" y="-5" />
+    </Text>
+  </Component>
+ 
+  <Component name="freespace_tv" w="235"  z_depth="1">
+	<Bitmap3x3 name="bar0" file="art/FreeSpaceBase.tga" corner_w="0" corner_h="61" h="170" x="174" y="85">
+		<Bitmap name="bar1" file="art/FreeSpaceCurrent.tga" />
+	</Bitmap3x3>
+	<Text  name="text0" str="Disk remaining 100%" x="156" y="-103" rgba="ffffffff" />
+	<Text name="text1" str="03H02M" x="227" y="-67" rgba="ffffffff" />
+	<Text name="text2" str="04H00M" x="227" y="-38" rgba="ffffffff" />
+	<Text name="text3" str="06H31M" x="227" y="-9" rgba="ffffffff" />
+	<Text name="text4" str="08H00M" x="227" y="20" rgba="ffffffff" />
+	<Text name="text5" str="12H56M" x="227" y="49" rgba="ffffffff" />
+	<Text name="text6" str="18H00M" x="227" y="78" rgba="ffffffff" />
+	<Bitmap name="carpet" file="art/FreeSpace-TV.png" trans_mode="1" x="233.0" y="0.0" rgba="FFFFFFFF" />
+  </Component>
+  
+</App>
+

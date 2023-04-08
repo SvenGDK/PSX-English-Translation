@@ -1,0 +1,50 @@
+﻿<?dic version="1.0" language="jp" size="44" ?>
+
+{MusSetting.Label} = "Music Settings";
+
+{MusSetting.Encoding} = "CD Import Setting";
+
+{MusSetting.Encoding.0} = "132 kbps (HQ)";
+{MusSetting.Encoding.1} = "105 kbps";
+{MusSetting.Encoding.2} = "66 kbps";
+
+{Default.Title} = "Misc";
+{Default.Artist} = "Misc";
+{Default.Genre} = "Misc";
+
+{Genre.0} = "None";
+{Genre.10} = "Soul";
+{Genre.11} = "R&B";
+{Genre.12} = "Hip Hop";
+{Genre.20} = "Rock";
+{Genre.21} = "Hard Rock";
+{Genre.22} = "Progressive";
+{Genre.23} = "New wave";
+{Genre.24} = "Punk";
+{Genre.25} = "Core";
+{Genre.30} = "Jazz";
+{Genre.31} = "Latin";
+{Genre.32} = "Fusion";
+{Genre.40} = "Pop";
+{Genre.51} = "Disco";
+{Genre.52} = "Eurobeat";
+{Genre.53} = "House";
+{Genre.54} = "Reggae/Ska";
+{Genre.55} = "Techno";
+{Genre.56} = "Trance";
+{Genre.57} = "Breakbeats";
+{Genre.58} = "Drum n Base";
+{Genre.61} = "Folk";
+{Genre.62} = "Country";
+{Genre.63} = "World";
+{Genre.64} = "New Age";
+{Genre.65} = "Children";
+{Genre.66} = "Sound Track";
+{Genre.67} = "Classic";
+{Genre.71} = "J-Pop";
+{Genre.72} = "J-Ballad";
+{Genre.73} = "J-Idol";
+{Genre.74} = "J-New Music";
+{Genre.75} = "J-Group Sounds";
+{Genre.76} = "J-Enka";
+{Genre.77} = "J-Anime";

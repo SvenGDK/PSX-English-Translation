@@ -1,0 +1,4 @@
+<?dic version="1.0" language="jp" size="1"?>
+
+{RepairMsg} = "Repair in progress. \nPlease wait a moment.";
+

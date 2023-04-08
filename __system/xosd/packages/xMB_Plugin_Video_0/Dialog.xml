@@ -1,0 +1,109 @@
+﻿<?xml version="1.0"?>
+<PSML2>
+
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xButton/xButton" version="0.1.0" />
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+
+	<Screen name="Message" visible="0" z_depth="-1">
+		<Text name="Text" size="16" spacing_v="8" rgba="{*::TextRGBA.Normal}" />
+	</Screen>
+
+	<Screen name="YesOrNo" visible="0" z_depth="-1" focus="ButtonNo">
+
+		<Text name="Text" size="16" spacing_v="8" rgba="{*::TextRGBA.Normal}" />
+
+		<Button name="ButtonYes" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0" />
+			</FocusOn>
+			<FocusOff><Text str="Yes" rgba="{*::TextRGBA.Normal}" alignment="center" /></FocusOff>
+		</Button>
+		<Button name="ButtonNo" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0" />
+			</FocusOn>
+			<FocusOff><Text str="nNo" rgba="{*::TextRGBA.Normal}" alignment="center"/></FocusOff>
+		</Button>
+	</Screen>
+
+	<Screen name="VideoInfo" visible="0" z_depth="-1">
+
+		<Bitmap name="Icon" x="-180" y="-106" w="108" h="81" />
+
+		<Text str="Title name :" x="-80" y="-120" rgba="c0c0c0ff" />
+		<Text name="title" x="-80" y="-90" rgba="{*::TextRGBA.Normal}" />
+
+		<Bitmap name="Omakase" file="art/ICN_heart_special.png" x="-122" y="-73" visible="0" />
+
+		<Bitmap name="GG" file="art/ICN_GG.png" x="240" y="-76" visible="0" />
+
+		<Component name="left_item" x="-310">
+
+			<Text str="Recording start date and time :"        y="-36" alignment="left" rgba="c0c0c0ff" />
+			<Text name="Date_Start"  x="118"  y="-36" rgba="{*::TextRGBA.Normal}" />
+
+			<Text str="Recording end date and time :"        y="-12" alignment="left" rgba="c0c0c0ff" />
+			<Text name="Date_End"    x="118"  y="-12" rgba="{*::TextRGBA.Normal}" />
+
+			<Text str="Play time :"          y="12" alignment="left" rgba="c0c0c0ff" />
+			<Text name="Time"        x="118"  y="12" rgba="{*::TextRGBA.Normal}" />
+
+			<Component name="EDIT"          y="36" visible="0">
+				<Text str="( After editing :                       )" rgba="c0c0c0ff" />
+				<Text name="EditedTime" x="118" rgba="{*::TextRGBA.Normal}" />
+			</Component>
+
+			<Component name="Block">
+
+				<Text str="Recording mode :"          y="60" alignment="left" rgba="c0c0c0ff" />
+				<Bitmap name="RecMode"   x="130" y="56" rgba="{*::TextRGBA.Normal}" />
+				<Text name="RecModePRW" str="（For DVD+RW）" x="142" y="60" size="14" visible="0" />
+
+				<Text str="Voice Mode :"          y="84" alignment="left" rgba="c0c0c0ff" />
+				<Bitmap name="SndMode"   x="145" y="80" rgba="{*::TextRGBA.Normal}" />
+
+				<Text str="Dubbing :"            y="108" alignment="left" rgba="c0c0c0ff" />
+				<Text name="Dubbing"     x="118"  y="108" rgba="{*::TextRGBA.Normal}" />
+
+				<Text str="Broadcaster :"              y="132" alignment="left" rgba="c0c0c0ff" />
+				<Text name="BCName"      x="118"  y="132" rgba="{*::TextRGBA.Normal}" />
+				<Bitmap name="PhotoStory" file="art/photostory.png"  x="150" y="128" />
+
+				<Text str="Genre :"            y="156" alignment="left" rgba="c0c0c0ff" />
+				<Text name="Genre"      x="118"   y="156" rgba="{*::TextRGBA.Normal}" />
+			</Component>
+		</Component>
+
+		<Bitmap name="RecMode" file="art/line_02.png"  x="-3" y="56" h="220" />
+
+		<Component name="right_item" x="30">
+
+			<Text name="ProtectWord" str="Protected :"          y="-36" alignment="left" />
+			<Text name="Protect"      x="138" y="-36" rgba="{*::TextRGBA.Normal}" />
+
+			<Text name="AutoDeletionWord" str="Auto Erase :"            y="-12" alignment="left" />
+			<Bitmap name="AutoDeletion" file="art/ICN_trashbox.png" x="148" y="-14" />
+
+			<Text name="EditingWord" str="Edited :"                y="12" alignment="left" />
+			<Text name="Editing"      x="138" y="12" rgba="{*::TextRGBA.Normal}" />
+
+			<Text name="SportsExtWord" str="Sports Extension :"        y="36" alignment="left" />
+			<Text name="SportsExt"    x="138" y="36" rgba="{*::TextRGBA.Normal}" />
+
+			<Text name="ProgramChaseWord" str="Program tracking:"            y="60" alignment="leftt" />
+			<Text name="ProgramChase" x="138" y="60" rgba="{*::TextRGBA.Normal}" />
+
+			<Text name="OMAKASEKeywordWord" str="Omakase Keywords:"  y="84" alignment="left" />
+			<Text name="OMAKASEKeyword" x="222" y="104" max_w="146" visible="0" rgba="{*::TextRGBA.Normal}" alignment="right" />
+			<Bitmap name="OSUSUME_ICON" file="art/osusume_01.png" x="207" y="80" visible="0" />
+
+		</Component>
+
+	</Screen>
+
+</PSML2>

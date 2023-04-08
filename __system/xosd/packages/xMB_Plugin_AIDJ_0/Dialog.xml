@@ -1,0 +1,168 @@
+﻿<?xml version="1.0"?>
+<PSML2>
+
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xButton/xButton" version="0.1.0" />
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+
+	<Screen name="Mu1-6" visible="0" z_depth="-1">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="No capacity to take(LPCM)。" shadow="0" />
+	</Screen>
+
+	<Screen name="Mu2-11" visible="0" z_depth="-1">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="DJ Registration Screen" shadow="0" />
+	</Screen>
+
+	<Screen name="Mu2-12" visible="0" z_depth="-1" focus="ButtonYes">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="Cancels DJ registration." y="0"  shadow="0" spacing_v="6" alignment="center" />
+		<Text name="Text2" str="Is this OK?" y="0"  shadow="0" spacing_v="6" alignment="center" />
+
+		<Button name="ButtonYes" x="-60" y="60" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="80" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="Yes" alignment="center"/></FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="60" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="No" alignment="center"/></FocusOff>
+		</Button>
+	</Screen>
+
+	<Screen name="Mu4-5-1" visible="0" z_depth="-1" focus="ButtonYes">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="Register as a DJ." y="0"  shadow="0" spacing_v="6" alignment="center" />
+		<Text name="Text2" str="Is this OK?" y="0"  shadow="0" spacing_v="6" alignment="center" />
+
+		<Button name="ButtonYes" x="-60" y="60" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="80" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="Yes" alignment="center"/></FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="60" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="No" alignment="center"/></FocusOff>
+		</Button>
+	</Screen>
+
+	<Screen name="Mu4-5-2" visible="0" z_depth="-1" focus="ButtonYes">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="DJ registration for all tracks in the album." y="0"  shadow="0" spacing_v="6" alignment="center" />
+		<Text name="Text2" str="Is this OK?" y="0"  shadow="0" spacing_v="6" alignment="center" />
+
+		<Button name="ButtonYes" x="-60" y="60" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="80" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="Yes" alignment="center"/></FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="60" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="No" alignment="center"/></FocusOff>
+		</Button>
+	</Screen>
+
+	<Screen name="Mu4-6" visible="0" z_depth="-1">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="DJ registration has ended." x="-80" y="-120" rgba="ffffffff"/>
+	</Screen>
+
+	<Screen name="Mu4-7" visible="0" z_depth="-1" focus="ButtonYes">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="Cancel DJ registration." y="0"  shadow="0" spacing_v="6" alignment="center" />
+		<Text name="Text2" str="Is this OK?" y="0"  shadow="0" spacing_v="6" alignment="center" />
+
+		<Button name="ButtonYes" x="-60" y="60" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="80" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="Yes" alignment="center"/></FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="60" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="No" alignment="center"/></FocusOff>
+		</Button>
+	</Screen>
+
+	<Screen name="Mu4-8" visible="0" z_depth="-1" focus="ButtonYes">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="Unregistering as a DJ." y="0"  shadow="0" spacing_v="6" alignment="center" />
+		<Text name="Text2" str="Do not turn off the power." y="0"  shadow="0" spacing_v="6" alignment="center" />
+
+		<Button name="ButtonYes" x="-60" y="60" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="80" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="Yes" alignment="center"/></FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="60" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="No" alignment="center"/></FocusOff>
+		</Button>
+	</Screen>
+
+	<Screen name="Mu4-9" visible="0" z_depth="-1">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="DJ registration has been canceled." x="-80" y="-120" rgba="ffffffff"/>
+	</Screen>
+
+	<Screen name="Mu4-10" visible="0" z_depth="-1" focus="ButtonYes">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="Unregister all tracks in the album as DJs." y="0"  shadow="0" spacing_v="6" alignment="center" />
+		<Text name="Text2" str="Is this OK?" y="0"  shadow="0" spacing_v="6" alignment="center" />
+
+		<Button name="ButtonYes" x="-60" y="60" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="80" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="Yes" alignment="center"/></FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="60" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="pack:xMB_Plugin_AIDJ/0.1.0/art/TextFocus.tga" y="-4" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="ffff84" alignment="center"/>
+			</FocusOn>
+			<FocusOff><Text str="No" alignment="center"/></FocusOff>
+		</Button>
+	</Screen>
+
+	<Screen name="DJ1-1" visible="0" z_depth="-1">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="Preparing to launch DJ Box SE" shadow="0" />
+	</Screen>
+	<Screen name="DJ1-2" visible="0" z_depth="-1">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="The game cannot be started because there is no game area.\nPlease create a game area in the HDD area setting." shadow="0" />
+	</Screen>
+	<Screen name="DJ1-3" visible="0" z_depth="-1">
+		<Prim name="bgm" type="rect" rgba="000000D0" x="0" y="0" w="720" h="480" />
+		<Text name="Text1" str="Cannot start because there are no DJ registered songs\nPlease register the music track as a DJ." shadow="0" />
+	</Screen>
+
+</PSML2>

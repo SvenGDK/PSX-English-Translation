@@ -1,0 +1,20 @@
+﻿<?dic version="1.0" language="jp" size="15" ?>
+
+{help.direction} = "Move Focus Key";
+{help.start} = "Confirmed Exit";
+{help.select} = "Canceled Exit";
+{help.cross} = "Confirm";
+{help.circle} = "Cancel";
+{help.triangle} = "Space";
+{help.square} = "Backspace / Delete";
+{help.l1.label} = "L1 button:";
+{help.l1} = "Change Input Mode";
+{help.r1.label} = "R1 button:";
+{help.r1} = "Shift / Unshift";
+{help.l2.label} = "L2 button:";
+{help.l2} = "Move Cursor Left";
+{help.r2.label} = "R2 button:";
+{help.r2} = "Move Cursor Right";
+
+
+

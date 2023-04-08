@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+<App name="xOSK" focus="osk_input" native="xOSK/xOSK" z_depth="-150" >
+    <Dic name="osk" filepath="dic" default="yes" />
+    <Dll name="xBitmap/xBitmap" version="0.1.0" />
+    <Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+    <Dll name="xEdit/xEdit" version="0.1.0" />
+    <Dll name="xPrim/xPrim" version="0.1.0" />
+    <Dll name="xText/xText" version="0.1.0" />
+
+    <Edit name="osk_input" str="" z_depth="-5" buf_size="1024" osk_input="1" />
+    
+    <Component name="helpText" visible="0" z_depth="-11" >
+        <Text name="help_l2_label" str="{osk::help.l2.label}" size="13" x2d="220" y2d="115" alignment="right" />
+        <Text name="help_l2_str" str="{osk::help.l2}" size="13" x2d="220" y2d="129" alignment="right" />
+        <Text name="help_l1_label" str="{osk::help.l1.label}" size="13" x2d="220" y2d="158" alignment="right" />
+        <Text name="help_l1_str" str="{osk::help.l1}" size="13" x2d="220" y2d="172" alignment="right" />
+        <Text name="help_direction_str" str="{osk::help.direction}" size="13" x2d="220" y2d="225" alignment="right" />
+        <Text name="help_select_str" str="{osk::help.select}" size="13" x2d="220" y2d="300" alignment="right" />
+        <Text name="help_start_str" str="{osk::help.start}" size="13" x2d="220" y2d="340" alignment="right" />
+        <Text name="help_r2_label" str="{osk::help.r2.label}" size="13" x2d="475" y2d="115" alignment="left" />
+        <Text name="help_r2_str" str="{osk::help.r2}" size="13" x2d="475" y2d="129" alignment="left" />
+        <Text name="help_r1_label" str="{osk::help.r1.label}" size="13" x2d="475" y2d="158" alignment="left" />
+        <Text name="help_r1_str" str="{osk::help.r1}" size="13" x2d="475" y2d="172" alignment="left" />
+        <Text name="help_triangle_str" str="{osk::help.triangle}" size="13" x2d="475" y2d="204" alignment="left" />
+        <Text name="help_circle_str" str="{osk::help.circle}" size="13" x2d="475" y2d="278" alignment="left" />
+        <Text name="help_cross_str" str="{osk::help.cross}" size="13" x2d="475" y2d="320" alignment="left" />
+        <Text name="help_square_str" str="{osk::help.square}" size="13" x2d="475" y2d="360" alignment="left" />
+    </Component>
+</App>

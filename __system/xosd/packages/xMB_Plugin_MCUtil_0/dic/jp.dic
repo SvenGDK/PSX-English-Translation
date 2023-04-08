@@ -1,0 +1,12 @@
+﻿<?dic version="1.0" language="jp" size="8" ?>
+
+
+
+{MC_Utility} = "Memory Card Utility";
+{MC_Create_Folder} = "Create Folder";
+{MC_Copy} = "Copy";
+{MC_Move} = "Move";
+{MC_Delete} = "Delete";
+{MC_Rename} = "Rename";
+{MC_Information} = "Information";
+{MC_Format} = "Initialize";

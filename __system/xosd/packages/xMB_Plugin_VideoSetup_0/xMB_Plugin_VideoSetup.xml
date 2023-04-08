@@ -1,0 +1,83 @@
+﻿<?xml version="1.0"?>
+
+<App name="VideoSetup" native="xMB_Plugin_VideoSetup/xMB_Plugin_VideoSetup">
+	<Dll name="xStr/xStr" version="0.1.0" />
+
+    <Dic name="videosetup" filepath="pack:xMB_Plugin_VideoSetup/0.1.0/dic" default="yes" />
+
+	<String name="SettingName" str="pack:xMB_Plugin_VideoSetup/0.1.0/art/Nail-Conf-Video.png" />
+
+	<Component name="VideoSetup_Items">
+
+		<String name="VideoSetup_0">				<!-- 録画モード -->
+			<String name="VideoSetup_0_0" />		<!-- 画質1 ( 高画質 ) -->
+			<String name="VideoSetup_0_1" />		<!-- 画質2 -->
+			<String name="VideoSetup_0_2" />		<!-- 画質3 -->
+			<String name="VideoSetup_0_3" />		<!-- 画質4 -->
+			<String name="VideoSetup_0_4" />		<!-- 画質5 -->
+			<String name="VideoSetup_0_5" />		<!-- 画質6 ( 長時間 ) -->
+		</String>
+		<String name="VideoSetup_1">				<!-- DVD-RW記録モード -->
+			<String name="VideoSetup_1_0" />		<!-- Videoモード -->
+			<String name="VideoSetup_1_1" />		<!-- VRモード -->
+		</String>
+		<String name="VideoSetup_2">				<!-- VRモードプレイリスト -->
+			<String name="VideoSetup_2_0" />		<!-- 作成する -->
+			<String name="VideoSetup_2_1" />		<!-- 作成しない -->
+		</String>
+		<String name="VideoSetup_3">				<!-- 外部映像入力1 -->
+			<String name="VideoSetup_3_0" />		<!-- 映像 -->
+			<String name="VideoSetup_3_1" />		<!-- S映像 -->
+		</String>
+		<String name="VideoSetup_4">				<!-- 外部映像入力2 -->
+			<String name="VideoSetup_4_0" />		<!-- 映像 -->
+			<String name="VideoSetup_4_1" />		<!-- S映像 -->
+		</String>
+		<String name="VideoSetup_5">				<!-- 外部入力1 ガイドチャンネル -->
+			<String name="dummy" />
+		</String>
+		<String name="VideoSetup_6">				<!-- 外部入力2 ガイドチャンネル -->
+			<String name="dummy" />
+		</String>
+		<String name="VideoSetup_7">				<!-- 外部入力音声 -->
+			<String name="VideoSetup_7_0" />		<!-- ステレオ -->
+			<String name="VideoSetup_7_1" />		<!-- 二重音声 -->
+		</String>
+		<String name="VideoSetup_8">				<!-- DV音声入力設定 -->
+			<String name="VideoSetup_8_0" />		<!-- ステレオ1 -->
+			<String name="VideoSetup_8_1" />		<!-- ステレオ2 -->
+			<String name="VideoSetup_8_2" />		<!-- ミックス -->
+		</String>
+		<String name="VideoSetup_9">				<!-- HDD二カ国語記録音声 -->
+			<String name="VideoSetup_9_0" />		<!-- 主音声 -->
+			<String name="VideoSetup_9_1" />		<!-- 副音声 -->
+			<String name="VideoSetup_9_2" />		<!-- 主+副音声 -->
+		</String>
+		<String name="VideoSetup_10">				<!-- DVD二カ国語記録音声 -->
+			<String name="VideoSetup_10_0" />		<!-- 主音声 -->
+			<String name="VideoSetup_10_1" />		<!-- 副音声 -->
+		</String>
+		<String name="VideoSetup_11">				<!-- 録画NR -->
+			<String name="VideoSetup_11_0" />		<!-- 3 -->
+			<String name="VideoSetup_11_1" />		<!-- 2 -->
+			<String name="VideoSetup_11_2" />		<!-- 1 -->
+			<String name="VideoSetup_11_3" />		<!-- 切 -->
+		</String>
+		<String name="VideoSetup_12">				<!-- 自動消去対象タイトル -->
+			<String name="VideoSetup_12_0" />		<!-- おまかせ・まる録 -->
+			<String name="VideoSetup_12_1" />		<!-- すべて -->
+		</String>
+		<String name="VideoSetup_13">				<!-- おまかせ・まる録\n最大録画時間 -->
+			<String name="VideoSetup_13_0" />		<!-- 12時間 -->
+			<String name="VideoSetup_13_1" />		<!-- 6時間 -->
+			<String name="VideoSetup_13_2" />		<!-- 3時間 -->
+			<String name="VideoSetup_13_3" />		<!-- しない -->
+		</String>
+		<String name="VideoSetup_14" />				<!-- おまかせ・まる録 チャンネル設定 -->
+		<String name="VideoSetup_15">				<!-- L2・R2ボタン設定 -->
+			<String name="VideoSetup_15_0" />		<!-- サーチ -->
+			<String name="VideoSetup_15_1" />		<!-- フラッシュ -->
+		</String>
+	</Component>
+</App>
+

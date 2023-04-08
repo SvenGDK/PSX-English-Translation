@@ -1,0 +1,60 @@
+<?dic version="1.0" language="jp" size="47"?>
+{PICTAPP_NAME} = "x-Pict Story Editor";
+
+{PICT_CATEGORY_NAME} = "Photo";
+
+{PICT_SORT} = "Change sort order";
+{PICT_PLAY} = "Play";
+{PICT_MODIFY} = "Pict Story Editor";
+{PICT_CREATE} = "Create Pict Story";
+{PICT_SLIDESHOW} = "Slide show";
+{PICT_CREATEVIDEO} = "Video creation";
+{PICT_RENAME} = "Rename";
+{PICT_DELETE} = "Delete";
+{PICT_INFO} = "Information";
+
+{PICT_CONFIRM} = "Confirm";
+{PICT_OPTION} = "Options";
+{PICT_PANEL} = "Control Panel";
+{PICT_CANCEL} = "Cancel";
+{PICT_CLOSE} = "Close";
+
+
+{PICT_ALBUMNAME} = "x-Pict Story";
+{PICT_ALBUMNAME_SHORT} = "Pict Story";
+{PICT_PRESETNAME} = "Sample x-Pict Story";
+{PICT_PRESETNAME_SHORT} = "Sample Pict Story";
+
+{PICT_DLG_BUTTONOK} = "Yes";
+{PICT_DLG_BUTTONNO} = "No";
+
+{PICT_DLG_INFOALBUMNAME} = "Album name :";
+{PICT_DLG_INFOFILENUMS} = "Number of contents :";
+{PICT_DLG_INFONAME} = "Title name :";
+{PICT_DLG_INFOAlBUMNAME} = "Album name :";
+{PICT_DLG_INFOTRACKNAME} = "Track name :";
+{PICT_DLG_INFOSIZE} = "Size :";
+{PICT_DLG_INFOCDATE} = "Creation date :";
+{PICT_DLG_INFODURATION} = "Play time :";
+{PICT_DLG_INFOKIND} = "File format :";
+
+{PICT_DLG_NOINPUTNAME} = "The name you entered is invalid or already in use.";
+{PICT_DLG_DUPLICATION} = "The name you entered is already in use.";
+{PICT_DLG_ENTERNAME} = "Please change the name.";
+
+{PICT_DLG_NOUSECHARS} = "The following characters cannot be used.";
+{PICT_DLG_INVALIDATECHARS} = "/\\:*?\"<>|\'";
+
+{PICT_DLG_DELETESTART} = "Delete.";
+{PICT_DLG_DELETECHECK} = "Is this OK?";
+{PICT_DLG_DELETENOW} = "deleting.";
+{PICT_DLG_DELETECOMPLITE} = "Deleted.";
+{PICT_DLG_DELETEERROR} = "Failed to delete.";
+
+{PHOTO_DLG_DEVICEKIND} = "Disc type :";
+{PHOTO_DLG_CDDATA} = "Data CD";
+{PHOTO_DLG_INFOFILENUMS} = "Number of sheets :";
+{PHOTO_DLG_PICTCREATED} = "Pict Story :";
+{PHOTO_DLG_CREATED} = "Created";
+{PHOTO_DLG_NOCREATE} = "ー";
+

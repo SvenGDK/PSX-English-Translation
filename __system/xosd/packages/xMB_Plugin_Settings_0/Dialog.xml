@@ -1,0 +1,82 @@
+﻿<?xml version="1.0"?>
+<PSML2>
+
+	<Dll name="xStr/xStr" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xButton/xButton" version="0.1.0" />
+	<Dll name="xContainer/xContainer" version="0.1.0" />
+	<Dll name="xTextButton/xTextButton" version="0.1.0" />
+
+	<Screen name="InfoView" visible="0">
+
+	    <Text name="text0" str="{settings::Conf_Term_PSXModel}"    x="-180" y="-29" rgba="D0D0D0FF" shadow_rgba="00000040"  />
+	    <Text name="text1" str="{settings::Conf_Term_PSXVer}"      x="-180" y="-5"  rgba="D0D0D0FF" shadow_rgba="00000040"  />
+	    <Text name="text2" str="{settings::Conf_Term_MACADDRESS}"  x="-180" y="19"  rgba="D0D0D0FF" shadow_rgba="00000040"  />
+	    <Text name="text3" str="{settings::Conf_Term_IPADDRESS}"   x="-180" y="43"  rgba="D0D0D0FF" shadow_rgba="00000040"  />
+
+	    <Text name="value0" str="{settings::Conf_Term_NOIPADDRESS}" x="-10" y="-29" rgba="D0D0D0FF" shadow_rgba="00000040"  />
+	    <Text name="value1" x="-10" y="-5"  rgba="D0D0D0FF" shadow_rgba="00000040"  />
+	    <Text name="value2" str="00:00:00:00:00:00" x="-10" y="19"  rgba="D0D0D0FF" shadow_rgba="00000040"  />
+	    <Text name="value3" str="0.0.0.0" x="-10" y="43"  rgba="D0D0D0FF" shadow_rgba="00000040"  />
+
+	</Screen>
+
+	<Screen name="Password" focus="password.0" visible="0" z_depth="-1">
+
+		<Text name="Message" str="{settings::Conf_Term_InputReqest}" alignment="center" y="-22" />
+		<Text name="Error"   str="{settings::Conf_Msg_WrongNumber}" alignment="center" y="-8" visible="0" />
+
+		<Container name="Numbers" align="center" spacing="30" x="-8" y="8">
+			<TextButton name="password.0" str="0" nav_left="password.9" nav_right="password.1" />
+			<TextButton name="password.1" str="1" nav_left="password.0" nav_right="password.2" />
+			<TextButton name="password.2" str="2" nav_left="password.1" nav_right="password.3" />
+			<TextButton name="password.3" str="3" nav_left="password.2" nav_right="password.4" />
+			<TextButton name="password.4" str="4" nav_left="password.3" nav_right="password.5" />
+			<TextButton name="password.5" str="5" nav_left="password.4" nav_right="password.6" />
+			<TextButton name="password.6" str="6" nav_left="password.5" nav_right="password.7" />
+			<TextButton name="password.7" str="7" nav_left="password.6" nav_right="password.8" />
+			<TextButton name="password.8" str="8" nav_left="password.7" nav_right="password.9" />
+			<TextButton name="password.9" str="9" nav_left="password.8" nav_right="password.0" />
+		</Container>
+		<Component x="-2" y="38">
+			<Text name="dot.0" str="・" alignment="center" x="-45" />
+			<Text name="dot.1" str="・" alignment="center" x="-15" />
+			<Text name="dot.2" str="・" alignment="center" x="15" />
+			<Text name="dot.3" str="・" alignment="center" x="45" />
+
+		</Component>
+
+		<String name="asterisk" str="＊" />
+		<String name="dot" str="・" />
+	</Screen>
+
+	<Screen name="Warning" visible="0" z_depth="-1">
+		<Text name="Text" size="16" spacing_v="8" rgba="{*::TextRGBA.Normal}" />
+	</Screen>
+
+	<Screen name="YesOrNo" visible="0" z_depth="-1" focus="ButtonNo">
+
+		<Text name="Text" size="16" spacing_v="8" rgba="{*::TextRGBA.Normal}" />
+
+		<Button name="ButtonYes" x="-60" y="40" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+			</FocusOn>
+			<FocusOff>
+				<Text str="Yes" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+			</FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="40" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+			</FocusOn>
+			<FocusOff>
+				<Text str="No" rgba="{*::TextRGBA.Normal}" alignment="center"/>
+			</FocusOff>
+		</Button>
+	</Screen>
+
+</PSML2>

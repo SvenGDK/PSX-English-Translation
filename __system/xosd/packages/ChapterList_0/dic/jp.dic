@@ -1,0 +1,4 @@
+<?dic version="1.0" language="jp" size="3"?>
+{app_title} = "Chapter Display";
+{Play} = "Play";
+{Back} = "Return";

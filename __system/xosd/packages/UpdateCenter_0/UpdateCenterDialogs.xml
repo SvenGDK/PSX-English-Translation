@@ -1,0 +1,293 @@
+<?xml version="1.0"?>
+<PSML2>
+
+	<Dll name="xButton/xButton" version="0.1.0" />
+	<Dll name="xText/xText"     version="0.1.0" />
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xEdit/xEdit" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xStr/xStr"   version="0.1.0" />
+	
+	<Screen name="cancel" focus="Button2" visible="0">
+		<Text name="return" str="Abort the update." x="-100" y="-24"/>
+		<Text name="return" str="Is this OK?"           x="-100" y="0"/>
+		<Button name="Button1" x="-50" y="44" nav_right="Button2"  alignment="center">
+			<FocusOn>
+			<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="96" h="40" x="0" y="-5" alignment="center"/>
+			<Text str="Yes" alignment="center" shadow="0" rgba="{*::TextRGBA.Hilited}"/>
+		</FocusOn>
+        <FocusOff>
+			<Text str="Yes" alignment="center" rgba="{*::TextRGBA.Normal}"/>
+		</FocusOff>
+		</Button>
+		<Button name="Button2" x="50" y="44" nav_left="Button1" >
+			<FocusOn>
+			<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="96" h="40" x="0" y="-5" alignment="center"/>
+			<Text str="No" alignment="center" shadow="0" rgba="{*::TextRGBA.Hilited}"/>
+		</FocusOn>
+		<FocusOff>
+			<Text str="No" alignment="center" rgba="{*::TextRGBA.Normal}"/>
+		</FocusOff>
+		</Button>
+	</Screen>
+	
+	<Screen name="update_cancel" focus="Button2" visible="0">
+		<Text name="text0" str="Cancel the update and restart the unit." x="0" y="-24" alignment="center"/>
+		<Text name="text1" str="Is this OK?"                           x="-178" y="0"/>
+		<Button name="Button1" x="-50" y="44" nav_right="Button2"  alignment="center">
+			<FocusOn>
+			<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="96" h="40" x="0" y="-5" alignment="center"/>
+			<Text str="Yes" alignment="center" shadow="0" rgba="{*::TextRGBA.Hilited}"/>
+		</FocusOn>
+        <FocusOff>
+			<Text str="Yes" alignment="center" rgba="{*::TextRGBA.Normal}"/>
+		</FocusOff>
+		</Button>
+		<Button name="Button2" x="50" y="44" nav_left="Button1" >
+			<FocusOn>
+			<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="96" h="40" x="0" y="-5" alignment="center"/>
+			<Text str="No" alignment="center" shadow="0" rgba="{*::TextRGBA.Hilited}"/>
+		</FocusOn>
+		<FocusOff>
+			<Text str="No" alignment="center" rgba="{*::TextRGBA.Normal}"/>
+		</FocusOff>
+		</Button>
+	</Screen>
+
+	<Screen name="recode_notice" visible="0">
+		<Text name="text0" str="It took less than an hour to start recording reservation."  x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Abort the current operation."               x="-160" y="12" size="16"/>
+	</Screen>
+	<Screen name="epg_notice" visible="0">
+		<Text name="text0" str="We will start getting program information soon."  x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Abort the current operation."               x="-153" y="12" size="16"/>
+	</Screen>
+
+	<Screen name="download_done" visible="0">
+		<Text name="text1" str="Software downloaded."         x="-178" y="-24" size="16"/>
+		<Text name="text2" str="After restarting, continue updating."   x="0" y="0"   size="16" alignment="center"/>
+		<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga"        x="-148" y="20"/>
+		<Text name="text3" str="Please press."                           x="-116" y="24"  size="16"/>
+	</Screen>
+	<Screen name="canceling" visible="0">
+		<Text name="text0" str="Aborting the update."   x="0" y="-12"   size="16" alignment="center"/>
+		<Text name="text1" str="Please wait without turning off the power."   x="0" y="12"   size="16" alignment="center"/>
+	</Screen>
+	<Screen name="backup_reboot" visible="0">
+		<Text name="text1" str="Restart the console."                   x="-102" y="-12" size="16"/>
+		<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga"  x="-74" y="8"/>
+		<Text name="text3" str="Please press."                     x="35" y="12"  size="16" alignment="center"/>
+	</Screen>
+	<Screen name="shutdown" visible="0">
+		<Text name="text1" str="Shut down the console."                          x="-170" y="-24" size="16"/>
+		<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga"       x="-142" y="-4"/>
+		<Text name="text2" str="Please press."                          x="-110" y="0"   size="16"/>
+		<Text name="text3" str="After shutting down the unit, turn the power off and on again."    x="0" y="24"  size="16" alignment="center"/>
+	</Screen>
+	<Screen name="reboot" visible="0">
+		<Text name="text1" str="Restart the console."                   x="-102" y="-12" size="16"/>
+		<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga"  x="-74" y="8"/>
+		<Text name="text3" str="Please press."                     x="35" y="12"  size="16" alignment="center"/>
+	</Screen>
+	<Screen name="done" visible="0">
+		<Text name="text1" str="Update finished."          x="0"    y="-24" size="16" alignment="center"/>
+		<Text name="text2" str="Restart the console."                  x="-119" y="0"   size="16"/>
+		<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga" x="-90"  y="20"/>
+		<Text name="text3" str="Please press."                    x="-58"  y="24"  size="16"/>
+	</Screen>
+	<Screen name="restore_complete" visible="0">
+		<Text name="text1" str="The console has been repaired."                 x="-161" y="-24" size="16"/>
+		<Text name="text2" str="Exit the wizard and reboot."     x="0"    y="0"   size="16" alignment="center"/>
+		<Text name="text3" str="Please wait."                   x="-161" y="24"  size="16"/>
+	</Screen>
+
+	<Screen name="net" visible="0">
+		<Text name="text0" str="Unable to connect to network."          x="-161" y="-24" size="16"/>
+		<Text name="text1" str="Check your network settings."  x="0"    y="0"   size="16" alignment="center"/>
+		<Text name="text2" str="Error number:"                            x="-161" y="24"  size="16"/>
+		<Text name="err_num" str=""                                      x="-61"  y="24"  size="16"/>
+	</Screen>
+	<Screen name="server_busy" visible="0">
+		<Text name="text0" str="Is the update server very busy right now?"  x="0"  y="-24" size="16" alignment="center"/>
+		<Text name="text1" str="Not available due to maintenance."                x="-221"  y="0"  size="16"/>
+		<Text name="text1" str="Error number:"                            x="-221" y="24"  size="16"/>
+		<Text name="err_num" str=""                                      x="-121"  y="24"  size="16"/>
+	</Screen>
+	<Screen name="update" visible="0">
+		<Text name="text0" str="An error occurred during the update."         x="-187" y="-24" size="16"/>
+		<Text name="text1" str="Please contact the customer service center."   x="0" y="0" size="16" alignment="center"/>
+		<Text name="text2" str="Error number:"            x="-187" y="24"  size="16"/>
+		<Text name="err_num" str=""                      x="-87"  y="24"  size="16"/>
+	</Screen>
+	<Screen name="package_list_dns" visible="0">
+		<Text name="text0" str="DNS server is not responding."                x="-173" y="-84" size="16"/>
+		<Text name="text1" str="Check the following items."           x="-173" y="-48" size="16"/>
+		<Text name="text2" str="Set the DNS settings of the unit or router to correct values."  x="0"    y="-24" size="16" alignment="center"/>
+		<Text name="text2" str="have set"                             x="-156" y="0" size="16"/>
+		<Text name="text3" str="Connect this unit to router/hub/modem/ONU"       x="-173" y="24" size="16"/>
+		<Text name="text3" str="connected correctly"                       x="-156" y="48" size="16"/>
+		<Text name="text4" str="The correct type of cable is connected."     x="-173" y="72" size="16"/>
+		<Text name="text5" str="Error number:"            x="-173"   y="96"  size="16"/>
+		<Text name="err_num" str=""                      x="-73"   y="96"  size="16"/>
+	</Screen>
+	<Screen name="package_list_connect" visible="0">
+		<Text name="text0" str="Failed to connect to server during update." x="0" y="-36" size="16" alignment="center"/>
+		<Text name="text1" str="After turning the power off and on again, wait for a while."   x="-204" y="-12"   size="16"/>
+		<Text name="text2" str="Please update again."             x="-204" y="12"  size="16"/>
+		<Text name="text3" str="Error number:"            x="-204" y="36"  size="16"/>
+		<Text name="err_num" str=""                      x="-104"   y="36"  size="16"/>
+	</Screen>
+	<Screen name="package_list_timeout" visible="0">
+		<Text name="text0" str="Communication with the server was interrupted during the update." x="0" y="-36" size="16" alignment="center"/>
+		<Text name="text1" str="After turning the machine off and on again"                         x="-213" y="-12"   size="16"/>
+		<Text name="text2" str="Please update again."               x="-213" y="12"  size="16"/>
+		<Text name="text3" str="Error number:"            x="-213" y="36"  size="16"/>
+		<Text name="err_num" str=""                      x="-113"   y="36"  size="16"/>
+	</Screen>
+	<Screen name="package_list_another" visible="0">
+		<Text name="text0" str="Communication with the server failed during update." x="0" y="-36" size="16" alignment="center"/>
+		<Text name="text1" str="After turning the machine off and on again"                       x="-204" y="-12"   size="16"/>
+		<Text name="text2" str="Please update again."             x="-204" y="12"  size="16"/>
+		<Text name="text3" str="Error number:"            x="-204" y="36"  size="16"/>
+		<Text name="err_num" str=""                      x="-104"   y="36"  size="16"/>
+	</Screen>
+
+	<Screen name="power_off" visible="0">
+		<Text name="text0" str="An error occurred during the update."   x="0" y="-36" size="16" alignment="center"/>
+		<Text name="text1" str="After turning the power off and on again,"             x="-161" y="-12" size="16"/>
+		<Text name="text2" str="Please update again."       x="-161" y="12" size="16"/>
+		<Text name="text3" str="Error number:"            x="-161" y="36"  size="16"/>
+		<Text name="err_num" str=""                      x="-61"   y="36"  size="16"/>
+	</Screen>
+
+	<Screen name="dnas" visible="0">
+		<Text name="text0" str="&#34;DNAS&#34;An error has occurred." x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                         x="-125" y="12" size="16"/>
+		<Text name="err_num" str=""                                     x="-25" y="12" size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dnas_server" visible="0">
+		<Text name="text0" str="&#34;DNAS&#34;Server error."   x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                         x="-118" y="12" size="16"/>
+		<Text name="err_num" str=""                                     x="-18" y="12" size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dnas_auth" visible="0">
+		<Text name="text0" str="&#34;DNAS&#34;Authentication error." x="0"   y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                   x="-101" y="12" size="16"/>
+		<Text name="err_num" str=""                             x="-1" y="12" size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dnas_busy" visible="0">
+		<Text name="text0" str="Now&#34;DNAS&#34;the server can accept"  x="0" y="-36" size="16" alignment="center"/>
+		<Text name="text1" str="you cant."                                        x="-186" y="-12" size="16"/>
+		<Text name="text2" str="Wait for a while and then reconnect."        x="-186" y="12"  size="16"/>
+		<Text name="text3" str="Error number:"                                        x="-186" y="36" size="16"/>
+		<Text name="err_num" str=""                                                  x="-86"  y="36" size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dnas_early" visible="0">
+		<Text name="text0" str="PSX&#34;DNAS&#34;It is before the certification service period." x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                         x="-172" y="12" size="16"/>
+		<Text name="err_num" str=""                                     x="-72" y="12" size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dnas_late" visible="0">
+		<Text name="text0" str="PSX&#34;DNAS&#34;The certification service period has expired." x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                         x="-198" y="12" size="16"/>
+		<Text name="err_num" str=""                                     x="-98" y="12" size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dnas_ended" visible="0">
+		<Text name="text0" str="All of&#34;DNAS&#34;Service has ended." x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                         x="-160" y="12" size="16"/>
+		<Text name="err_num" str=""                                     x="-60" y="12" size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dnas_timeout" visible="0">
+		<Text name="text0" str="&#34;DNAS&#34;The connection with the server has timed out." x="0" y="-24"  size="16" alignment="center"/>
+		<Text name="text1" str="Wait for a while and then reconnect."  x="-204" y="0" size="16"/>
+		<Text name="text2" str="Error number:"                                  x="-204" y="24" size="16"/>
+		<Text name="err_num" str=""                                              x="-104"  y="24" size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dnas_connect" visible="0">
+		<Text name="text0" str="&#34;DNAS&#34;Failed to connect to server." x="0"   y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                         x="-169" y="12" size="16"/>
+		<Text name="err_num" str=""                                     x="-69" y="12" size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dnas_action" visible="0">
+		<Text name="text0" str="&#34;DNAS&#34;The server is not working properly." x="0" y="-24"  size="16" alignment="center"/>
+		<Text name="text1" str="Wait for a while and then reconnect."  x="-186" y="0" size="16"/>
+		<Text name="text2" str="Error number:"                                  x="-186" y="24" size="16"/>
+		<Text name="err_num" str=""                                              x="-86"  y="24" size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="unipue_id" visible="0">
+		<Text name="text0" str="Unique ID error."      x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                x="-94" y="12"  size="16"/>
+		<Text name="err_num" str=""                          x="6"   y="12"  size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="download" visible="0">
+		<Text name="text0" str="Download error."    x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                x="-102" y="12"  size="16"/>
+		<Text name="err_num" str=""                          x="-2"   y="12"  size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="device_info" visible="0">
+		<Text name="text0" str="Device information error."        x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                x="-85" y="12"  size="16"/>
+		<Text name="err_num" str=""                          x="15"   y="12"  size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dns_find" visible="0">
+		<Text name="text0" str="DNS server not found."         x="-153" y="-24"  size="16"/>
+		<Text name="text1" str="Please check your network settings."  x="0" y="0"  size="16" alignment="center"/>
+		<Text name="text2" str="Error number:"                          x="-153" y="24" size="16"/>
+		<Text name="err_num" str=""                                      x="-53" y="24"  size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dns_response" visible="0">
+		<Text name="text0" str="There is an error in the DNS server response." x="0" y="-24" size="16" alignment="center"/>
+		<Text name="text1" str="Please check your network settings."  x="-167" y="0"  size="16"/>
+		<Text name="text2" str="Error number:"                          x="-167" y="24"  size="16"/>
+		<Text name="err_num" str=""                                      x="-67dns_response"  y="24"  size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="dns" visible="0">
+		<Text name="text0" str="DNS error."                        x="-160" y="-24"  size="16"   />
+		<Text name="text1" str="Check your network settings." x="0" y="0"  size="16" alignment="center"/>
+		<Text name="text2" str="Error number:"                           x="-161" y="24"  size="16"/>
+		<Text name="err_num" str=""                                     x="-61"  y="24"  size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="net_stop" visible="0">
+		<Text name="text0" str="Interrupted network connection."      x="0" y="-12" size="16" alignment="center"/>
+		<Text name="text1" str="Error number:"                          x="-136" y="12"  size="16"/>
+		<Text name="err_num" str=""                                      x="-36"  y="12"  size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="communication" visible="0">
+		<Text name="text0" str="Communication error."        x="-60" y="-12" size="16"/>
+		<Text name="text1" str="Error number:   "         x="0"   y="12" size="16" alignment="center"/>
+		<Text name="err_num" str=""                      x="40"  y="12"  size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+	<Screen name="communication_timeout" visible="0">
+		<Text name="text0" str="Communication timed out."                  x="-187" y="-24"  size="16" />
+		<Text name="text1" str="Wait for a while and then reconnect."  x="0" y="0"  size="16" alignment="center"/>
+		<Text name="text2" str="Error number:"            x="-187" y="24"  size="16"/>
+		<Text name="err_num" str=""                        x="-87"  y="24"  size="16"/>
+		<Bitmap name="DNAS_NG" file="art/dnas_small_failA.tga"  x="280" y="-120" z_depth="-4"/>
+	</Screen>
+
+	<Screen name="unknown" visible="0">
+		<Text name="text0" str="Unknown Error!!"         x="-100" y="-12" size="16"/>
+		<Text name="text1" str="Error number:"            x="-100" y="12"  size="16"/>
+		<Text name="err_num" str=""                      x="0"   y="12"  size="16"/>
+	</Screen>
+
+</PSML2>

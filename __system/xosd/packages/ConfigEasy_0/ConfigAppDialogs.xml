@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<PSML2>
+
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xStr/xStr" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+
+	<Dic name="ConfigEasy" filepath="pack:ConfigEasy/0.1.0/dic" default="yes" />
+
+	<Screen name="Dialog_Disp" visible="0" z_depth="-1" focus="message">
+		<Text name="message" size="16" spacing_v="8" alignment="center"  />
+	</Screen>
+
+	<Screen name="Dialog_Check" visible="0" z_depth="-1" focus="Dialog_Check_No">
+
+		<Text name="message" size="16" spacing_v="8" alignment="center" />
+
+		<Button name="Dialog_Check_Yes" nav_right="Dialog_Check_No" >
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="96" h="40" x="0" y="-5" alignment="center"  />
+				<Text str="{ConfigEasy::Button_YES}" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0" />
+			</FocusOn>
+	        <FocusOff>
+				<Text str="{ConfigEasy::Button_YES}" rgba="{*::TextRGBA.Normal}" alignment="center" />
+			</FocusOff>
+		</Button>
+		<Button name="Dialog_Check_No" nav_left="Dialog_Check_Yes" >
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="96" h="40" x="0" y="-5" alignment="center" />
+				<Text str="{ConfigEasy::Button_NO}" rgba="{*::TextRGBA.Hilited}" alignment="center"  shadow="0" />
+			</FocusOn>
+			<FocusOff>
+				<Text str="{ConfigEasy::Button_NO}" rgba="{*::TextRGBA.Normal}" alignment="center" />
+			</FocusOff>
+	    </Button>
+	</Screen>
+
+</PSML2>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<App name="NetworkSettings" native="NetworkSettings/NetworkSettings" focus="ScreenList">
+
+	<Dll name="xText/xText"     version="0.1.0" />
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xEdit/xEdit" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xButton/xButton"   version="0.1.0" />
+	
+	<Bitmap name="bg" file="art/wizard_bg.png" x="0" y="0" w="720" h="480" visible="0"/>
+
+	<Component name="ScreenList">
+
+		<Component name="StartSetup" visible="0">
+			<Bitmap name="bg1" file="art/wizard_bg.png" x="0" y="0" w="720" h="480" />
+			<Text  name="title" str="Network Settings / Start" x="-720" y="480"/>
+			<Text  name="text0" str="Start Network Setup." x="-165" y="-24" size="16"/>
+			<Text  name="text1" str="Please connect the network cable." x="-165" y="0" size="16"/>
+			<Text  name="text2" str="After connecting, please press" x="-165" y="24" size="16"/>
+			<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga" x="165" y="22" />			
+		</Component>
+
+		<Component name="IP" x="720" y="0">
+			<Text name="title" str="Network Settings / IP Address Settings" x="-720" y="480"/>
+			<Text name="text0" str="Select the IP address setting method." x="0" y="-58" size="16" alignment="center"/>
+			<Text  name="text1" str="After selecting, please press" x="-163" y="-34" size="16"/>
+			<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga" x="165" y="-38"/>
+			<Bitmap3x3 name="focus" file="art/TextFocus.tga" corner_w="25" corner_h="17" w="170" h="40" x="0" y="15" alignment="center"/>
+			<Text  name="auto" str="Automatically" x="0" y="20" alignment="center"/>
+			<Text  name="manual" str="Manual" x="0" y="44" alignment="center"/>
+			<Text  name="pppoe" str="PPPoE" x="0" y="68" alignment="center"/>
+		</Component>
+
+		<Component name="InputPPPoE" x="720" y="0">
+			<Text name="title" str="Network Settings / PPPoE Settings" x="-720" y="480"/>
+			<Text name="text0" str="Please select an item to enter." x="-190" y="-102" size="16"/>
+			<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga" x="-160" y="-82"/>
+			<Text name="text2" str="Press to enter or change the value." x="28" y="-78" size="16" alignment="center"/>
+			<Text name="text3" str="After entering or changing, please press" x="-190" y="-54" size="16"/>
+			<Bitmap name="right" file="art/arrow_R.tga" x="-33"  y="-58" />
+			<Prim type="outline" x="0" y="24" w="480" h="24"  alignment="center"/>
+			<Edit name="user_id" str="" osk_option="1" x="-230" y="28" w="450" size="16" buf_size="130" max_letters="64"/>
+			<Prim type="outline" x="0" y="94" w="480" h="24"  alignment="center"/>
+			<Edit name="password" str="" osk_option="1" x="-230" y="98" w="450" size="20" password="1" buf_size="130" max_letters="64"/>
+			<Text  name="text5" str="User ID" x="-230" y="0" size="16"/>
+			<Text  name="text6" str="Password" x="-230" y="70" size="16"/>
+			<Bitmap3x3 name="focus" file="art/TextFocus.tga" corner_w="25" corner_h="17" w="504" h="40" x="0" y="24" alignment="center"/>
+		</Component>
+
+		<Component name="InputIP" x="720" y="0">
+			<Text name="title" str="Network Settings / IP address settings" x="-720" y="480"/>
+			<Text name="text0" str="Please select an item to enter." x="-145" y="-92" size="16"/>
+			<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga" x="-117" y="-72"/>
+			<Text name="text2" str="Press to change the value." x="35" y="-68" size="16" alignment="center"/>
+			<Text name="text3" str="After changing, please press" x="-145" y="-44" size="16"/>
+			<Bitmap name="right" file="art/arrow_R.tga" x="-73" y="-48" />
+
+			<Bitmap3x3 name="focus" file="art/TextFocus.tga" corner_w="25" corner_h="17" w="268" h="40" x="80" y="5" alignment="center"/>
+			<Component name="up_down" visible="0" x="-10" y="5">
+				<Bitmap name="focus_up"   file="art/U_arw.png"  y="-15" />
+				<Bitmap name="focus_down" file="art/U_arw.png"  y="15"  rot_z="0.5"/>
+			</Component>
+
+			<Text name="text5" str="IP Address"     x="-205" y="10" size="16"/>
+			<Text name="ip_adr0" str="0"   x="10"  y="10" size="16" alignment="right" />
+			<Text name="ip_adr1" str="0"   x="70"  y="10" size="16" alignment="right" />
+			<Text name="ip_adr2" str="0"   x="130" y="10" size="16" alignment="right" />
+			<Text name="ip_adr3" str="0"   x="190" y="10" size="16" alignment="right" />
+			<Text name="ip_adr4" str="."   x="15"  y="10" size="16" />
+			<Text name="ip_adr5" str="."   x="75"  y="10" size="16" />
+			<Text name="ip_adr6" str="."   x="135" y="10" size="16" />
+			
+			<Text name="text6" str="Net Mask"     x="-205" y="50" size="16"/>
+			<Text name="netmask0" str="255" x="10"  y="50" size="16" alignment="right" />
+			<Text name="netmask1" str="255" x="70"  y="50" size="16" alignment="right" />
+			<Text name="netmask2" str="255" x="130" y="50" size="16" alignment="right" />
+			<Text name="netmask3" str="0"   x="190" y="50" size="16" alignment="right" />
+			<Text name="netmask4" str="."   x="15"  y="50" size="16"/>
+			<Text name="netmask5" str="."   x="75"  y="50" size="16"/>
+			<Text name="netmask6" str="."   x="135" y="50" size="16"/>
+
+			<Text name="text7" str="Default Router" x="-205" y="90" size="16"/>
+			<Text name="router0" str="0"   x="10"  y="90" size="16" alignment="right" />
+			<Text name="router1" str="0"   x="70"  y="90" size="16" alignment="right" />
+			<Text name="router2" str="0"   x="130" y="90" size="16" alignment="right" />
+			<Text name="router3" str="0"   x="190" y="90" size="16" alignment="right" />
+			<Text name="router4" str="."   x="15"  y="90" size="16"/>
+			<Text name="router5" str="."   x="75"  y="90" size="16"/>
+			<Text name="router6" str="."   x="135" y="90" size="16"/>
+			
+		</Component>
+
+		<Component name="DNS" x="720" y="0">
+			<Text name="title" str="Network Settings / DNS Settings" x="-720" y="480"/>
+			<Text name="text0" str="Please select a DNS setting method." x="0" y="-58" size="16" alignment="center"/>
+			<Text  name="text1" str="After selecting, please press" x="-140" y="-34" size="16"/>
+			<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga" x="165" y="-38"/>
+			<Bitmap3x3 name="focus" file="art/TextFocus.tga" corner_w="25" corner_h="17" w="168" h="40" x="0" y="15" alignment="center"/>
+			<Text  name="dns0" str="Set automatically" x="0" y="20" alignment="center"/>
+			<Text  name="dns1" str="Do not set automatically" x="0" y="44" alignment="center"/>
+		</Component>
+
+		<Component name="InputDNS" x="720" y="0">
+			<Text name="title" str="Network Settings / DNS Settings" x="-720" y="480"/>
+			<Text name="text0" str="Please select an item to enter." x="-145" y="-72" size="16"/>
+			<Bitmap name="confirm" file="art/BtnNav-EnterCir-917-wide.tga" x="-117" y="-52"/>
+			<Text name="text2" str="Press to change the value." x="35" y="-48" size="16" alignment="center"/>
+			<Text name="text3" str="After selecting, open the next page." x="-145" y="-24"  size="16"/>
+			<Bitmap name="right" file="art/arrow_R.tga" x="-73"  y="-28" />
+
+			<Bitmap3x3 name="focus" file="art/TextFocus.tga" corner_w="25" corner_h="17" w="268" h="40" x="80" y="25" alignment="center"/>
+			<Component name="up_down" visible="0" x="-10" y="25">
+				<Bitmap name="focus_up"   file="art/U_arw.png"  y="-15" />
+				<Bitmap name="focus_down" file="art/U_arw.png"  y="15"  rot_z="0.5"/>
+			</Component>
+
+			<Text name="text5" str="Primary DNS"     x="-205" y="30" size="16"/>
+			<Text name="1stdns0" str="0"  x="10"   y="30"  size="16" alignment="right"/>
+			<Text name="1stdns1" str="0"  x="70"   y="30"  size="16" alignment="right"/>
+			<Text name="1stdns2" str="0"  x="130"  y="30"  size="16" alignment="right"/>
+			<Text name="1stdns3" str="0"  x="190"  y="30"  size="16" alignment="right"/>
+			<Text name="1stdns4" str="."  x="15"   y="30"  size="16" />
+			<Text name="1stdns5" str="."  x="75"   y="30"  size="16" />
+			<Text name="1stdns6" str="."  x="135"  y="30"  size="16" />
+
+			<Text name="text6" str="Secondary DNS"     x="-205" y="70" size="16"/>
+			<Text name="2nddns0" str="0"  x="10"   y="70"  size="16" alignment="right"/>
+			<Text name="2nddns1" str="0"  x="70"   y="70"  size="16" alignment="right"/>
+			<Text name="2nddns2" str="0"  x="130"  y="70"  size="16" alignment="right"/>
+			<Text name="2nddns3" str="0"  x="190"  y="70"  size="16" alignment="right"/>
+			<Text name="2nddns4" str="."  x="15"   y="70"  size="16" />
+			<Text name="2nddns5" str="."  x="75"   y="70"  size="16" />
+			<Text name="2nddns6" str="."  x="135"  y="70"  size="16" />
+			
+		</Component>
+
+		<Component name="ConfigList" x="720" y="0">
+			<Text name="title" str="Network settings /list of settings" x="-720" y="480"/>
+			<Text name="text0" str="List of settings"  x="-15" y="-68" size="16" alignment="center" />
+			<Component name="res_pppoe1_dns0" visible="0">
+				<Text name="text1" str="User :"    x="-180" y="-24" size="16"/>
+				<Text name="text2" str="Password :"    x="-180" y="0"   size="16"/>
+				<Text name="text3" str="Primary DNS :" x="-180" y="24"  size="16"/>
+				<Text name="text4" str="Secondary DNS:" x="-180" y="48"  size="16"/>
+				<Text name="text5" str=""              x="10"   y="-24" size="16" max_w="200"/>
+				<Text name="text6" str=""              x="10"   y="0"   size="16" max_w="200"/>
+				<Text name="text7" str="Automatic"      x="10"   y="24"  size="16"/>
+				<Text name="text8" str="Automatic"      x="10"   y="48"  size="16"/>
+			</Component>
+			<Component name="res_pppoe1_dns1" visible="0">
+				<Text name="text1" str="User :"    x="-180" y="-24" size="16"/>
+				<Text name="text2" str="Password :"    x="-180" y="0"   size="16"/>
+				<Text name="text3" str="Primary DNS :" x="-180" y="24"  size="16"/>
+				<Text name="text4" str="Secondary DNS:" x="-180" y="48"  size="16"/>
+				<Text name="text5" str=""              x="10"   y="-24" size="16" max_w="200"/>
+				<Text name="text6" str=""              x="10"   y="0"   size="16" max_w="200"/>
+				<Text name="text7" str=""              x="10"   y="24"  size="16"/>
+				<Text name="text8" str=""              x="10"   y="48"  size="16"/>
+			</Component>
+			<Component name="res_pppoe0_ip0_dns0" visible="0">
+				<Text name="text1" str="IP Address :"       x="-180" y="-24" size="16"/>
+				<Text name="text2" str="Netmask:"     x="-180" y="0"   size="16"/>
+				<Text name="text3" str="Default Router:" x="-180" y="24"  size="16"/>
+				<Text name="text4" str="Primary DNS :"    x="-180" y="48"  size="16"/>
+				<Text name="text5" str="Secondary DNS:"    x="-180" y="72"  size="16"/>
+				<Text name="text6" str="Automatic"         x="10"   y="-24" size="16"/>
+				<Text name="text7" str="Automatic"         x="10"   y="0"   size="16"/>
+				<Text name="text8" str="Automatic"         x="10"   y="24"  size="16"/>
+				<Text name="text9" str="Automatic"         x="10"   y="48"  size="16"/>
+				<Text name="text10" str="Automatic"         x="10"   y="72"  size="16"/>
+			</Component>
+			<Component name="res_pppoe0_ip0_dns1" visible="0">
+				<Text name="text1" str="IP Address :"       x="-180" y="-24" size="16"/>
+				<Text name="text2" str="Netmask:"     x="-180" y="0"   size="16"/>
+				<Text name="text3" str="Default Router:" x="-180" y="24"  size="16"/>
+				<Text name="text4" str="Primary DNS :"    x="-180" y="48"  size="16"/>
+				<Text name="text5" str="Secondary DNS:"    x="-180" y="72"  size="16"/>
+				<Text name="text6" str="Automatic"         x="10"   y="-24" size="16"/>
+				<Text name="text7" str="Automatic"         x="10"   y="0"   size="16"/>
+				<Text name="text8" str="Automatic"         x="10"   y="24"  size="16"/>
+				<Text name="text9" str=""                 x="10"   y="48"  size="16"/>
+				<Text name="text10" str=""                 x="10"   y="72"  size="16"/>
+			</Component>
+			<Component name="res_pppoe0_ip1" visible="0">
+				<Text name="text1" str="IP Address :"       x="-180" y="-24" size="16"/>
+				<Text name="text2" str="Netmask:"     x="-180" y="0"   size="16"/>
+				<Text name="text3" str="Default Router:" x="-180" y="24"  size="16"/>
+				<Text name="text4" str="Primary DNS :"    x="-180" y="48"  size="16"/>
+				<Text name="text5" str="Secondary DNS:"    x="-180" y="72"  size="16"/>
+				<Text name="text6" str=""                 x="10"   y="-24" size="16"/>
+				<Text name="text7" str=""                 x="10"   y="0"   size="16"/>
+				<Text name="text8" str=""                 x="10"   y="24"  size="16"/>
+				<Text name="text9" str=""                 x="10"   y="48"  size="16"/>
+				<Text name="text10" str=""                 x="10"   y="72"  size="16"/>
+			</Component>
+		</Component>
+
+		<Component name="ConnectionTest" x="720" y="0">
+			<Text name="title" str="Network Settings / Connection Test" x="-720" y="480"/>
+			<Text name="text0" str="Save the settings to the hard disk"    x=" 0"   y="-24" size="16" alignment="center"/>
+			<Text name="text1" str="Perform a network connection test."    x="-153" y="0"   size="16"/>
+			<Bitmap name="cross" file="art/BtnNav-EnterCir-917-wide.tga"     x="-125" y="20"/>
+			<Text name="text2" str="Press to confirm."                      x="-93" y="24"  size="16"/>
+		</Component>
+
+		<Component name="DNAS" visible="0">
+			<Text name="title" str="Network Settings" x="-720" y="480"/>
+			<Text  name="text0" str="&#34;DNAS&#34;Authenticating."     x="-128" y="-24" size="16"/>
+			<Text  name="text1" str="Processing cannot be canceled during authentication." x="0"    y="0"   size="16" alignment="center"/>
+			<Text  name="text1" str="Please wait."       x="-128" y="24"  size="16"/>
+			<Bitmap name="DNAS_OK" file="art/dnas_small_basicA.tga"  x="280"  y="-120" z_depth="-4" alignment="center"/>
+		</Component>
+
+		<Component name="Testing" x="720" y="0">
+			<Text name="title" str="Network Settings" x="-720" y="480"/>
+			<Text name="text0" str="Connection test..."        x="-145" y="-12" size="16"/>
+			<Bitmap name="cross" file="art/BtnNav-Crs-917.png"         x="-137"   y="8"/>
+			<Text name="text1" str="Press to abort the connection test."  x="8"   y="12"  size="16" alignment="center"/>
+		</Component>
+
+		<Component name="Complete" x="720" y="0">
+			<Text name="title" str="Network Setup / Setup Complete" x="-720" y="480"/>
+			<Text name="text0" str="Successfully connected to the network."  x="0" y="-12" size="16" alignment="center"/>
+		</Component>
+
+	</Component>
+
+
+	<Component name="ScreenContext" visible="0">
+
+		<Component name="ContextInfo">
+			<Text   name="numOfScreen" x="20"/>
+			<Text   name="numOfLog"    x="11"/>
+			<Text   name="numOfFlag"   x="0" />
+			<Text   name="firstScreen" str="START_SETUP"/>
+		</Component>
+
+		<Component name="START_SETUP">
+			<Text name="NOMAL" str="IP"    x="1"/>
+		</Component>
+
+		<Component name="INPUT_PPPOE">
+			<Text name="NOMAL" str="DNS" x="1"/>
+		</Component>
+
+		<Component name="IP">
+			<Text name="AUTO"   str="DNS"         x="1"/>
+			<Text name="MANUAL" str="INPUT_IP"    x="1"/>
+			<Text name="PPPOE"  str="INPUT_PPPOE" x="1"/>
+		</Component>
+
+		<Component name="INPUT_IP">
+			<Text name="NOMAL" str="INPUT_DNS" x="1"/>
+		</Component>
+
+		<Component name="DNS">
+			<Text name="AUTO"   str="CONFIG_LIST" x="1"/>
+			<Text name="MANUAL" str="INPUT_DNS"   x="1"/>
+		</Component>
+
+		<Component name="INPUT_DNS">
+			<Text name="NOMAL" str="CONFIG_LIST" x="1"/>
+		</Component>
+
+		<Component name="CONFIG_LIST">
+			<Text name="NOMAL" str="CONNECTION_TEST" x="1"/>
+		</Component>
+
+		<Component name="CONNECTION_TEST">
+			<Text name="NOMAL" str="TESTING"     x="0"/>
+			<Text name="AUTH"  str="DNAS"        x="0"/>
+			<Text name="DONE"  str="COMPLETE"    x="0"/>
+		</Component>
+
+		<Component name="TESTING">
+			<Text name="AUTH" str="DNAS"        x="0"/>
+			<Text name="DONE" str="COMPLETE"    x="0"/>
+		</Component>
+
+		<Component name="DNAS">
+			<Text name="NOMAL" str="TESTING"     x="0"/>
+			<Text name="DONE"  str="COMPLETE"    x="0"/>
+		</Component>
+
+		<Component name="COMPLETE">
+		</Component>
+
+	</Component>
+
+
+	<Component name="CommonParts">
+
+		<Text name="TitleText"   str="Network settings" visible="0"/>
+		<Text name="TitleText2"  str=""                   visible="0"/>
+		<Text name="CancelText1" str="Return"               visible="0"/>
+		<Text name="CancelText2" str="Close"             visible="0"/>
+		<Text name="CancelText3" str="Cancel"               visible="0"/>
+		<Text name="ConfirmText" str="Enter"               visible="0"/>
+		<Text name="OptionText"  str=""                   visible="0"/>
+
+		<Bitmap name="ArrowRight" file="art/GT000020.tga" x="290"  y="-5" w="28" h="30" visible="0"/>
+		<Bitmap name="ArrowLeft"  file="art/GT000020.tga" x="-290" y="-5" w="28" h="30" rot_z="0.5" visible="0"/>
+
+		<Anim name="Anim_SlideLeftIn" loop="no">
+			<AnimSegment  length="100" loop="no" duration="300" curve="0">
+				<Channel type="T" delta="0" closed="yes" loop="no">
+					<Frame time="0" x="720" />
+					<Frame time="99" x="0" />
+				</Channel>
+			</AnimSegment>
+		</Anim>
+		<Anim name="Anim_SlideLeftOut" loop="no">
+			<AnimSegment  length="100" loop="no" duration="300" curve="0">
+				<Channel type="T" delta="0" closed="yes" loop="no">
+					<Frame time="0" x="0" />
+					<Frame time="99" x="-720" />
+				</Channel>
+			</AnimSegment>
+		</Anim>
+		<Anim name="Anim_SlideRightIn" loop="no">
+			<AnimSegment  length="100" loop="no" duration="300" curve="0">
+				<Channel type="T" delta="0" closed="yes" loop="no">
+					<Frame time="0" x="-720" />
+					<Frame time="99" x="0" />
+				</Channel>
+			</AnimSegment>
+		</Anim>
+		<Anim name="Anim_SlideRightOut" loop="no">
+			<AnimSegment  length="100" loop="no" duration="300" curve="0">
+				<Channel type="T" delta="0" closed="yes" loop="no">
+					<Frame time="0" x="0" />
+					<Frame time="99" x="720" />
+				</Channel>
+			</AnimSegment>
+		</Anim>
+		<Anim name="Anim_FadeIn" loop="no">
+			<AnimSegment length="100" loop="no" duration="300" curve="0">
+				<Channel type="C" delta="0" closed="yes" loop="no">
+					<Frame time="0" a="0.0"/>
+					<Frame time="99" a="1.0"/>
+				</Channel>
+			</AnimSegment>
+		</Anim>
+
+	</Component>
+
+</App>

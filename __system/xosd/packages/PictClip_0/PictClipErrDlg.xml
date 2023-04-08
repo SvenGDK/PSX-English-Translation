@@ -1,0 +1,163 @@
+﻿<?xml version="1.0"?>
+<PSML2>
+
+<Dll name="xBitmap/xBitmap"	version="0.1.0" />
+<Dll name="xButton/xButton"	version="0.1.0" />
+<Dll name="xText/xText"		version="0.1.0" />
+
+<!-- 警告 = 後戻りできる /-->
+<!-- エラー = 終了する /-->
+
+<!-- アルバム内に写真がない警告 /-->
+<Screen name="FileNotFoundInAlbumError" visible="0" z_depth="-1">
+	<Text name="text0" str="There are no photos available for Pict Story."				y="-6" size="16" alignment="center" />
+	<Text name="text1" str="Please select another album.　　　　"				y="16" size="16" alignment="center" />
+</Screen>
+
+<!-- Pict Storyファイルが壊れている警告 /-->
+<Screen name="PictClipFileBrokenError" visible="0" z_depth="-1">
+	<Text name="text0" str="This Pict Story cannot be modified.　　"					y="-6" size="16" alignment="center" />
+	<Text name="text1" str="Please select another Pict Story."					y="16" size="16" alignment="center" />
+</Screen>
+
+<!-- 入力した値と同名、もしくは無記名の警告 /-->
+<Screen name="TitleInSameOrNoneError" visible="0" z_depth="-1">
+	<Text name="text0" str="The name you entered is invalid or already in use."			y="-6" size="16" alignment="center" />
+	<Text name="text1" str="Please change the name.　　　　　　　　　　"			y="16" size="16" alignment="center" />
+</Screen>
+
+<!-- Pict Story数がmax(Optionから入ってきた場合) /-->
+<Screen name="PictClipMaxError" visible="0" z_depth="-1">
+	<Text name="text0" str="No more Pict Story can be created."					y="-19" size="16" alignment="center" />
+	<Text name="text1" str="Delete unnecessary Pict Story.　"					y="5"   size="16" alignment="center" />
+	<Text name="text2" str="Exit Pict Story editing.　　　　　"					y="29"  size="16" alignment="center" />
+</Screen>
+
+<!-- アルバム内Jpegなしエラー(Optionから入ってきた場合) /-->
+<Screen name="FileNotFoundFromOptionError" visible="0" z_depth="-1">
+	<Text name="text0" str="There are no photos to create a Pict Story."			y="-6" size="16" alignment="center" />
+	<Text name="text1" str="Exit Pict Story editing.　　　　　　　　　"			y="16" size="16" alignment="center" />
+</Screen>
+
+<!-- PictClip修正不可エラー(Optionから入ってきた場合) /-->
+<Screen name="PictClipFileError" visible="0" z_depth="-1">
+	<Text name="text0" str="Albums used in this Pict Story"					y="-19" size="16" alignment="center" />
+	<Text name="text1" str="There are no photos.　　　　　　　　　"					y="5"   size="16" alignment="center" x="-3" />
+	<Text name="text2" str="Exit Pict Story editing.　　　　　"					y="29"  size="16" alignment="center" />
+</Screen>
+
+<!-- 録画中エラー /-->
+<Screen name="UnderRecError" visible="0" z_depth="-1">
+	<Text name="text0" str="Saved Pict Story.　　　　　"					y="-50" size="16" alignment="center" />
+	<Text name="text1" str="Video cannot be created because recording is in progress." 					y="-6"  size="16" alignment="center" />
+	<Text name="text2" str="After the recording is finished, from Pict Story　　　　"					y="16"  size="16" alignment="center" />
+	<Text name="text3" str="Please make a video.　　　　　　" 					y="38"  size="16" alignment="center" />
+	<Text name="text4" str="Exit Pict Story editing.　　　　" 					y="60"  size="16" alignment="center" />
+</Screen>
+
+<!-- HDD容量不足エラー /-->
+<Screen name="CapacityOverError" visible="0" z_depth="-1">
+	<Text name="text0" str="Saved Pict Story.　　　　　　　　　　　　　"	y="-50" size="16" alignment="center" />
+	<Text name="text1" str="Due to lack of hard disk space"	y="-6"  size="16" alignment="center" />
+	<Text name="text2" str="Cant make a video.　　　　　　　　　　　　　　　" 	y="16"  size="16" alignment="center" />
+	<Text name="text3" str="Delete unnecessary titles, tracks and photos." 	y="38"  size="16" alignment="center" />
+	<Text name="text4" str="Exit Pict Story editing.　　　　　　　　　　　　" 	y="60"  size="16" alignment="center" />
+</Screen>
+
+<!-- タイトル数エラー /-->
+<Screen name="TitleNumOverError" visible="0" z_depth="-1">
+	<Text name="text0" str="Saved Pict Story.　　　　　　　"				y="-43" size="16" alignment="center" />
+	<Text name="text1" str="No more video titles can be created."				y="5"   size="16" alignment="center" />
+	<Text name="text2" str="Please delete unnecessary titles.　　　"				y="29"  size="16" alignment="center" />
+	<Text name="text3" str="Exit Pict Story editing.　　　　　　"				y="53"  size="16" alignment="center" />
+</Screen>
+
+<!-- 最適化中エラー /-->
+<Screen name="UnderOptimizeError" visible="0" z_depth="-1">
+	<Text name="text0" str="Saved Pict Story.　　"							y="-67" size="16" alignment="center" />
+	<Text name="text1" str="Due to video title optimization"	 						y="-19" size="16" alignment="center" />
+	<Text name="text2" str="Cant make a video.　　　　" 						y="5"   size="16" alignment="center" />
+	<Text name="text3" str="After optimization is finished, from Pict Story" 						y="29"  size="16" alignment="center" />
+	<Text name="text4" str="Please make a video.　　　" 						y="53"  size="16" alignment="center" />
+	<Text name="text5" str="Exit Pict Story editing.　" 						y="77"  size="16" alignment="center" />
+</Screen>
+
+<!-- 録画準備中エラー /-->
+<Screen name="UnderRecPrepError" visible="0" z_depth="-1">
+	<Text name="text0" str="Saved Pict Story.　　　　　　　"				y="-50" size="16" alignment="center" />
+	<Text name="text1" str="A video cannot be created because recording is being prepared." 				y="-6"  size="16" alignment="center" />
+	<Text name="text2" str="After deleting the scheduled recording, from Pict Story　　"				y="16"  size="16" alignment="center" />
+	<Text name="text3" str="Please make a video.　　　　　　　　" 				y="38"  size="16" alignment="center" x="2" />
+	<Text name="text4" str="Exit Pict Story editing.　　　　　　" 				y="60"  size="16" alignment="center" x="2" />
+</Screen>
+
+<!-- 録画中エラー(From Option) /-->
+<Screen name="UnderRecErrorFrmOpt" visible="0" z_depth="-1">
+	<Text name="text0" str="Video cannot be created because recording is in progress." 					y="-28" size="16" alignment="center" />
+	<Text name="text1" str="After the recording is finished, from Pict Story　　　　"					y="-6"  size="16" alignment="center" />
+	<Text name="text2" str="Please make a video.　　　　　　" 					y="16"  size="16" alignment="center" />
+	<Text name="text3" str="Exit Pict Story editing.　　　　" 					y="38"  size="16" alignment="center" />
+</Screen>
+
+<!-- HDD容量不足エラー(From Option) /-->
+<Screen name="CapacityOverErrorFrmOpt" visible="0" z_depth="-1">
+	<Text name="text0" str="Due to lack of hard disk space"	y="-28" size="16" alignment="center" />
+	<Text name="text1" str="Cant make a video.　　　　　　　　　　　　　　　" 	y="-6"  size="16" alignment="center" />
+	<Text name="text2" str="Delete unnecessary titles, tracks and photos." 	y="16"  size="16" alignment="center" />
+	<Text name="text3" str="Exit Pict Story editing.　　　　　　　　　　　　" 	y="38"  size="16" alignment="center" />
+</Screen>
+
+<!-- タイトル数エラー(From Option) /-->
+<Screen name="TitleNumOverErrorFrmOpt" visible="0" z_depth="-1">
+	<Text name="text0" str="No more video titles can be created." 				y="-19" size="16" alignment="center" />
+	<Text name="text1" str="Please delete unnecessary titles.　　　"				y="5"   size="16" alignment="center" />
+	<Text name="text2" str="Exit Pict Story editing.　　　　　　" 				y="29"  size="16" alignment="center" />
+</Screen>
+
+<!-- 最適化中エラー(From Option) /-->
+<Screen name="UnderOptimizeErrorFrmOpt" visible="0" z_depth="-1">
+	<Text name="text0" str="Due to video title optimization"	 						y="-43" size="16" alignment="center" />
+	<Text name="text1" str="Cant make a video.　　　　" 						y="-19" size="16" alignment="center" />
+	<Text name="text2" str="After optimization is finished, from Pict Story" 						y="5"   size="16" alignment="center" />
+	<Text name="text3" str="Please make a video.　　　" 						y="29"  size="16" alignment="center" />
+	<Text name="text4" str="Exit Pict Story editing.　" 						y="53"  size="16" alignment="center" />
+</Screen>
+
+<!-- 録画準備中エラー(From Option) /-->
+<Screen name="UnderRecPrepErrorFrmOpt" visible="0" z_depth="-1">
+	<Text name="text1" str="A video cannot be created because recording is being prepared." 				y="-28" size="16" alignment="center" />
+	<Text name="text2" str="After deleting the scheduled recording, from Pict Story　　"				y="-6"  size="16" alignment="center" />
+	<Text name="text3" str="Please make a video.　　　　　　　　" 				y="16"  size="16" alignment="center" x="2" />
+	<Text name="text4" str="Exit Pict Story editing.　　　　　　" 				y="38"  size="16" alignment="center" x="2" />
+</Screen>
+
+<!-- PictClip再生等でフォトファイルが読み出せない場合のエラー /-->
+<Screen name="PhotoFileReadError" visible="0" z_depth="-1">
+	<Text name="text0" str="Failed to load photos.　　　"	 				y="-6" size="16" alignment="center" />
+	<Text name="text1" str="Please check the photo from the album." 				y="16" size="16" alignment="center" x="2" />
+</Screen>
+
+<!-- PictClipの録画中に何らかのエラー /-->
+<Screen name="PictClipRecodingError" visible="0" z_depth="-1">
+	<Text name="text0" str="Cant make a video.　　　"		 					y="-6" size="16" alignment="center" />
+	<Text name="text1" str="Exit Pict Story editing." 							y="16" size="16" alignment="center" x="2" />
+</Screen>
+
+<!-- スライドショーエラー /-->
+<Screen name="SlideShowError" visible="0" z_depth="-1">
+	<Text name="text0" str="There are no photos available for slideshow." 				y="5"   size="16" alignment="center" />
+</Screen>
+
+<!-- PictClip再生エラー /-->
+<Screen name="PictClipPlayError" visible="0" z_depth="-1">
+	<Text name="text0" str="Albums and photos used in this Pict Story" 		y="-6"  size="16" alignment="center" />
+	<Text name="text1" str="It cannot be played because it has been changed or deleted.　"		y="16"  size="16" alignment="center" />
+</Screen>
+
+<!-- システムエラー /-->
+<Screen name="SystemError" visible="0" z_depth="-1">
+	<Text name="text0" str="An error has occurred　　　"							y="-6"  size="16" alignment="center" />
+	<Text name="text1" str="Please turn off the power and turn it on again."							y="16"  size="16" alignment="center" />
+</Screen>
+
+</PSML2>

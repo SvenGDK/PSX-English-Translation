@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<App name="ConfigTVChannel" focus="TvConfigList" native="ConfigTVChannel/ConfigTVChannel"  z_depth="-200">
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dic name="ConfigTVChannel" filepath="pack:ConfigTVChannel/0.1.0/dic" default="yes" />
+
+	<Text name="ch_skip0" str="No Skip" visible="0" />
+	<Text name="ch_skip1" str="Skip" visible="0" />
+	<Text name="grt0" str="Cut" visible="0" />
+	<Text name="grt1" str="Enter" visible="0" />
+	<Text name="fine_tune0" str="No Skip" visible="0" />
+	<Text name="fine_tune1" str="Skip" visible="0" />
+
+	<!-- Index list *********************************************************************************** -->
+	<!-- High model -->
+
+	<Component name="TvConfigListIndex_H" x="-370" y="-240" visible="0" >
+		<Text name="Cap_Index1" str="Reception" x="145" y="87" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index2" str="Channel" x="145" y="107" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index5" str="Guide" x="250" y="87" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index6" str="Channel" x="250" y="107" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index8" str="Channel" x="365" y="87" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index9" str="Skip" x="365" y="107" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_IndexA" str="GRT" x="485" y="97" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_IndexB" str="Automatic" x="565" y="87" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_IndexC" str="Tuning" x="565" y="107" size="16" rgba="D0D0D0FF" />
+	</Component>
+
+	<!-- Middle model -->
+
+	<Component name="TvConfigListIndex_M" x="-370" y="-240" visible="0" >
+		<Text name="Cap_Index1" str="Reception"         x="145" y="87"  size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index2" str="Channel"   x="145" y="107" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index5" str="Guide"       x="273" y="87"  size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index6" str="Channel"   x="273" y="107" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index8" str="Channel"   x="401" y="87"  size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_Index9" str="Skip"       x="401" y="107" size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_IndexB" str="Automatic"         x="529" y="87"  size="16" rgba="D0D0D0FF" />
+		<Text name="Cap_IndexC" str="Tuning" x="529" y="107" size="16" rgba="D0D0D0FF" />
+
+		<!-- Text name="Cap_Index1" str="受信" x="145" y="87" size="16" rgba="D0D0D0FF" / -->
+		<!-- Text name="Cap_Index2" str="チャンネル" x="145" y="107" size="16" rgba="D0D0D0FF" / -->
+		<!-- Text name="Cap_Index5" str="ガイド" x="278" y="87" size="16" rgba="D0D0D0FF" / -->
+		<!-- Text name="Cap_Index6" str="チャンネル" x="278" y="107" size="16" rgba="D0D0D0FF" / -->
+		<!-- Text name="Cap_Index8" str="チャンネル" x="411" y="87" size="16" rgba="D0D0D0FF" / -->
+		<!-- Text name="Cap_Index9" str="飛ばし" x="411" y="107" size="16" rgba="D0D0D0FF" / -->
+		<!-- Text name="Cap_IndexB" str="自動" x="544" y="87" size="16" rgba="D0D0D0FF" / -->
+		<!-- Text name="Cap_IndexC" str="チューニング" x="544" y="107" size="16" rgba="D0D0D0FF" / -->
+	</Component>
+
+	<!-- Config list *********************************************************************************** -->
+	<!-- High model -->
+
+	<Component name="TvConfigList_H" x="-370" y="-240" visible="0" >
+		<Component name="Bar" x="55" y="260" />
+
+		<Component name="cell0" x="0" y="120" rgba="D0D0D000" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell1" x="0" y="140" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell2" x="0" y="160" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell3" x="0" y="180" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell4" x="0" y="200" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell5" x="0" y="220" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell6" x="0" y="240" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell7" x="0" y="260" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell8" x="0" y="280" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell9" x="0" y="300" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell10" x="0" y="320" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell11" x="0" y="340" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell12" x="0" y="360" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell13" x="0" y="380" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell14" x="0" y="400" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell15" x="0" y="420" rgba="D0D0D000" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />
+		</Component>
+
+		<Prim name="Line1" type="line" rgba="404040FF" x="127" y="70" x2="-243" y2="165" />
+		<Prim name="Line2" type="line" rgba="404040FF" x="238" y="70" x2="-132" y2="165" />
+		<Prim name="Line3" type="line" rgba="404040FF" x="349" y="70" x2="-21"  y2="165" />
+		<Prim name="Line4" type="line" rgba="404040FF" x="468" y="70" x2="98"  y2="165" />
+		<Prim name="Line5" type="line" rgba="404040FF" x="542" y="70" x2="172"  y2="165" />
+
+		<Component name="ListFocus" x="372" y="145" />
+	</Component>
+
+	<!-- Middle model -->
+
+	<Component name="TvConfigList_M" x="-370" y="-240" visible="0" >
+		<Component name="Bar" x="55" y="265" />
+
+		<Component name="cell0" x="0" y="120" rgba="D0D0D000" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="320" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="453" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="595" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell1" x="0" y="140" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell2" x="0" y="160" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell3" x="0" y="180" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell4" x="0" y="200" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell5" x="0" y="220" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell6" x="0" y="240" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell7" x="0" y="260" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell8" x="0" y="280" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell9" x="0" y="300" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell10" x="0" y="320" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell11" x="0" y="340" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell12" x="0" y="360" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell13" x="0" y="380" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell14" x="0" y="400" rgba="D0D0D0FF" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Component name="cell15" x="0" y="420" rgba="D0D0D000" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="195" size="16" alignment="right" />
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />
+		</Component>
+
+		<Prim name="Line1" type="line" rgba="404040FF" x="121" y="70" x2="-249" y2="165" />
+		<Prim name="Line2" type="line" rgba="404040FF" x="249" y="70" x2="-121" y2="165" />
+		<Prim name="Line3" type="line" rgba="404040FF" x="377" y="70" x2="7"  y2="165" />
+		<Prim name="Line4" type="line" rgba="404040FF" x="505" y="70" x2="135"  y2="165" />
+
+		<Component name="ListFocus" x="372" y="145" />
+	</Component>
+
+
+	<!-- focus bitmap base for setting *********************************************************************************** -->
+	<!-- High model -->
+
+	<Component name="TVChannelConfigModifyBase_H" x="-370" y="-240" visible="0" >
+		<Component name="TVChannelConfigModify_H" x="0" y="220" >
+			<Text name="Cnt0" x="110" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="180" size="16" alignment="center" />  <!-- 受信チャンネル -->
+			<Text name="Cnt2" str="" x="290" size="16" alignment="center" />  <!-- チャンネルガイド -->
+			<Text name="Cnt3" str="" x="400" size="16" alignment="center" />  <!-- チャンネルスキップ -->
+			<Text name="Cnt4" str="" x="505" size="16" alignment="center" />  <!-- ＧＲＴ -->
+			<Text name="Cnt5" str="" x="605" size="16" alignment="center" />  <!-- 自動チューニング -->
+		</Component>
+	</Component>
+
+	<!-- focus bitmap base for setting Middle model -->
+	<!-- Middle model -->
+
+	<Component name="TVChannelConfigModifyBase_M" x="-370" y="-240" visible="0" >
+		<Component name="TVChannelConfigModify_M" x="0" y="220" >
+			<Text name="Cnt0" x="97" str="" size="16" alignment="right" />
+			<Text name="Cnt1" str="" x="187" size="16" alignment="center" />  <!-- 受信チャンネル -->
+			<Text name="Cnt2" str="" x="315" size="16" alignment="center" />  <!-- チャンネルガイド -->
+			<Text name="Cnt3" str="" x="443" size="16" alignment="center" />  <!-- チャンネルスキップ -->
+			<Text name="Cnt5" str="" x="580" size="16" alignment="center" />  <!-- 自動チューニング -->
+		</Component>
+	</Component>
+
+	<!-- ARROW for Item Setting *********************************************************************************** -->
+
+	<Component name="ModifyFocus" x="-370" y="-240" visible="0" >
+	<!-- High model -->
+		<Component name="ModifyFocusArrow_H" x="0" >
+			<Bitmap name="ModifyFocusArrowUp" file="art/arrow_U.tga" y="-23" w="14" h="12" />
+			<Bitmap name="ModifyFocusArrowDn" file="art/arrow_U.tga" y="12" rot_x="0.5" w="14" h="12" />
+		</Component>
+	<!-- Middle model -->
+		<Component name="ModifyFocusArrow_M" x="0" >
+			<Bitmap name="ModifyFocusArrowUp" file="art/arrow_U.tga" y="-23" w="14" h="12" />
+			<Bitmap name="ModifyFocusArrowDn" file="art/arrow_U.tga" y="12" rot_x="0.5" w="14" h="12" />
+		</Component>
+	</Component>
+
+	<Prim name="rect" type="rect" rgba="00000040" x="0" y="0" w="720" h="480" />
+
+	<Component name="FineTuneBarBase" x="-360" y="-240" visible="0" z_depth="-10">
+		<Text name="Channel" str="" x="588" y="57" size="16" alignment="left" rgba="FFFFFFB0" />
+
+		<Component name="slider" y="380" >
+			<!-- Bitmap name="barBg" file="art/timeline.tga"  y="0" x="360" w="510" / -->
+			<!-- Bitmap name="barFg" file="art/timeline_point_focued.tga" x="360" / -->
+		</Component>
+
+		<Text name="Title" str="TV setup / Manual Channel Setup / Channel Fine Tuning" x="88" y="57" size="16" rgba="FFFFFFFF" />
+		<Bitmap name="TopBarBg" file="art/TopBar-Thick.tga" x="360" y="40" w="720" h="64" rgba="FFFFFF60" />
+
+		<Text name="TXTCross" str="Return" x="269" y="435" size="16" rgba="D0D0D0FF" />
+		<Bitmap name="IcnCross" file="art/BtnNav-Crs-917.png" x="256" y="430" />
+		<Text name="TXTCircle" str="Accept" x="408" y="436" size="16" rgba="D0D0D0FF" />
+		<Bitmap name="IcnCiecle" file="art/BtnNav-EnterCir-917-wide.tga" x="375" y="432" />
+		<Bitmap name="BotBarBg" file="art/TopBar-Thick.tga" x="360" y="440" w="720" h="64" rot_z="0.5" rgba="FFFFFF60" />
+	</Component>
+
+	<Component name="SB" x="-370" y="-240" visible="1" >
+		<Component name="Scrool_Bar" x="55" y="260" />
+	</Component>
+
+</App>

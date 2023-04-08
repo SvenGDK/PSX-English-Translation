@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<PSML2>
+
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+
+<Screen name="TerminateQuestion" visible="0" z_depth="-1" focus="TerminateQuestion_BtnCancel" >
+	<Text name="text0" str="{HDDPartition::Message_Cancel}" x="-104" y="-30"  size="16" spacing_v="8"  />
+
+	<Button name="TerminateQuestion_BtnDone" x="-60" y="42" visible="1" nav_right="TerminateQuestion_BtnCancel" alignment="center">
+		<FocusOn>
+			<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="96" h="40" x="0" y="-5" alignment="center"/>
+			<Text str="{HDDPartition::HDD_YES}" rgba="{*::TextRGBA.Hilited}" shadow="0" alignment="center" />
+		</FocusOn>
+        <FocusOff>
+			<Text str="{HDDPartition::HDD_YES}" rgba="{*::TextRGBA.Normal}" alignment="center" />
+		</FocusOff>
+	</Button>
+	<Button name="TerminateQuestion_BtnCancel" x="60" y="42" visible="1" nav_left="TerminateQuestion_BtnDone" alignment="center">
+		<FocusOn>
+			<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="96" h="40" x="0" y="-5" alignment="center"/>
+			<Text str="{HDDPartition::HDD_NO}" rgba="{*::TextRGBA.Hilited}" shadow="0" alignment="center" />
+		</FocusOn>
+		<FocusOff>
+			<Text str="{HDDPartition::HDD_NO}" rgba="{*::TextRGBA.Normal}" alignment="center" />
+		</FocusOff>
+    </Button>
+
+</Screen>
+
+<Screen name="FinalQuestion" visible="0" z_depth="-1" focus="FinalQuestion_BtnCancel" >
+	<Component name="Base" x="-200" y="-110" >
+		<Text name="text0" str="{HDDPartition::Message_Warning0}" x="0"  y="0"  spacing_v="8" />
+		<Text name="text1" str="{HDDPartition::Message_Warning1}" x="48" y="86" spacing_v="8" />
+	</Component>
+
+	<Button name="FinalQuestion_BtnDone" x="-60" y="120" visible="1" nav_right="FinalQuestion_BtnCancel" alignment="center">
+		<FocusOn>
+			<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="96" h="40" x="0" y="-5" alignment="center"/>
+			<Text str="{HDDPartition::HDD_EXEC}" rgba="{*::TextRGBA.Hilited}" shadow="0" alignment="center" />
+		</FocusOn>
+        <FocusOff>
+			<Text str="{HDDPartition::HDD_EXEC}" rgba="{*::TextRGBA.Normal}" alignment="center" />
+		</FocusOff>
+	</Button>
+	<Button name="FinalQuestion_BtnCancel" x="60" y="120" visible="1" nav_left="FinalQuestion_BtnDone" alignment="center">
+		<FocusOn>
+			<Bitmap3x3 file="art/TextFocus.tga" corner_w="25" corner_h="17" w="96" h="40" x="0" y="-5" alignment="center"/>
+			<Text str="{HDDPartition::HDD_CANCEL}" rgba="{*::TextRGBA.Hilited}" shadow="0" alignment="center" />
+		</FocusOn>
+		<FocusOff>
+			<Text str="{HDDPartition::HDD_CANCEL}" rgba="{*::TextRGBA.Normal}" alignment="center" />
+		</FocusOff>
+    </Button>
+
+</Screen>
+
+<Screen name="Dialog_RecStanby" visible="1" z_depth="-1" focus="text0">
+	<Text name="text0" str="{HDDPartition::Message_RecStanby}"   x="-150" y="-6" spacing_v="8" />
+</Screen>
+
+<!-- EPG受信1分前確認ダイアログ /-->
+<Screen name="Dialog_EPGStanby" visible="0" z_depth="-1" focus="text0">
+	<Text name="text0" str="{HDDPartition::Message_EPGStanby}"   x="-150" y="-6"  spacing_v="8" />
+</Screen>
+
+
+
+
+
+</PSML2>

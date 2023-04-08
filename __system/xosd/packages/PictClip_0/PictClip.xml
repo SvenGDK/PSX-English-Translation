@@ -1,0 +1,332 @@
+﻿<?xml version="1.0"?>
+<App name="PictClip" focus="ModifyFocus" native="PictClip/PictClip" z_depth="0" visible="0">
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xStr/xStr" version="0.1.0" />
+	<Dll name="xSet/xSet" version="0.1.0" />
+
+	<!-- 縦横線 /-->
+	<Component name="LineForTest" visible="0">
+		<Prim type="line" rgba="FF0000FF" x="0" y="-224" x2="0" y2="224"  z_depth="-11" />
+		<Prim type="line" rgba="FF0000FF" x="-352" y="-0" x2="352" y2="0" z_depth="-11" />
+	</Component>
+
+	<Component name="WizardList" x="-360" y="-240" >
+
+		<!-- No.0 作成・修正選択 /-->
+		<Component name="cell0" x="720" y="0" rgba="D0D0D0FF" visible="0" >
+			<Component name="text" x="352" y="185" >
+				<Text name="text0" str="Pict Story from photos saved in the album"	 x="8" y="0"  size="16" alignment="center" />
+				<Text name="text1" str=", or an already created Pict Story"	 x="8" y="24" size="16" alignment="center" />
+				<Text name="text2" str="to correct.　　　　　　　　　　　　　　　"	 x="8" y="48" size="16" alignment="center" />
+			</Component>
+			<Component name="ImageTextList" x="352" y="295" w="200.0" >
+				<Text name="text0" str="Create New" x="8" y="0"  size="16" alignment="center" />
+				<Text name="text1" str="Correction" x="8" y="24" size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.1 アルバム選択 /-->
+		<Component name="cell1" 	x="720"	y="0" rgba="D0D0D0FF" visible="0" >
+			<Component name="ImageTextList"				x="130" y="240" />
+			<Component name="text" x="0" y="0" >
+				<Bitmap name="textBgWall" file="art/ListMessageBase.png"	x="720" y="91" w="1440" />
+				<Text name="text0" str="Please select an album."		x="88"  y="85" size="16" />
+			</Component>
+		</Component>
+
+		<!-- No.2 Pict Story選択 /-->
+		<Component name="cell2" 						x="720"	y="0" rgba="D0D0D0FF" visible="0" >
+			<Component name="ImageTextList"				x="130" y="240" />
+			<Component name="text" x="0" y="0" >
+				<Bitmap name="textBgWall" file="art/ListMessageBase.png"	x="720" y="91" w="1440" />
+				<Text name="text0" str="Choose Pict Story."		x="88"  y="85" size="16" />
+			</Component>
+		</Component>
+
+		<!-- No.3 BGM選択 /-->
+		<Component name="cell3" 						x="720" y="0" rgba="D0D0D0FF" visible="0" >
+			<Component name="ImageTextList"				x="130" y="240" />
+			<Component name="text" x="0" y="0" >
+				<Bitmap name="textBgWall" file="art/ListMessageBase.png"	x="0" y="91" w="1440" />
+				<Text name="text0" str="Please select BGM."			x="88"  y="85" size="16" />
+			</Component>
+		</Component>
+
+		<!-- No.4 設定確認 /-->
+		<Component name="cell4" x="720"	y="0" rgba="D0D0D0FF" visible="0" >
+			<Component name="text" x="0" y="150" >
+				<Text name="text0" str="Create a Pict Story with the following settings." x="100"	y="0"	size="16" alignment="left" />
+				<Text name="text1" str="Album:"		x="200" y="62"  size="16" alignment="left" />
+				<Text name="text2" str=""				x="285" y="62"  size="16" alignment="left" max_w="330" />
+				<Text name="text3" str="Track:"		x="200" y="92"  size="16" alignment="left" />
+				<Text name="text4" str=""				x="285" y="92"  size="16" alignment="left" />
+				<Text name="text5" str="Play time:"		x="200" y="122" size="16" alignment="left" />
+				<Text name="text6" str=""				x="285" y="122" size="16" alignment="left" />
+			</Component>
+		</Component>
+
+		<!-- No.5 確認再生(プレビュー) /-->
+		<Component name="cell5" 			x="720"	y="0" rgba="D0D0D0FF" visible="0" >
+		<!-- 画面要素無し /-->
+		</Component>
+
+		<!-- No.6 上書き確認 /-->
+		<Component name="cell6" x="720" y="0" rgba="D0D0D0FF" visible="0" >
+			<Component name="text" x="352" y="180" >
+				<Text name="text0" str="Save Pict Story.　　　　　　　" x="8" y="0"  size="16" alignment="center" />
+				<Text name="text1" str="When saving as a new Pict Story" x="8" y="24" size="16" alignment="center" />
+				<Text name="text2" str="Select Save As.　　" x="8" y="48" size="16" alignment="center" />
+			</Component>
+			<Component name="ImageTextList" x="352" y="280" w="200.0" >
+				<Text name="text0" str="Overwrite save" x="8" y="0"  size="16" alignment="center" />
+				<Text name="text1" str="Save as" x="8" y="24" size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.7 保存(タイトル入力) /-->
+		<Component name="cell7" 											   x="720"	y="0" rgba="D0D0D0FF" visible="0" >
+		<!-- 画面要素無し /-->
+		</Component>
+
+		<!-- No.8 ビデオ作成開始 /-->
+		<Component name="cell8" x="720" y="0" rgba="D0D0D0FF" visible="0" >
+			<Component name="text" x="352" y="125" >
+				<Text name="text0" str="Saved Pict Story.　　　　　　　　" x="-168" y="0"   size="16" />
+				<Text name="text1" str="Next, we will create a Pict Story video.　　" x="-168" y="24"  size="16" />
+				<Text name="text2" str="Is this OK?　　　　　　　　　　　　　" x="-168" y="48"  size="16" />
+				<Text name="text3" str="You cannot operate anything other than [Stop] while creating a video." x="-168" y="96"  size="16" />
+				<Text name="text4" str="Scheduled recording cannot be performed during video creation.　" x="-168" y="120" size="16" />
+				<Text name="text5" str=""											x="-168" y="144" size="16" />
+				<Text name="text6" str=""											x="-168" y="168" size="16" />
+				<Text name="text7" str="has a scheduled recording."						x="-108" y="168" size="16" />
+			</Component>
+			<Component name="ImageTextList" x="352" y="341" w="200.0" >
+				<Text name="text0" str="video creation" x="8" y="0"  size="16" alignment="center" />
+				<Text name="text1" str="Pict Story editing finished" x="8" y="24" size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.9 ビデオ作成開始(Optionより) /-->
+		<Component name="cell9" x="720" y="0" rgba="D0D0D0FF" visible="0" >
+			<Component name="text" x="352" y="150" >
+				<Text name="text3" str="You cannot operate anything other than [Stop] while creating a video." x="8"    y="24" size="16" alignment="center" />
+				<Text name="text4" str="Scheduled recording cannot be performed during video creation.　" x="8"    y="48" size="16" alignment="center" />
+				<Text name="text5" str=""											x="-168" y="72" size="16" />
+				<Text name="text6" str=""											x="-168" y="96" size="16" />
+				<Text name="text7" str="has a scheduled recording."						x="-108" y="96" size="16" />
+			</Component>
+			<Component name="ImageTextList" x="352" y="289" w="200.0" >
+				<Text name="text0" str="Video creation" x="8" y="0"  size="16" alignment="center" />
+				<Text name="text1" str="Pict Story editing finished" x="8" y="24" size="16" alignment="center" />
+			</Component>
+		</Component>
+
+		<!-- No.10 (ビデオ作成中) /-->
+		<Component name="cell10" 											  	x="720" y="0" rgba="D0D0D0FF" visible="0" >
+		<!-- 画面要素無し /-->
+		</Component>
+
+		<!-- No.11 再生 /-->
+		<Component name="cell11" 			x="720"	y="0" rgba="D0D0D0FF" visible="0" >
+		<!-- 画面要素無し /-->
+		</Component>
+
+		<!-- No.12 スライドショー /-->
+		<Component name="cell12" 			x="720"	y="0" rgba="D0D0D0FF" visible="0" >
+		<!-- 画面要素無し /-->
+		</Component>
+
+		<!-- No.13 終了 /-->
+		<Component name="cell13" 											x="720" y="0" rgba="D0D0D0FF" visible="0" >
+			<Component name="text"											x="150" y="200" >
+				<Text name="text0" 		str="The Pict Story video you created" 	x="0"   y="0"  size="16" />
+				<Bitmap name="enter"	file="art/video.png"				x="245" y="-5" />
+				<Text name="text1" 		str="saved to" 				x="270" y="0"  size="16" />
+				<Text name="text2" 		str="Exit Pict Story editing." x="0"   y="24" size="16" />
+			</Component>
+		</Component>
+
+		<!-- 左右の矢印 /-->
+		<Bitmap name="ListArrowLeft"  file="art/GT000020.tga" x="65"  y="240" w="28" h="30" visible="0" rot_y="0.5" />
+		<Bitmap name="ListArrowRight" file="art/GT000020.tga" x="646" y="240" w="28" h="30" visible="0" />
+
+		<!-- フォーカスコンポーネントの仮格納場所(リスト使用時に親を置換え) /-->
+		<Component name="FocusComponent" visible="0">
+			<Bitmap3x3 name="TextFocusTop"         file="art/TextFocus.tga" corner_w="25" corner_h="17" w="120" h="40" x="0" y="-6" />
+			<Bitmap3x3 name="TextFocusOvertide"    file="art/TextFocus.tga" corner_w="25" corner_h="17" w="165" h="40" x="0" y="-5" />
+			<Bitmap3x3 name="TextFocusVideoCreate" file="art/TextFocus.tga" corner_w="25" corner_h="17" w="205" h="40" x="0" y="-5" />
+		</Component>
+
+	</Component>
+
+	<!-- 文字列 /-->
+	<Component name="ListNode" visible="0">
+		<!-- 新規作成/編集選択リスト /-->
+		<String name="TopSelectListE"				str="Edit"					visible="0" />
+		<!-- ビデオ作成開始画面 /-->
+		<String name="VideoCreateConfirmStr1"		str="to the end approximately"		visible="0" />
+		<String name="VideoCreateConfirmStr2"		str="It takes minutes."		visible="0" />
+		<!-- 画面毎のタイトル /-->
+		<String name="page_guide0"					str="Create/Modify selection"		visible="0" />
+		<String name="page_guide1"					str="Album selection"			visible="0" />
+		<String name="page_guide2"					str="Pict Story selection"		visible="0" />
+		<String name="page_guide3"					str="BGM selection"				visible="0" />
+		<String name="page_guide4"					str="Confirm settings"				visible="0" />
+		<String name="page_guide5"					str="Confirm playback"				visible="0" />
+		<String name="page_guide6"					str="Overwrite confirmation"			visible="0" />
+		<String name="page_guide7"					str="Keep"					visible="0" />
+		<String name="page_guide8"					str="Start making videos"		visible="0" />
+		<String name="page_guide9"					str="Start making videos"		visible="0" />
+		<!--
+			// 10:ビデオ作成中
+			// 11:Pict Storyの再生
+			// 12:スライドショー
+		/-->
+		<String name="page_guide13"					str="終了"					visible="0" />
+	</Component>
+
+	<!-- キー入力禁止文字列 /-->
+	<Text name="DisallowStr" visible="0" str="&#x0022;&#x0027;&#x002a;&#x002f;&#x003a;&#x003c;&#x003e;&#x003f;&#x005c;&#x007c;&#x00a5;&#xe002;&#xe003;&#xe004;&#xe005;&#xe006;&#xe007;&#xe008;&#xe009;&#xe00a;&#xe00b;&#xe00c;&#xe00d;&#xe00e;&#xe00f;&#xe02f;&#xe030;&#xe03b;&#xe03c;" />
+
+	<!-- ビジー表示 -->
+	<Component name="BusyIcon" rgba="FFFFFFFF" x="289" y="-156" z_depth="-11" visible="0" >
+		<Set frames="2" looping="1" state="1">
+			<Bitmap name="01" file="art/01.png" />
+			<Bitmap name="02" file="art/02.png" />
+			<Bitmap name="03" file="art/03.png" />
+			<Bitmap name="04" file="art/04.png" />
+			<Bitmap name="05" file="art/05.png" />
+			<Bitmap name="06" file="art/06.png" />
+			<Bitmap name="07" file="art/07.png" />
+			<Bitmap name="08" file="art/08.png" />
+			<Bitmap name="09" file="art/09.png" />
+			<Bitmap name="10" file="art/10.png" />
+			<Bitmap name="11" file="art/11.png" />
+			<Bitmap name="12" file="art/12.png" />
+			<Bitmap name="13" file="art/13.png" />
+			<Bitmap name="14" file="art/14.png" />
+			<Bitmap name="15" file="art/15.png" />
+		</Set>
+	</Component>
+
+	<!-- ここからはPlayerが使うComponentを定義 /-->
+
+	<Bitmap name="TestImage0" x="0" y="0" z_depth="-10" visible="0" />
+	<Bitmap name="TestImage1" x="0" y="0" z_depth="-10" visible="0" />
+	<Bitmap name="TestImage2" x="0" y="0" z_depth="-10" visible="0" />
+
+    <!-- ここからはPlayerConPaneが使うContainerを定義 /-->
+	<Container name="control_panel" orientation="vertical" align="center" spacing="36" y2d="0" visible="0" focus="menu_r2">
+    	<Container name="menu_r1" orientation="horizontal" align="center" spacing="36" x2d="240" focus="__AREA__">
+            <Button name="Display" x="0" y="0" nav_down="menu_r2">
+                <String name="Label" str="Screen Display" />
+                <FocusOff>
+                    <Bitmap file="art/CP_Display.png" rgba="{*::IconRGBA.Normal}"/>
+                </FocusOff>
+                <FocusOn>
+                    <Bitmap file="art/CP_Display.png" rgba="{*::IconRGBA.Hilited}"/>
+                </FocusOn>
+            </Button>
+        </Container>
+        <Container name="menu_r2" orientation="horizontal" align="center" spacing="36" x2d="240" visible="1" focus="__AREA__">
+            <Button name="Play" nav_right="Pause" nav_up="menu_r1">
+                <String name="Label" str="Play" />
+                <FocusOff>
+                    <Bitmap file="art/CP_Play.png" rgba="{*::IconRGBA.Normal}"/>
+                </FocusOff>
+                <FocusOn>
+                    <Bitmap file="art/CP_Play.png" rgba="{*::IconRGBA.Hilited}"/>
+                </FocusOn>
+            </Button>
+            <Button name="Pause" nav_left="Play" nav_right="Stop" nav_up="menu_r1">
+                <String name="Label" str="Stop for a while" />
+                <FocusOff>
+                    <Bitmap file="art/CP_Pause.png" rgba="{*::IconRGBA.Normal}"/>
+                </FocusOff>
+                <FocusOn>
+                    <Bitmap file="art/CP_Pause.png" rgba="{*::IconRGBA.Hilited}"/>
+                </FocusOn>
+            </Button>
+            <Button name="Stop" nav_left="Pause" nav_up="menu_r1">
+                <String name="Label" str="Stop" />
+                <FocusOff>
+                    <Bitmap file="art/CP_Stop.png" rgba="{*::IconRGBA.Normal}"/>
+                </FocusOff>
+                <FocusOn>
+                    <Bitmap file="art/CP_Stop.png" rgba="{*::IconRGBA.Hilited}"/>
+                </FocusOn>
+            </Button>
+        </Container>
+        <Container name="legend_container" orientation="horizontal" align="center" spacing="18" x2d="240" visible="1">
+            <Text name="Legend" str="" rgba="{*::TextRGBA.Hilited}" alignment="center" size="18"/>
+        </Container>
+    </Container>
+
+	<Container name="cb_preview1" orientation="vertical" align="center" y2d="388" visible="0" focus="menu1">
+        <Container name="menu1" orientation="horizontal" visible="1" focus="__AREA__">
+            <Button name="cb_Play1" nav_right="cb_Save1">
+                <FocusOff>
+                    <Bitmap file="art/CP_Play.png" x="-120" rgba="{*::IconRGBA.Normal}"/>
+                </FocusOff>
+                <FocusOn>
+                    <Bitmap file="art/CP_Play.png" x="-120" rgba="{*::IconRGBA.Hilited}"/>
+                </FocusOn>
+            </Button>
+            <Button name="cb_Save1" nav_left="cb_Play1" nav_right="cb_Exit1">
+                <String name="cb_Label" str="Save	Abort" />
+                <FocusOff>
+                    <Bitmap file="art/Edit_btn2.png" x="-113" w="60" rgba="{*::IconRGBA.Normal}"/>
+                </FocusOff>
+                <FocusOn>
+                    <Bitmap file="art/Edit_btn2.png" x="-113" w="60" rgba="{*::IconRGBA.Hilited}"/>
+                </FocusOn>
+            </Button>
+            <Button name="cb_Exit1" nav_left="cb_Save1">
+                <FocusOff>
+                    <Bitmap file="art/Edit_btn2.png" x="-95" w="60" rgba="{*::IconRGBA.Normal}"/>
+                </FocusOff>
+                <FocusOn>
+                    <Bitmap file="art/Edit_btn2.png" x="-95" w="60" rgba="{*::IconRGBA.Hilited}"/>
+                </FocusOn>
+            </Button>
+        </Container>
+        <Container name="cb_legend_container1" orientation="horizontal" align="center" visible="1">
+            <Text name="cb_Legend1" shadow="0" size="16" x="26" y="-13" alignment="center" rgba="000000dc"/>
+        </Container>
+    </Container>
+
+	<Container name="cb_preview2" orientation="vertical" align="center" y2d="388" visible="0" focus="menu2">
+        <Container name="menu2" orientation="horizontal" visible="1" focus="__AREA__">
+            <Button name="cb_Stop2" nav_right="cb_Save2">
+                <FocusOff>
+                    <Bitmap file="art/CP_Stop.png" x="-120" rgba="{*::IconRGBA.Normal}"/>
+                </FocusOff>
+                <FocusOn>
+                    <Bitmap file="art/CP_Stop.png" x="-120" rgba="{*::IconRGBA.Hilited}"/>
+                </FocusOn>
+            </Button>
+            <Button name="cb_Save2" nav_left="cb_Stop2" nav_right="cb_Exit2">
+                <FocusOff>
+                    <Bitmap file="art/Edit_btn2.png" x="-113" w="60" rgba="{*::IconRGBA.Normal}"/>
+                </FocusOff>
+                <FocusOn>
+                    <Bitmap file="art/Edit_btn2.png" x="-113" w="60" rgba="{*::IconRGBA.Hilited}"/>
+                </FocusOn>
+            </Button>
+            <Button name="cb_Exit2" nav_left="cb_Save2">
+                <FocusOff>
+                    <Bitmap file="art/Edit_btn2.png" x="-95" w="60" rgba="{*::IconRGBA.Normal}"/>
+                </FocusOff>
+                <FocusOn>
+                    <Bitmap file="art/Edit_btn2.png" x="-95" w="60" rgba="{*::IconRGBA.Hilited}"/>
+                </FocusOn>
+            </Button>
+        </Container>
+        <Container name="cb_legend_container2" orientation="horizontal" align="center" visible="1">
+            <Text name="cb_Legend2" shadow="0" size="16" x="26" y="-13" alignment="center" rgba="000000dc"/>
+        </Container>
+    </Container>
+</App>

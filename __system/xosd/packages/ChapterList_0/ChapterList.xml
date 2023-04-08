@@ -1,0 +1,72 @@
+﻿<?xml version="1.0"?>
+<App name="ChapterList" focus="list" native="ChapterList/ChapterList">
+	<Dll name="xButton/xButton" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+
+	<Dic name="chapterlist" filepath="pack:ChapterList/0.1.0/dic" default="yes" />
+	<Bitmap name="futa" file="art/video_chapter_futa.png" w="704" h="480" />
+	<Bitmap name="bg" file="art/chapter_bg_01.png" w="704" h="480" />
+    
+<Component name="page" visible="0">
+
+		<Bitmap name="F0" file="art/Focus.png" x="-228" y="-324" w="80" h="62" z_depth="-6" rgba="FFFF8800" />
+		<Bitmap name="F1" file="art/Focus.png" x="-228" y="-270" w="80" h="62" z_depth="-6" rgba="FFFF8800" />
+		<Bitmap name="F2" file="art/Focus.png" x="-228" y="-216" w="80" h="62" z_depth="-6" rgba="FFFF8800" />
+		<Bitmap name="F3" file="art/Focus.png" x="-228" y="-162" w="80" h="62" z_depth="-6" rgba="FFFF8800" />
+		<Bitmap name="F4" file="art/Focus.png" x="-228" y="-108" w="80" h="62" z_depth="-6" rgba="FFFF8800" />
+		<Bitmap name="F5" file="art/Focus.png" x="-191" y="0"    w="158" h="125" z_depth="-6" rgba="FFFF88FF" />
+		<Bitmap name="F6" file="art/Focus.png" x="-228" y="108"  w="80" h="62"  z_depth="-6" rgba="FFFF8800" />
+		<Bitmap name="F7" file="art/Focus.png" x="-228" y="162"  w="80" h="62"  z_depth="-6" rgba="FFFF8800" />
+		<Bitmap name="F8" file="art/Focus.png" x="-228" y="216"  w="80" h="62"  z_depth="-6" rgba="FFFF8800" />
+		<Bitmap name="F9" file="art/Focus.png" x="-228" y="270"  w="80" h="62"  z_depth="-6" rgba="FFFF8800" />
+		<Bitmap name="F10" file="art/Focus.png" x="-228" y="324" w="80" h="62" z_depth="-6" rgba="FFFF8800" />
+
+	<Component name="tab1" x="-10" y="-108" rgba="FFFFFF00">
+		<Bitmap name="Zab1" file="art/BlueCarpet_Center.tga" x="35" y="-1" w="290" h="55" rgba="FFFFFF7E" />
+		<Bitmap name="Zab2" file="art/BlueCarpet_Center.tga" x="35" y="-1" w="290" h="110" rgba="FFFFFF7E" />
+		<Text name="CNo" str="0" x="16" y="-5" size="18" />
+		<Text name="Num" str="0" x="59" y="-5" size="18" />
+		<Text name="CTime" str="00:00:00" x="-90" y="20" /> 
+		<Text name="TTime" str="（00:00:00）" x="20" y="20" /> 
+		<Text name="Chapter" str="Chapter     （    ）" x="-90" y="-5" size="18" />
+		<Text name="Title" str="（             ）" x="0" y="20" size="18" />
+	</Component>
+	<Component name="tab2" x="-10" rgba="FFFFFFFF">
+		<Bitmap name="Zab1" file="art/BlueCarpet_Center.tga" x="35" y="-1" w="290" h="55" rgba="FFFFFF7E" />
+		<Bitmap name="Zab2" file="art/BlueCarpet_Center.tga" x="35" y="-1" w="290" h="110" rgba="FFFFFF7E" />
+		<Text name="CNo" str="0" x="14" y="-5" size="18" />
+		<Text name="Num" str="0" x="59" y="-5" size="18" />
+		<Text name="CTime" str="00:00:00" x="-90" y="20" /> 
+		<Text name="TTime" str="（00:00:00）" x="20" y="20" /> 
+		<Text name="Chapter" str="Chapter     （    ）" x="-90" y="-5" size="18" />
+		<Text name="Title" str="（             ）" x="0" y="20" size="18" />
+	</Component>
+	<Component name="tab3" x="-10" y="108" rgba="FFFFFF00">
+		<Bitmap name="Zab1" file="art/BlueCarpet_Center.tga" x="35" y="-1" w="290" h="55" rgba="FFFFFF7E" />
+		<Bitmap name="Zab2" file="art/BlueCarpet_Center.tga" x="35" y="-1" w="290" h="110" rgba="FFFFFF7E" />
+		<Text name="CNo" str="0" x="16" y="-5" size="18" />
+		<Text name="Num" str="0" x="59" y="-5" size="18" />
+		<Text name="CTime" str="00:00:00" x="-90" y="20" /> 
+		<Text name="TTime" str="（00:00:00）" x="20" y="20" /> 
+		<Text name="Chapter" str="Chapter     （    ）" x="-90" y="-5" size="18" />
+		<Text name="Title" str="（             ）" x="0" y="20" size="18" />
+	</Component>
+
+	<Component name="list" x="-228" z_depth="-5">
+		<Bitmap name="cell0" y="-324" w="72" h="54" rgba="FFFFFF00" />
+		<Bitmap name="cell1" y="-270" w="72" h="54" rgba="FFFFFF00" />
+		<Bitmap name="cell2" y="-216" w="72" h="54" rgba="FFFFFF40" />
+		<Bitmap name="cell3" y="-162" w="72" h="54" rgba="FFFFFF60" />
+		<Bitmap name="cell4" y="-108" w="72" h="54" rgba="FFFFFF80" />
+		<Bitmap name="cell5" x="36" w="144" h="108" rgba="FFFFFF80" />
+		<Bitmap name="cell6" y="108" w="72" h="54"  rgba="FFFFFF80" />
+		<Bitmap name="cell7" y="162" w="72" h="54"  rgba="FFFFFF60" />
+		<Bitmap name="cell8" y="216" w="72" h="54"  rgba="FFFFFF40" />
+		<Bitmap name="cell9" y="270" w="72" h="54"  rgba="FFFFFF00" />
+		<Bitmap name="cell10" y="324" w="72" h="54" rgba="FFFFFF00" />
+
+	</Component>
+</Component>
+
+</App>

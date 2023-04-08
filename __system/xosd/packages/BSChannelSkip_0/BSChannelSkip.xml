@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<App name="BSChannelSkip" native="BSChannelSkip/BSChannelSkip" >
+
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xPrim/xPrim" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xStr/xStr" version="0.1.0" />
+	<Dll name="xSelector/xSelector" version="0.1.0" />
+	<Dic name="BSChannelSkip" filepath="pack:BSChannelSkip/0.1.0/dic" default="yes" />
+
+	<String name="BSCHANNELSKIP_STR_Modify" str="Modify" />
+	<String name="BSCHANNELSKIP_STR_Back"   str="Return" />
+
+	<String name="ch_skip0" str="Dont skip" />
+	<String name="ch_skip1" str="Skip" />
+
+	<Selector name="Selection" arrows="1" next="DOWN" prev="UP" alignment="center" wrap="0" visible="0">
+		<Selection name="Yes" str="Yes" />
+		<Selection name="No" str="No" />
+	</Selector>
+
+	<Component name="BsConfigListIndex" y="-93">
+		<Text name="BSCHANNELSKIP_TEXT_BSCHANNEL"      str="BS Channel"     x="-100" rgba="D0D0D0FF" alignment="right" />
+		<Text name="BSCHANNELSKIP_TEXT_BSCHANNEL_GUIDE" str="Guide Channel"     x="0" rgba="D0D0D0FF" alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_BSCHANNEL_SKIP" str="Channel Skip" x="100"  rgba="D0D0D0FF" />
+	</Component>
+
+	<Bitmap3x3 name="TextFocus" file="art/TextFocus.tga" x="10" y="-66" w="410" h="40" corner_w="26" corner_h="16" />
+
+	<Component name="BSChannel" x="-140" rgba="d0d0d0ff">
+		<Text name="BSCHANNELSKIP_TEXT_CH1"  str="1"  y="-60" alignment="right" />
+		<Text name="BSCHANNELSKIP_TEXT_CH3"  str="3"  y="-40" alignment="right" />
+		<Text name="BSCHANNELSKIP_TEXT_CH5"  str="5"  y="-20" alignment="right" />
+		<Text name="BSCHANNELSKIP_TEXT_CH7"  str="7"  y="0"   alignment="right" />
+		<Text name="BSCHANNELSKIP_TEXT_CH9"  str="9"  y="20"  alignment="right" />
+		<Text name="BSCHANNELSKIP_TEXT_CH11" str="11" y="40"  alignment="right" />
+		<Text name="BSCHANNELSKIP_TEXT_CH13" str="13" y="60"  alignment="right" />
+		<Text name="BSCHANNELSKIP_TEXT_CH15" str="15" y="80"  alignment="right" />
+	</Component>
+
+	<Component name="BSChannelGuide" x="0" rgba="d0d0d0ff">
+		<Text name="BSCHANNELSKIP_TEXT_GUIDE1"  str=""  y="-60" alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_GUIDE3"  str=""  y="-40" alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_GUIDE5"  str=""  y="-20" alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_GUIDE7"  str=""  y="0"   alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_GUIDE9"  str=""  y="20"  alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_GUIDE11" str="" y="40"  alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_GUIDE13" str="" y="60"  alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_GUIDE15" str="" y="80"  alignment="center" />
+	</Component>
+
+	<Component name="BSChannelSkip" x="160" rgba="d0d0d0ff">
+		<Text name="BSCHANNELSKIP_TEXT_SKIP1"  str="Skip" y="-60" alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_SKIP3"  str="Skip" y="-40" alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_SKIP5"  str="Skip" y="-20" alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_SKIP7"  str="Skip" y="0"   alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_SKIP9"  str="Skip" y="20"  alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_SKIP11" str="Skip" y="40"  alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_SKIP13" str="Skip" y="60"  alignment="center" />
+		<Text name="BSCHANNELSKIP_TEXT_SKIP15" str="Skip" y="80"  alignment="center" />
+	</Component>
+
+	<Prim name="Line" type="line" rgba="606060FF" x="-80" y="-110" x2="-80"  y2="90" />
+	<Prim name="Line2" type="line" rgba="606060FF" x="80" y="-110" x2="80"  y2="90" />
+
+</App>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0"?>
+<PSML2>
+
+	<Dll name="xText/xText" version="0.1.0" />
+	<Dll name="xButton/xButton" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+
+	<Screen name="Message" visible="0" z_depth="-1">
+		<Text name="Text" size="16" spacing_v="8" rgba="{*::TextRGBA.Normal}" />
+	</Screen>
+
+	<Screen name="YesOrNo" visible="0" z_depth="-1" focus="ButtonNo">
+
+		<Text name="Text" size="16" spacing_v="8" rgba="{*::TextRGBA.Normal}" />
+
+		<Button name="ButtonYes" x="-60" y="60" nav_right="ButtonNo">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="Yes" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+			</FocusOn>
+			<FocusOff><Text str="Yes" rgba="{*::TextRGBA.Normal}" alignment="center"/></FocusOff>
+		</Button>
+		<Button name="ButtonNo" x="60" y="60" nav_left="ButtonYes">
+			<FocusOn>
+				<Bitmap3x3 file="art/TextFocus.tga" y="-5" w="96" h="40" corner_w="25" corner_h="17"/>
+				<Text str="No" rgba="{*::TextRGBA.Hilited}" alignment="center" shadow="0"/>
+			</FocusOn>
+			<FocusOff><Text str="No" rgba="{*::TextRGBA.Normal}" alignment="center"/></FocusOff>
+		</Button>
+	</Screen>
+
+</PSML2>

@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<App name="DVDubbing" focus="ModifyFocus" native="DVDubbing/DVDubbing" z_depth="0" visible="0">
+
+	<Dll name="xBitmap/xBitmap" version="0.1.0" />
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0" />
+	<Dll name="xStr/xStr" version="0.1.0" />
+	<Dll name="xText/xText" version="0.1.0" />
+
+	<Dic name="DVDubbing" filepath="pack:DVDubbing/0.1.0/dic" default="yes" />
+
+	<!-- 壁紙 /-->
+	<Bitmap name="bg" file="art/PSX3GDvDubbingWallpaper0830.png" x="0" y="0" w="720" h="480" visible="0" />
+	
+	<!-- タイトル /-->
+	<String name="page_guide0"  str="{DVDubbing::Main_Title}"       visible="0" /> 
+
+	<Component name="WizardList" x="-360" y="-240" >
+
+		<Component name="cell0"                                                 x="-720" y="120" rgba="D0D0D0FF" visible="0" >
+			<Component name="text"                                              x="360"  y="0" alignment="center" >
+				<Text name="text0" str="{POP_START__TEXT_START}"                x="-240" y="0" size="17" spacing_v="7" alignment="left" />
+				<Text name="text1" str="{POP_START__TEXT_SELECT_SOUND_MODE}"    x="-100" y="102" size="17" alignment="center" />
+				<Text name="text2" str="{POP_START__TEXT_SELECT_REC_MODE}"      x="100"  y="102" size="17" alignment="center" />
+				<Bitmap name="button0" file="art/resDateBg.png"                 x="0"    y="136" w="720" rgba="FFFFFF80"/>
+				<Text name="text3" str="{POP_START__TEXT_CONNECT_DV_NAME}"      x="-100" y="190" size="17" />
+
+			</Component>
+			<Component name="list"                                              x="360"  y="0" w="80.0" alignment="center" >
+				<Text name="text0"                                              x="0"    y="140" size="17" w="720.0" alignment="center" />
+				<Component name="text1"                                         x="-100" y="140" size="17" w="120.0" alignment="center" >
+					<Text name="audio_mode"                                     x="0"    y="0"   size="17" alignment="center" />
+				</Component>
+				<Component name="text2"                                         x="100"  y="140" size="17" w="60.0"  alignment="center" >
+				</Component>
+				<Component name="text3"                                         x="0"    y="250" size="16" w="130.0" alignment="center" >
+				</Component>
+				<Bitmap3x3 name="yes_button" file="art/btn.png"                  x="0"  y="245" w="150" h="32" corner_w="8" rgba="FFFFFF80" alignment="center" />
+				<Text name="yes_text" str="{POP_START__YES}"                     x="0"  y="250" size="16" rgba="000000A0" shadow="0" shadow_rgba="00000020" alignment="center" />
+			</Component>
+			<Component name="data"                                              x="360"  y="0" alignment="center" >
+				<Bitmap name="rec_mode"                                         x="100"  y="135" alignment="center" />
+				<Text name="dvcam_name"                                         x="-12"  y="190" size="17" />
+			</Component>
+
+			<Component name="focus_base" z_depth="1" >
+				<Bitmap name="Focus0" file="art/FocusGoko.tga" h="106" />
+				<Bitmap3x3 name="Focus1" file="art/TextFocus.tga" rgba="FFFF00FF" h="40" corner_w="25" corner_h="17"/>
+				<Component name="Focus2" >
+					<Bitmap name="FcsArrowUp" file="art/U_arw.png" y="-20" w="14" h="12" />
+					<Bitmap name="FcsArrowDn" file="art/U_arw.png" y="20" rot_x="0.5" w="14" h="12"  />
+				</Component>
+			</Component>
+
+		</Component>
+
+	</Component>
+
+	<Component name="TopBar" x="0" y="-70.0"  visible="0" >
+		<Text   name="Title" str="{DVDubbing::Main_Title}"        shadow="0" x="-272" y="-183.0" rgba="FFFFFFFF" />
+		<Bitmap name="Category"    file="art/TV-Top-CI_video_05.png"    trans_mode="1" x="-318.5" y="-205.0"           rgba="FFFFFFFF" />
+		<Bitmap name="BlackBar"    file="art/TV-Top-Bar_04.png"         trans_mode="1" x="79.0"    y="-205.0" w="720.0" rgba="FFFFFFFF" />
+	</Component>
+
+	<Component name="ButtomBar" y="70.0"  z_depth="-1" visible="0" >
+		<Component name="ButtomBarCancel" y="0.0"  z_depth="-1" visible="0" >
+			<Text   name="CANCEL"  str="{DVDubbing::CANCEL}"               x="-87.0"  y="197"             shadow="0"     rgba="FFFFFFFF" />
+		    <Bitmap                      file="art/TV-Btn-Bar_04.png"      x="-235.0" y="205.0" w="240.0" trans_mode="1" rgba="FFFFFFFF" />
+		    <Bitmap name="CANCEL_BUTTON" file="art/TV-BtnNav-Cross_04.png" x="-100.0" y="205.0"           trans_mode="1" rgba="FFFFFFFF" />
+		    <Bitmap                      file="art/TV-Btn-Bar_04.png"      x="141.0"  y="205.0" w="450.0" trans_mode="1" rgba="FFFFFFFF" />
+		</Component>
+
+		<Component name="ButtomBarConfirm" y="0.0"  z_depth="-1" visible="0" >
+			<Text   name="CANCEL"  str="{DVDubbing::BACK}"                  x="-87.0"  y="197"             shadow="0"     rgba="FFFFFFFF" />
+			<Text   name="CONFIRM" str="{DVDubbing::ENTER}"                 x="51.0"   y="197"             shadow="0"     rgba="FFFFFFFF" />
+		    <Bitmap                       file="art/TV-Btn-Bar_04.png"      x="-235.0" y="205.0" w="234.0" trans_mode="1" rgba="FFFFFFFF" />
+		    <Bitmap name="CANCEL_BUTTON"  file="art/TV-BtnNav-Cross_04.png" x="-102.5" y="205.0"           trans_mode="1" rgba="FFFFFFFF" />
+		    <Bitmap                       file="art/TV-Btn-Bar_04.png"      x="-54.5"  y="205.0" w="65.0"  trans_mode="1" rgba="FFFFFFFF" />
+		    <Bitmap name="CONFIRM_BUTTON" file="art/TV-BtnNav-Enter_04.png" x="14.5"   y="205.0"           trans_mode="1" rgba="FFFFFFFF" />
+		    <Bitmap                       file="art/TV-Btn-Bar_04.png"      x="251.0"  y="205.0" w="400.0" trans_mode="1" rgba="FFFFFFFF" />
+		</Component>
+	</Component>
+
+	<Component name="rec_info" visible="0" x="-280.0" y="150.0">
+		<Bitmap name="SokoIcon" trans_mode="1" x="0.0" y="0.0" rgba="FFFFFFFF" />
+		<Component name="rec_time" x="70.0" y="0.0">
+			<Text   name="time" size="16" str="0:00:00" alignment="left" shadow="1" x="0.0" y="5.0" rgba="FFFFFFFF" />
+			<Bitmap name="carpet" file="art/rec_num.tga" trans_mode="1" x="15.0" y="0.0" rgba="FFFFFFFF" />
+		</Component>
+	</Component>
+
+	<Component name="FreeSpace" visible="0" x="235">
+		<Bitmap3x3 name="bar0" file="art/FreeSpaceBase.tga" corner_w="0" corner_h="61" h="170" x="174" y="85">
+			<Bitmap name="bar1" file="art/FreeSpaceCurrent.tga" />
+		</Bitmap3x3>
+		<Text  name="text0" str="Disk remaining 100%" x="156" y="-103" rgba="ffffffff" />
+		<Text name="text1" str="03H02M" x="227" y="-67" rgba="ffffffff" />
+		<Text name="text2" str="04H00M" x="227" y="-38" rgba="ffffffff" />
+		<Text name="text3" str="06H31M" x="227" y="-9" rgba="ffffffff" />
+		<Text name="text4" str="08H00M" x="227" y="20" rgba="ffffffff" />
+		<Text name="text5" str="12H56M" x="227" y="49" rgba="ffffffff" />
+		<Text name="text6" str="18H00M" x="227" y="78" rgba="ffffffff" />
+		<Bitmap name="carpet" file="art/FreeSpace-TV.png" trans_mode="1" x="233.0" y="0.0" rgba="FFFFFFFF" />
+	</Component>
+
+	<Component name="tool_item">
+		<!-- 出荷時設定に戻す設定 /-->
+		<String name="TopTitle"      str="{DVDubbing::Main_Title}" />
+		<!-- 決定 /-->
+		<String name="GuideConfirm"  str="{DVDubbing::ENTER}" />
+		<!-- 戻る /-->
+		<String name="GuideBack"     str="{DVDubbing::BACK}" />
+		<!-- 中止 /-->
+		<String name="GuideCancel"   str="{DVDubbing::CANCEL}" />
+	</Component>
+	
+	<Component name="audio_input_item">
+		<String name="text0"      str="Stereo 1" />
+		<String name="text1"      str="Stereo 2" />
+		<String name="text2"      str="Mix" />
+	</Component>
+<!-->
+	<Component name="dialog_message_item">
+		<String name="text0"      str="-100,{DVDubbing::DLG_ROLLING_BACK_TAPE}" />
+		<String name="text1"      str="-100,{DVDubbing::DLG_STOP_COPY}"         />
+		<String name="text2"      str="-100,{DVDubbing::DLG_STOPED_COPY}"       />
+		<String name="text3"      str="-190,{DVDubbing::DLG_PRE60_REC}"         />
+		<String name="text4"      str="-190,{DVDubbing::DLG_PRE5_REC}"          />
+		<String name="text5"      str="-130,{DVDubbing::DLG_PLAY_REC}"          />
+		<String name="text6"      str="-110,{DVDubbing::DLG_UNKNOWN_DV}"        />
+		<String name="text7"      str="-150,{DVDubbing::DLG_NOINPUT_TAPE}"      />
+		<String name="text8"      str="-110,{DVDubbing::DLG_CANNOT_CONTROL_DV}" />
+		<String name="text9"      str="-100,{DVDubbing::DLG_COPY_FAITAL}"       />
+		<String name="text10"     str="-210,{DVDubbing::DLG_HDD_NO_CAPACITY}"   />
+		<String name="text11"     str="-140,{DVDubbing::DLG_TITLE_FULL}"        />
+		<String name="text12"     str="-100,{DVDubbing::DLG_COPY_COMPLETE}"     />
+	</Component>
+</-->
+</App>

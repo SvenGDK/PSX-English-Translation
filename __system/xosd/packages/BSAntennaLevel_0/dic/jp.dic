@@ -1,0 +1,6 @@
+<?dic version="1.0" language="jp" size="5"?>
+{MENU} = "TV Settings";
+{TITLE} = "BS Antenna Level Display";
+{CANCEL} = "Cancel";
+{RECSTANDBYDIALOG_TEXT} = "Less than 10 minutes left until recording reservation starts. \nAborting the current operation.";
+{EPGSTANDBYDIALOG_TEXT} = "We will start getting program information soon. \nAborting the current operation.";

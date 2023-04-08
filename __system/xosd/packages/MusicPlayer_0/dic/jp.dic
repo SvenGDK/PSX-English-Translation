@@ -1,0 +1,205 @@
+﻿<?dic version="1.0" language="jp" size="173" ?>
+
+{OptionsTitle} = "Options";
+
+{AudioPlayer} = "Digital Audio Player";
+
+{PlayBtn} = "Play";
+{PauseBtn} = "Pause";
+{StopBtn} = "Stop";
+{PreviousBtn} = "Previous";
+{NextBtn} = "Next";
+{VisualizerBtn} = "Visualizer";
+{FastForwardBtn} = "Fast Forward";
+{FastRewindBtn} = "Fast Reverse";
+{InfoBtn} = "Information";
+{RandomBtn} = "Random";
+{ShuffleBtn} = "Shuffle";
+{RepeatBtn} = "Repeat";
+
+{Folder} = "Folder";
+{File} = "File";
+{Album} = "Album";
+{Track} = "Track";
+{Photo} = "Photo";
+{Slideshow} = "Slideshow";
+{ArtistName} = "Artist";
+{AlbumGenre} = "Genre";
+{YEAR} = "Release year :";
+{Bar} = "－";
+{AlbumNumTracks} = "Tracks";
+{Size} = "Size";
+{Duration} = "Length";
+{Bitrate} = "Bit Rate";
+{FileFormat} = "Format";
+{FileFormatStr} = "CDA";
+{SizeIfImported} = "Import Size";
+{DiscType} = "Disc Type";
+{ImportDate} = "Imported";
+{CreationDate} = "Created";
+{Created} = "Create Device";
+{Filmed} = "Film Device";
+{Resolution} = "Resolution";
+{CameraModel} = "Camera";
+{Length} = "Length";
+{NotAvailable} = "N/A";
+{DataCD} = "Data CD";
+{AudioCD} = "Audio CD";
+{PrePhotoImportedDate} = "2004/11/01 12:00:00";
+
+{Folders} = "Folders";
+{Files} = "Files";
+{Albums} = "Albums";
+{Tracks} = "Tracks";
+{Photos} = "Photos";
+{Information} = "Information";
+
+{FolderN} = "Folder %d";
+{FileN} = "File %d";
+{AlbumN} = "Album %d";
+{TrackN} = "Track %d";
+{PhotoN} = "Photo %d";
+
+{FolderName} = "Folder";
+{FIleName} = "File";
+{AlbumName} = "Album";
+{CDTrackName} = "Track name :";
+{TrackName} = "Track";
+{ImageName} = "Image";
+{MovieName} = "Movie";
+
+{DeviceLabel} = "Device";
+{FolderLabel} = "Folder";
+{NameLabel} = "Name";
+{MediaLabel} = "Media";
+
+{DiscLabel} = "Disc";
+{TrackLabel} = "Track";
+{PhotoLabel} = "Photo";
+{MovieLabel} = "Movie";
+
+{NumFolders} = "Folders";
+{NumFiles} = "Files";
+{NumTracks} = "Tracks";
+{NumPhotos} = "Photos";
+
+{RenameQuestion} = "名前を変更しますか？";
+
+{InvalidName} = "The name you entered has been used\nor contains characters that cannot be used.";
+{InvalidName1} = "You have not entered any characters";
+{InvalidName2} = "The name you entered is already in use.";
+{InvalidName3} = "The name you entered is invalid or already in use.";
+{IllegalName} = "The name you entered contains characters\nthat cannot be used.";
+{EmptyName} = "That is a blank name and cannot be used.";
+{SameName} = "No change to name, rename cancelled.";
+{EnterDiffName} = "Enter a different name.";
+
+{ChangeAlbumName} = "Change the album name.";
+{ChangeTrackName} = "Change the track name.";
+
+{PleaseWait} = "Please wait...";
+{DeletingWarning} = "Deleting. Please wait...";
+{RenamingWarning} = "Renaming. Please wait...";
+{FormatWarning} = "Formatting. Please wait...";
+{Importing} = "Importing...";
+{ImportAll} = "All";
+{ImportTrackN} = "Importing track %i...";
+{ImportPhotoN} = "Importing photo %i...";
+
+{CopyComplete} = "Copy completed.";
+{CopyCancelled} = "Copy cancelled.";
+{CopyFailed} = "The copy could not be completed";
+{MoveComplete} = "Move completed.";
+{MoveCancelled} = "Move cancelled.";
+{MoveFailed} = "The move could not be completed.";
+{DeleteComplete} = "Delete completed.";
+{DeleteCancelled} = "Delete cancelled.";
+{DeleteFailed} = "The delete could not be completed.";
+{RenameComplete} = "Rename completed.";
+{RenameCancelled} = "Rename cancelled.";
+{RenameFailed} = "The item could not be renamed.";
+{RestoreInfoLoading} = "Updating information...";
+{RestoreInfoFailed} = "The update could not be completed.";
+{ImportExist} = "An album with this name already exists. If you continue with the Import the album will be overwritten.";
+{ImportComplete} = "Import completed.";
+{ImportCancelled} = "Import cancelled.";
+{ImportFailed} = "The import could not be completed.";
+{ImpFailed.SomeContent...} = "Some content could not be imported.";
+{ImpFailed.ContentsOfDisc...} = "The contents of this disc cannot be imported.";
+
+{DoNotTurnOff} = "Do not turn off the console.";
+{NoOffOrRemCD} = "Do not turn off the console or remove the CD.";
+{NoOffOrRemMS} = "Do not turn off the console or remove the memory stick.";
+{CheckMSInserted} = "Check that the memory stick is fully inserted.";
+
+{CheckingForSpaceHD} = "Checking for free space on the hard disk";
+{NotEnoughSpaceHD} = "There is not enough free space on the hard disk.";
+{NotEnoughSpace} = "There is not enough space.";
+
+{DeleteOldFiles} = "Delete unnecessary\ndata items.";
+
+{ContinueQuestion} = "Do you want to continue?";
+{CancelImportQuestion} = "The import will be cancelled.\nDo you want to continue?";
+
+{DeletingAllPhotos} = "All photos in this album will be deleted.";
+{DeletingAllMovies} = "All movies in this album will be deleted.";
+{DeletingAllTracks} = "All tracks in this album will be deleted.";
+{DeletingPhoto} = "The photo will be deleted.";
+{DeletingMovie} = "The movie will be deleted.";
+{DeletingTrack} = "The track will be deleted.";
+
+{NoFiles} = "There is no item available to import.";
+{CreateAlbum} = "Create New";
+{SelectImportDest} = "Select an album to\nimport to.";
+
+{NewAlbum} = "New Album";
+
+{MaxAlbums} = "No additional albums can be created.\nSelect a different album.";
+{SelectAlbum} = "Select an album.";
+{MaxTrack} = "Import done. Some items could not\nbe imported because the number of\nitems in the album reached 999.";
+
+{TooManyTracks} = "There are too many tracks in this album.";
+{NoTrack} = "There are no tracks to play.";
+{NoNextTrack} = "There is no track available.";
+{NoPreviousTrack} = "There is no track available.";
+{NoNextData} = "There is no data available.";
+{NoPreviousData} = "There is no data available.";
+{EmptyAlbum} = "This album cannot be used to do a slideshow.";
+
+{FormatMS} = "All data stored on the memory stick\nwill be deleted during formatting.";
+
+{DelTrackQuestion} = "The track will be deleted. Do you want to continue?";
+
+{ShowPhoto} = "Show";
+{RotateL} = "Rotate Left";
+{RotateR} = "Rotate Right";
+{Random} = "Random";
+{UseAsIcon} = "Set as Cover";
+
+{Err.PhotoNotSupported} = "This photo cannot be displayed.";
+
+{Show.AddToShow} = "Add To Show";
+
+{Show.NoFiles} = "There is no item available to add to show.";
+{Show.Checking} = "Checking for free space on the hard disk.\nPlease wait...\nDo not turn off the console.";
+{Show.NoSpace} = "There is not enough free space on the hard disk.\nDelete unnecessary\ndata items.";
+{Show.NewAlbum} = "Create New";
+{Show.Destination} = "Select a Show to add to.";
+{Show.MaxAlbums} = "No additional Shows can be created.\nSelect a different show.";
+{Show.MaxAlbums.Exit} = "Select a Show.";
+{Show.TooManyitems} = "There are too many items in this show.\nAdd to Show cancelled.";
+{Show.NewDstInvalid} = "The name you entered has been used or cannot be used.\nChange the Show name.";
+{Show.Processing} = "Adding�\nDo not turn off the console or remove the media.";
+{Show.ProcessingAll} = "All";
+{Show.ProcessingItem} = "Do not turn off the console or\nremove the media.";
+{Show.Finished} = "Add completed.";
+{Show.ImportError} = "The item could not be added\nSome content could not be added.";
+{Show.MaxItem} = "Add to Show done. Some items could not\nbe added because the number of\nitems in the show reached 999.";
+{Show.Cancel} = "Add to Show will be cancelled. Continue?";
+{Show.ItemName} = "Item Name";
+{Show.FileType} = "File Type";
+{Show.RunTime} = "Run Time";
+{Show.Location} = "Location";
+
+{ImpCD_str16} = "Importing... Do not turn off the console.";
+{ImpCD_str17} = "Change the album name.";

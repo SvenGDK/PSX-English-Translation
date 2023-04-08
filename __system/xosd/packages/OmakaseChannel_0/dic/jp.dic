@@ -1,0 +1,9 @@
+<?dic version="1.0" language="jp" size="8"?>
+{MENU} = "TV SETTING";
+{TITLE} = "TV MANUAL SETTING";
+{CONFIRM} = "CONFIRM";
+{CANCEL} = "CANCEL";
+{DIALOG_CONFIRM} = "Confirm";
+{SAVECONFIRMDIALOG_TEXT} = "Save your settings. \nAre you sure?";
+{RECSTANDBYDIALOG_TEXT} = "Less than 10 minutes left until recording reservation starts. \nAborting the current operation.";
+{EPGSTANDBYDIALOG_TEXT} = "We will start getting program information soon. \nAborting the current operation.";

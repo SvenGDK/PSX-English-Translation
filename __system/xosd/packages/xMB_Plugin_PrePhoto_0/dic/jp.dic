@@ -1,0 +1,37 @@
+<?dic version="1.0" language="jp" size="50"?>
+
+{ALBUMTITLE} = "Sample Album";
+{ALBUMPATH} = "/Preset/Photo/サンプルアルバム";
+{PHOTOPATH_001} = "/Preset/Photo/サンプルアルバム/SMPL0001.JPG";
+{PHOTOPATH_002} = "/Preset/Photo/サンプルアルバム/SMPL0002.JPG";
+{PHOTOPATH_003} = "/Preset/Photo/サンプルアルバム/SMPL0003.JPG";
+{PHOTOPATH_004} = "/Preset/Photo/サンプルアルバム/SMPL0004.JPG";
+{PHOTOPATH_005} = "/Preset/Photo/サンプルアルバム/SMPL0005.JPG";
+{PHOTOPATH_006} = "/Preset/Photo/サンプルアルバム/SMPL0006.JPG";
+{PHOTOPATH_007} = "/Preset/Photo/サンプルアルバム/SMPL0007.JPG";
+{PHOTOPATH_008} = "/Preset/Photo/サンプルアルバム/SMPL0008.JPG";
+{PHOTOPATH_009} = "/Preset/Photo/サンプルアルバム/SMPL0009.JPG";
+{PHOTOPATH_010} = "/Preset/Photo/サンプルアルバム/SMPL0010.JPG";
+{PHOTOPATH_011} = "/Preset/Photo/サンプルアルバム/SMPL0011.JPG";
+{PHOTOPATH_012} = "/Preset/Photo/サンプルアルバム/SMPL0012.JPG";
+{PHOTOPATH_013} = "/Preset/Photo/サンプルアルバム/SMPL0013.JPG";
+{PHOTOPATH_014} = "/Preset/Photo/サンプルアルバム/SMPL0014.JPG";
+{PHOTOPATH_015} = "/Preset/Photo/サンプルアルバム/SMPL0015.JPG";
+{PHOTOPATH_016} = "/Preset/Photo/サンプルアルバム/SMPL0016.JPG";
+{PHOTOPATH_017} = "/Preset/Photo/サンプルアルバム/SMPL0017.JPG";
+{PHOTOPATH_018} = "/Preset/Photo/サンプルアルバム/SMPL0018.JPG";
+{PHOTOPATH_019} = "/Preset/Photo/サンプルアルバム/SMPL0019.JPG";
+{PHOTOPATH_020} = "/Preset/Photo/サンプルアルバム/SMPL0020.JPG";
+{PHOTOPATH_021} = "/Preset/Photo/サンプルアルバム/SMPL0021.JPG";
+{PHOTOPATH_022} = "/Preset/Photo/サンプルアルバム/SMPL0022.JPG";
+{PHOTOPATH_023} = "/Preset/Photo/サンプルアルバム/SMPL0023.JPG";
+{PHOTOPATH_024} = "/Preset/Photo/サンプルアルバム/SMPL0024.JPG";
+
+{PICTTITLE} = "Sample";
+{PICTALBUMPATH} = "/Photo3/サンプルアルバム";
+{PICTPATH_001} = "/Preset/PictClip/001_TEST.pclip";
+
+{BACK} = "Return";
+{CONFIRM} = "Confirm";
+{OPTION} = "Options";
+

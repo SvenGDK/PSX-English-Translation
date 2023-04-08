@@ -1,0 +1,22 @@
+<?dic version="1.0" language="jp" size="21"?>
+{Main_Title} = "Main settings";
+{Title_SettingStart} = "Restore Factory Settings";
+{ENTER} = "Confirm";
+{BACK} = "Return";
+{CANCEL} = "Cancel";
+{CLOSE} = "Close";
+{Stop} = "Stop";
+{NStop} = "Dont abort";
+{cell0_text0} = "Restores all settings to factory defaults. \nAre you sure?";
+{YES} = "Yes";
+{NO} = "No";
+{cell1_text0} = "Resetting to factory settings.";
+{cell1_text1} = "Do not turn off the power during execution.";
+{cell1_text2} = "Progress";
+{cell2_text0} = "Restored to factory settings.";
+{Message_Cancel} = "Abort the restore to factory settings. \nAre you sure?";
+{EXEC} = "Execution";
+{NO_EXEC} = "Cancellation";
+{Message_RecStanby} = "Less than 10 minutes left until recording reservation starts. \nAborting the current operation.";
+{Message_EPGStanby} = "Getting program information soon. \nAborting the current operation.";
+{Dialog_Warning} = "Clear the current settings and return to factory defaults. \nAre you sure? \n\nIf you execute this, the program guide data will also be deleted.";

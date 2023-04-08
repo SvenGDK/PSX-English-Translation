@@ -1,0 +1,21 @@
+<?dic version="1.0" language="jp" size="20"?>
+{Yes} = "Yes";
+{No} = "No";
+{Enter} = "Enter";
+{Back} = "Return";
+{Close} = "Close";
+{Option} = "Options";
+{Add} = "Add";
+{Edit} = "Edit";
+{Delete} = "Delete";
+{edit registed word} = "Character input settings/editing registered words";
+{Choose the location of word.} = "Please select a location to register.";
+{Choose the word.} = "Please select a phrase to use.";
+{Input the string.} = "Please enter a letter.";
+{There is same word.} = "the same phrase exists.";
+{Overwrite the word?} = "Overwrite. \nAre you sure?";
+{Delete the word?} = "Delete a phrase. \nAre you sure?";
+{Word is registed.} = "Registered the phrase.";
+{Word is deleted.} = "Removed phrase.";
+{There is no registed word.} = "There are no words registered.";
+{Invalid word.} = "This phrase is not allowed.";

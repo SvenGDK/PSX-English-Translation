@@ -1,0 +1,14 @@
+<?dic version="1.0" language="jp" size="13"?>
+{MENU} = "TV Settings";
+{TITLE} = "Manual Channel Setting";
+{FINETUNE} = "Channel Fine-Tuning";
+{CONFIRM} = "Confirm";
+{CANCEL} = "Cancel";
+{DIALOG_CONFIRM} = "Confirm";
+{SAVECONFIRMDIALOG_TEXT} = "Save your settings. \nAre you sure?";
+{SAVEWAITINGDIALOG_TEXT} = "Saving channel settings. \nPlease wait a moment.";
+{RECSTANDBYDIALOG_TEXT} = "Less than 10 minutes left until recording reservation starts. \nAborting the current operation.";
+{INVALIDVALUEDIALOG_TEXT} = "The received channel you entered is invalid.";
+{GUIDECHEXISTDIALOG_TEXT} = "The guide channels overlap. \nPlease check the setting value.";
+{EPGHOSTCHANGEDIALOG_TEXT} = "If you change this channel, you may not be able to use the program guide or \nOmakase Maru Recording. \nAre you sure?";
+{EPGSTANDBYDIALOG_TEXT} = "We will start getting program information soon. \nAborting the current operation.";

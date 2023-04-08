@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+<App name="HDDPartition" native="HDDPartition/HDDPartition" focus="ScreenList">
+
+	<Dic name="HDDPartition" filepath="pack:HDDPartition/0.1.0/dic" default="yes" />
+
+	<Dll name="xText/xText" version="0.1.0"/>
+	<Dll name="xStr/xStr" version="0.1.0"/>
+	<Dll name="xSelector/xSelector" version="0.1.0"/>
+	<Dll name="xButton/xButton" version="0.1.0"/>
+	<Dll name="xBitmap/xBitmap" version="0.1.0"/>
+	<Dll name="xBitmap3x3/xBitmap3x3" version="0.1.0"/>
+	<Dll name="xPrim/xPrim" version="0.1.0"/>
+
+	<Bitmap name="bg" file="art/wizard_bg.png" x="0" y="0" w="720" h="480"/>
+
+	<Anim name="Anim_SlideLeftIn" loop="no">
+		<AnimSegment length="100" loop="no" duration="300" curve="0">
+			<Channel type="T" delta="0" closed="yes" loop="no">
+				<Frame time="0" x="720"/>
+				<Frame time="99" x="0"/>
+			</Channel>
+		</AnimSegment>
+	</Anim>
+
+	<Anim name="Anim_SlideLeftOut" loop="no">
+		<AnimSegment length="100" loop="no" duration="300" curve="0">
+			<Channel type="T" delta="0" closed="yes" loop="no">
+				<Frame time="0" x="0"/>
+				<Frame time="99" x="-720"/>
+			</Channel>
+		</AnimSegment>
+	</Anim>
+
+	<Anim name="Anim_SlideRightIn" loop="no">
+		<AnimSegment length="100" loop="no" duration="300" curve="0">
+			<Channel type="T" delta="0" closed="yes" loop="no">
+				<Frame time="0" x="-720"/>
+				<Frame time="99" x="0"/>
+			</Channel>
+		</AnimSegment>
+	</Anim>
+
+	<Anim name="Anim_SlideRightOut" loop="no">
+		<AnimSegment length="100" loop="no" duration="300" curve="0">
+			<Channel type="T" delta="0" closed="yes" loop="no">
+				<Frame time="0" x="0"/>
+				<Frame time="99" x="720"/>
+			</Channel>
+		</AnimSegment>
+	</Anim>
+
+	<Anim name="Anim_FadeIn" loop="no">
+		<AnimSegment length="100" loop="no" duration="300" curve="0">
+			<Channel type="C" delta="0" closed="yes" loop="no">
+				<Frame time="0" a="0.0"/>
+				<Frame time="99" a="1.0"/>
+			</Channel>
+		</AnimSegment>
+	</Anim>
+
+	<Component name="ScreenList" x="0" y="-240" z="0" rot_x="0" rot_y="0" rot_z="0" visible="1">
+
+		<Component name="ScreenArrows" y="245">
+			<Bitmap name="ArrowLeft" file="art/GT000020.tga" x="-300" y="-5" w="28" h="30" rot_z="0.5" visible="0"/>
+			<Bitmap name="ArrowRight" file="art/GT000020.tga" x="290" y="-5" w="28" h="30" visible="0"/>
+		</Component>
+
+		<Component name="SelectionArrows" x="0" alignment="center" visible="0">
+			<Bitmap file="art/GT000020.tga" x="98" y="-5" w="14" h="15" rot_z="0.5"/>
+			<Bitmap file="art/GT000020.tga" x="-100" y="-5" w="14" h="15"/>
+		</Component>
+
+
+		<Component name="Screen.0" x="720" y="0" visible="1">   <!--Select Language -->
+
+			<Text name="BB_CONFIRM" str="Confirm" visible="0" />
+			<Text name="BB_CANCEL" str="Cancel" visible="0"/>
+
+			<Component name="text0" x="-230" y="208">
+				<Text name="text1" str="Run HDD Space settings and change the game area."                  y="0" size="16" alignment="left" />
+				<Text name="text2" str="When executed, it will erase all contents of the hard disk."         y="24" size="16"  alignment="left" />
+				<Text name="text3" str="Current game area:"                                     x="120" y="80" size="16" alignment="left" />
+				<Text name="SettingField" str="?GB"                                             x="270" y="80" />
+			</Component>
+		</Component>
+
+		<Component name="Screen.1" x="720" y="0" visible="1">
+
+			<Text name="EOS" visible="0" />
+
+			<Text name="BB_CONFIRM" str="Confirm" visible="0" />
+			<Text name="BB_CANCEL" str="Cancel" visible="0" />
+
+			<Component name="textA" x="-240" y="190">
+				<Text name="text0" str="Run HDD Space settings and delete the game area."            x="0"  y="0" size="16" />
+				<Bitmap name="enter" file="art/BtnNav-EnterCir-917-wide.tga"                      x="32" y="20" />
+				<Text name="text1" str="Please press."                                       x="68" y="24" size="16" />
+				<Text name="text2" str="Please note"                                                   x="0"  y="72" size="16" />
+				<Text name="text3" str="If you delete the game area, the games in the hard disk,"     x="0"  y="96" size="16" />
+				<Text name="text4" str="Some music and photo functions will be unavailable." x="0"  y="120" size="16" />
+			</Component>
+
+			<Component name="textB" x="-180" y="170" visible="0">
+				<Text name="text0" str="Run HDD Space settings and create a game area."            x="0"  y="0" size="16" />
+				<Bitmap name="enter" file="art/BtnNav-EnterCir-917-wide.tga"                      x="32" y="20" />
+				<Text name="text1" str="Please press."                                       x="68" y="24"  size="16" />
+				<Text name="text2" str="Please note"                                                   x="0"  y="72"  size="16" />
+				<Text name="text3" str="When you create a game area, the program recording time"                 x="0"  y="96"  size="16" />
+				<Text name="text4" str="About 17 hours (for SP recording) will be shortened."                         x="0"  y="120" size="16" />
+			</Component>
+		</Component>
+
+		<Component name="Screen.2" x="720" y="0" visible="1"> 
+
+			<Text name="BB_CONFIRM" str="Restart" visible="0" />
+
+			<Component name="text0" x="-200" y="228">
+				<Bitmap name="enter" file="art/BtnNav-EnterCir-917-wide.tga"                x="32"  y="-4" />
+				<Text name="text" str="Press to reboot."                        x="68"  y="0" size="16" />
+				<Text name="text" str="After rebooting, start hard disk space settings."      x="0"   y="24" size="16" />
+			</Component>
+		</Component>
+
+	</Component>
+
+	<Component name="tool_item">
+		<String name="TopTitle"      str="Main settings" />
+		<String name="SubTitle"      str="HDD space settings" />
+	</Component>
+</App>

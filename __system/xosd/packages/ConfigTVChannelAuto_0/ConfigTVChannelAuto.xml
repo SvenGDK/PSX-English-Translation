@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<App name="ConfigTVChannelAuto" focus="ModifyFocus" native="ConfigTVChannelAuto/ConfigTVChannelAuto" z_depth="0" visible="0">
+
+	<Dic name="ConfigTVChannelAuto" filepath="pack:ConfigTVChannelAuto/0.1.0/dic" default="yes" />
+
+	<String name="page_guide0"  str="Automatic Channel Setting"         visible="0" />
+	<String name="page_guide1"  str="Automatic Channel Setting"         visible="0" />
+	<String name="page_guide2"  str="Automatic Channel Setting"         visible="0" />
+
+	<Component name="WizardList" x="-360" y="-240" >
+
+		<!-- No.0 自動チャンネル設定 /-->
+		<Component name="cell0"                                                 x="720" y="0" rgba="D0D0D0FF" visible="0" >
+		</Component>
+
+		<!-- No.1 自動チャンネル設定中画面 /-->
+		<Component name="cell1"                                                   x="720"  y="0" rgba="D0D0D0FF" visible="0" >
+			<Component name="text"                                                x="360"  y="160" >
+				<Text name="text0" str="Automatic channel setting in progress."               x="0"    y="0"  size="16" alignment="center" />
+				<Text name="text1" str="Do not turn off the power during setting."       x="0"    y="30" size="16" alignment="center" />
+				<Text name="text2" str="Progress"                                 x="-220" y="80" size="16" alignment="center" />
+				<Text name="prog_ch" str="  "                                     x="200"  y="-60" size="14" alignment="left" />
+				<Text name="prog"    str="  "                                     x="200"  y="120" size="14" alignment="center" />
+			</Component>
+			<Component name="slider_bar"                                          x="160"  y="255" >
+				<Component name="bar"                                             x="180"  y="0" />
+			</Component>
+		</Component>
+
+	</Component>
+
+	<Component name="tool_item">
+		<String name="TopTitle"      str="TV Settings" />
+		<!-- 決定 /-->
+		<String name="GuideConfirm"  str="{ConfigTVChannelAuto::ENTER}" />
+		<!-- CANCEL /-->
+		<String name="GuideBack"   str="{ConfigTVChannelAuto::BACK}" />
+		<!-- CANCEL /-->
+		<String name="GuideCancel"   str="{ConfigTVChannelAuto::CANCEL}" />
+		<!-- CANCEL /-->
+		<String name="GuideClose"   str="{ConfigTVChannelAuto::CLOSE}" />
+	</Component>
+	
+</App>

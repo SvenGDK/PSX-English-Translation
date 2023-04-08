@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<Category
+    name="VideoUtil"
+    icon="pack:xMB_Plugin_Video/0.1.0/art/video.png"
+    icon_x="34"
+    icon_y="23"
+    label="{VideoLabel}"
+    order="10"
+>
+</Category>
+

@@ -1,0 +1,32 @@
+<?dic version="1.0" language="jp" size="28"?>
+{Title_EasySetting} = "Easy Setting";
+{Title_SettingStart} = "Set start";
+{Title_DisplayLanguage} = "Display Language";
+{Title_TunerSystem} = "Tuner System";
+{Title_Area} = "Area Code Setting";
+{Title_AutoChannel} = "Automatic Channel Setting";
+{Title_Time} = "Setting the time";
+{Title_Omakase} = "Omakase/March Recording Settings";
+{Title_TVType} = "TV Type";
+{Title_Scart} = "Scart Setting";
+{Title_OpticalOut} = "Optical Digital Output";
+{Title_DolbyDegital} = "Dolby Digital";
+{Title_DTS} = "DTS";
+{Title_SettingList} = "List of Setting Values";
+{Title_SettingEnd} = "End of Setting";
+{Message_Cancel} = "Cancels Easy Setup. \nAre you sure?";
+{Message_TVAutoChannel} = "Execute automatic channel setting. \nAre you sure?";
+{Message_ACSAutoDate} = "Execute automatic time setting. \nAre you sure?";
+{Message_OmakaseDelete} = "おまかせ・まる録はすでに設定されています。
+新しく設定すると、現在の設定を消去して、
+おまかせ・まる録 最大録画時間を初期の値に戻します。
+よろしいですか？";
+{Message_AreaChange} = "If you change the settings, you may not be able to use the program guide, Omakase, or Maru Recording\n. \nAre you sure?";
+{Message_RecStanby} = "Less than 10 minutes left until recording reservation starts. \nAborting the current operation.";
+{Message_RecRun} = "Cannot be changed during recording preparation and recording.";
+{Message_EPGStanby} = "We will start getting program information soon. \nAborting the current operation.";
+{Message_Time_Error} = "The value you entered is invalid.";
+{Message_BS_Error} = "BS antenna power could not be turned on.";
+{Message_Wait} = "Please wait.";
+{Button_YES} = "Yes";
+{Button_NO} = "No";

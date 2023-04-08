@@ -1,0 +1,10 @@
+<?dic version="1.0" language="jp" size="9"?>
+{MENU} = "TV Settings";
+{TITLE} = "BS Channel Skip";
+{CONFIRM} = "Confirm";
+{CANCEL} = "Cancel";
+{SAVECONFIRM_TEXT} = "Save your settings. \nAre you sure?";
+{FINISH_TEXT} = "Saving channel settings. \nPlease wait a moment.";
+{GUIDECHEXIST_TEXT} = "The guide channels overlap. \nPlease check the setting value.";
+{RECSTANDBY_TEXT} = "Less than 10 minutes left until recording reservation starts. \nAborting the current operation.";
+{EPGSTANDBY_TEXT} = "We will start getting program information soon. \nAborting the current operation.";
