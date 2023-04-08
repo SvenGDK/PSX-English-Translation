@@ -5,7 +5,7 @@ Currently only (tested) for newer models with Firmware 2.11 </br>
 Tested on a PSX DESR-5700 with Firmware 2.11.
 
 ### Installation
-Requires FMBC and wLaunchELF kHn
+Requires FMCB and wLaunchELF kHn
 1. Copy the folder "__system" to a FAT32 (MBR) formatted USB drive.
 2. Start wLaunchELF on your PSX and go to "mass:/"
 3. Open the folder "__system" MARK both "dic" and "xosd" with cross (X)
